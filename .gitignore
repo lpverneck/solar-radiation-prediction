@@ -1,5 +1,7 @@
 # Prerequisites
 *.d
+*.xlsx
+
 
 # Object files
 *.o
