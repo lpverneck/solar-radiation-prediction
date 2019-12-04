@@ -9,10 +9,11 @@ from sklearn import metrics
 from sklearn.neural_network import MLPRegressor
 from sklearn.ensemble import GradientBoostingRegressor
 from xgboost import XGBRegressor
+from sklearn.model_selection import GridSearchCV
 
 
 project_dir = os.path.dirname(__file__)
-data_dir = project_dir + "\\data"
+data_dir = project_dir + "\\data\\raw"
 
 
 df1 = pd.read_excel(data_dir+'\\BoboDioulasso.xlsx', header=1)
@@ -27,6 +28,7 @@ df1 = pd.read_excel(data_dir+'\\BoboDioulasso.xlsx', header=1)
 
 df1.columns = ['date', 'wind speed', 't max', 't min', 'humidity max',
                'humidity min', 'vpd', 'evaporation', 'solar radiation']
+aux = df1['date']
 df1 = df1.set_index('date')
 df1['year'] = df1.index.year
 df1['month'] = df1.index.month
@@ -55,6 +57,35 @@ y_pred_svm = reg_svm.predict(X_test)
 print("SVM: \n==========")
 print("R²:", metrics.r2_score(y_test, y_pred_svm))
 print("MSE:", metrics.mean_squared_error(y_test, y_pred_svm), "\n-----")
+
+y_pred_svm_df = pd.DataFrame(data=y_pred_svm, index=aux[4018:])
+
+plt.figure()
+plt.plot(y_test)
+plt.plot(y_pred_svm_df, color='red')
+plt.title('Prediction vs Real Values')
+plt.xlabel('Date')
+plt.ylabel('Solar radiation')
+plt.show()
+
+
+# GridSearchCV
+parameters = [{'C': [1, 10, 100, 1000], 'kernel': ['linear']},
+              {'C': [1, 10, 100, 1000], 'kernel': ['rbf']}]
+#scor = ['r2', 'neg_mean_squared_error']
+
+opt = GridSearchCV(
+    estimator=reg_svm,
+    param_grid=parameters,
+    scoring='r2',
+    n_jobs=-1,
+    iid=True,
+    #refit=False
+)
+opt = opt.fit(X_train, y_train)
+
+best_scores = opt.cv_results_()
+best_parameters = opt.best_params_
 
 
 # ANN
