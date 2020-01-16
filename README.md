@@ -1,2 +1,2 @@
-# bf-sr-project
-... under construction (...)
+# solar-radiation-prediction
+( ... )
