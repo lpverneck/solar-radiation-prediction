@@ -1,17 +1,18 @@
 import os
-import pickle
 import numpy as np
 import pandas as pd
 import matplotlib.pyplot as plt
-from sklearn.linear_model import LinearRegression
-from sklearn.preprocessing import PolynomialFeatures
-from sklearn.model_selection import GridSearchCV
 from sklearn.pipeline import Pipeline
-from sklearn import metrics
+from sklearn.linear_model import Ridge
+from sklearn.model_selection import KFold
+from sklearn.model_selection import GridSearchCV
+from sklearn.preprocessing import PolynomialFeatures
+import time
+t = time.time()
 
 
-# Data structure to store the results
-fold = []
+# Data structure to store the final results
+L = []
 
 
 # Selecting data folder
@@ -20,88 +21,91 @@ files = os.listdir(data_dir)
 files.pop(0)
 
 
-# Loading original data files
-for station in files:
-    attr = []
-    station_name = station[:-5]
-    df = pd.read_excel(data_dir + "\\" + station, header=1)
+# Independent and generalized executions (executions = 30)
+for exec in range(1, 31):
 
-    # Data preprocessing
-    df.columns = ['date', 'wind speed', 't max', 't min', 'humidity max',
-                  'humidity min', 'vpd', 'evaporation', 'solar radiation']
-    aux = df['date']
-    df = df.set_index('date')
-    df['year'] = df.index.year
-    df['month'] = df.index.month
-    df['weekday name'] = df.index.weekday_name
+    print("Execução:", exec)
+    # Setting random number generator seed
+    semente = ((exec + 100) * 77) + 2**exec
 
-    # Data split
-    X_train, X_test = df.loc['1998':'2008'], df.loc['2009':'2012']
-    y_train, y_test = X_train['solar radiation'], X_test['solar radiation']
-    X_train = X_train.drop(['year', 'month', 'weekday name', 'solar radiation']
-                           , axis=1)
-    X_test = X_test.drop(['year', 'month', 'weekday name', 'solar radiation'],
-                         axis=1)
+    # Iteration over the different stations
+    for station in files:
+        d = {}
 
-    # Pipeline creation
-    pipeline = Pipeline([
-        ('poly_features', PolynomialFeatures()),
-        ('lr_reg', LinearRegression())
-    ])
+        station_name = station[:-5]
+        df = pd.read_excel(data_dir + "\\" + station, header=1)
 
-    # Values for GridSearchCV to iterate over
-    param_grid = {
-        'poly_features__degree': [1, 2, 3],
-        'poly_features__interaction_only': [True, False],
-        'poly_features__include_bias': [True, False],
-        'lr_reg__fit_intercept': [True, False],
-        'lr_reg__normalize': [True, False]
-    }
+        print("Estação:", station_name)
 
-    # Scores
-    scoring = ['neg_mean_squared_error', 'neg_mean_absolute_error', 'r2']
+        # Data preprocessing
+        df.columns = ['date', 'wind speed', 't max', 't min', 'humidity max',
+                      'humidity min', 'vpd', 'evaporation', 'solar radiation']
+        aux = df['date']
+        df = df.set_index('date')
+        df['year'] = df.index.year
+        df['month'] = df.index.month
+        df['weekday name'] = df.index.weekday_name
 
-    # Do 10 CV for each of the 6 possible combinations of the parameter values
-    grid = GridSearchCV(pipeline, cv=10, param_grid=param_grid, refit='r2',
-                        scoring=scoring, iid=False, return_train_score=True)
-    grid.fit(X_train, y_train)
+        # Data split
+        X_train, X_test = df.loc['1998':'2008'], df.loc['2009':'2012']
+        y_train, y_test = X_train['solar radiation'], X_test['solar radiation']
+        X_train = X_train.drop(['year', 'month', 'weekday name',
+                                'solar radiation'], axis=1)
+        X_test = X_test.drop(['year', 'month', 'weekday name',
+                              'solar radiation'], axis=1)
 
-    # Summarize results
-    pd.DataFrame(grid.cv_results_)
-    print("Best Estimator:", grid.best_estimator_)
-    print("Best Score:", grid.best_score_)
-    print("Best Params:", grid.best_params_)
-    print("Best Index:", grid.best_index_)
+        # Pipeline creation
+        pipeline = Pipeline([
+            ('poly_features', PolynomialFeatures()),
+            ('ridge_reg', Ridge())
+        ])
 
-    # Predict test instances using the best configs found in the CV step
-    y_pred = grid.predict(X_test)
+        # Values for GridSearchCV to iterate over
+        param_grid = {
+            'poly_features__degree': [1, 2, 3],
+            'poly_features__interaction_only': [True, False],
+            'poly_features__include_bias': [True, False],
+            'ridge_reg__alpha': [0, 1, 2],
+            'ridge_reg__fit_intercept': [True, False],
+            'ridge_reg__normalize': [True, False]
+        }
 
-    # Metric calculations
-    print("MSE:", metrics.mean_squared_error(y_test, y_pred, squared=True))
-    print("RMSE:", metrics.mean_squared_error(y_test, y_pred, squared=False))
-    print("MAE:", metrics.mean_absolute_error(y_test, y_pred))
-    print("R²:", metrics.r2_score(y_test, y_pred))
+        # Scores
+        scoring = ['neg_mean_squared_error', 'neg_mean_absolute_error', 'r2']
 
-    # Save the results for each station
-    attr.append(station_name)
-    attr.append(grid.best_score_)
-    attr.append(grid.best_params_)
-    attr.append(grid.best_index_)
-    attr.append(grid.best_estimator_)
-    attr.append(pd.DataFrame(grid.cv_results_))
-    attr.append(metrics.mean_squared_error(y_test, y_pred, squared=True))
-    attr.append(metrics.mean_squared_error(y_test, y_pred, squared=False))
-    attr.append(metrics.mean_absolute_error(y_test, y_pred))
-    attr.append(metrics.r2_score(y_test, y_pred))
+        # Do CV for each of the possible combinations of the parameter values
+        grid = GridSearchCV(pipeline, cv=KFold(n_splits=10, shuffle=True,
+                                               random_state=semente),
+                            param_grid=param_grid,
+                            refit='neg_mean_squared_error', scoring=scoring,
+                            iid=False, return_train_score=True)
+        grid.fit(X_train, y_train)
 
-    fold.append(attr)
+        # Predict test instances using the best configs found in the CV step
+        y_pred = grid.predict(X_test)
 
+        # Save the results for each station
+        d = {
+             'Exec': exec,
+             'Seed': semente,
+             'Station': station_name,
+             'Best Params': grid.best_params_,
+             'Best Score': grid.best_score_,
+             'Best Estimator': grid.best_estimator_,
+             'y_pred': y_pred
+        }
 
-# Save the simulation results into a pickle file
-with open('results.pickle', 'wb') as f:
-    pickle.dump(fold, f)
+        L.append(d)
 
 
-# Load the results saved
-# with open('results.pickle', 'rb') as f:
-#     results = pickle.load(f)
+# Sava final results into a .csv file
+results = pd.DataFrame(L)
+results.to_csv('results.csv', index=False)
+
+
+# Displays the elapsed time
+elapsed = time.time() - t
+h = int(elapsed / 3600)
+m = int((elapsed % 3600) / 60)
+s = (elapsed % 3600) % 60
+print(h, 'HORA(S)', m, 'MINUTO(S)', s, 'SEGUNDO(S)')
