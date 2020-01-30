@@ -1,0 +1,2401 @@
+Exec,Seed,Station,Best Params,Best Score,Best Estimator,y_pred
+1,7779,Bobo Dioulasso,"{'poly_features__degree': 3, 'poly_features__include_bias': False, 'poly_features__interaction_only': False, 'ridge_reg__alpha': 0, 'ridge_reg__fit_intercept': False, 'ridge_reg__normalize': True}",-0.3746164282969752,"Pipeline(memory=None,
+         steps=[('poly_features',
+                 PolynomialFeatures(degree=3, include_bias=False,
+                                    interaction_only=False, order='C')),
+                ('ridge_reg',
+                 Ridge(alpha=0, copy_X=True, fit_intercept=False, max_iter=None,
+                       normalize=True, random_state=None, solver='auto',
+                       tol=0.001))],
+         verbose=False)","[20.69768209 19.37763426 21.11407966 ... 21.41718418 21.57715644
+ 21.32847943]"
+1,7779,Boromo,"{'poly_features__degree': 3, 'poly_features__include_bias': False, 'poly_features__interaction_only': False, 'ridge_reg__alpha': 1, 'ridge_reg__fit_intercept': False, 'ridge_reg__normalize': True}",-0.47415568501180994,"Pipeline(memory=None,
+         steps=[('poly_features',
+                 PolynomialFeatures(degree=3, include_bias=False,
+                                    interaction_only=False, order='C')),
+                ('ridge_reg',
+                 Ridge(alpha=1, copy_X=True, fit_intercept=False, max_iter=None,
+                       normalize=True, random_state=None, solver='auto',
+                       tol=0.001))],
+         verbose=False)","[21.02174993 19.178055   20.77727047 ... 21.03889985 20.69244054
+ 20.95188152]"
+1,7779,Bur Dedougou,"{'poly_features__degree': 3, 'poly_features__include_bias': False, 'poly_features__interaction_only': False, 'ridge_reg__alpha': 0, 'ridge_reg__fit_intercept': False, 'ridge_reg__normalize': True}",-0.3611633836438693,"Pipeline(memory=None,
+         steps=[('poly_features',
+                 PolynomialFeatures(degree=3, include_bias=False,
+                                    interaction_only=False, order='C')),
+                ('ridge_reg',
+                 Ridge(alpha=0, copy_X=True, fit_intercept=False, max_iter=None,
+                       normalize=True, random_state=None, solver='auto',
+                       tol=0.001))],
+         verbose=False)","[20.38982416 19.21164149 19.72034605 ... 20.16869445 19.78523958
+ 19.74158062]"
+1,7779,Dori,"{'poly_features__degree': 2, 'poly_features__include_bias': False, 'poly_features__interaction_only': False, 'ridge_reg__alpha': 2, 'ridge_reg__fit_intercept': True, 'ridge_reg__normalize': False}",-9.013084738625544,"Pipeline(memory=None,
+         steps=[('poly_features',
+                 PolynomialFeatures(degree=2, include_bias=False,
+                                    interaction_only=False, order='C')),
+                ('ridge_reg',
+                 Ridge(alpha=2, copy_X=True, fit_intercept=True, max_iter=None,
+                       normalize=False, random_state=None, solver='auto',
+                       tol=0.001))],
+         verbose=False)","[21.21433346 20.50202106 20.9508392  ... 20.80878035 19.90387963
+ 22.59659034]"
+1,7779,Fada N'gourma,"{'poly_features__degree': 3, 'poly_features__include_bias': False, 'poly_features__interaction_only': False, 'ridge_reg__alpha': 0, 'ridge_reg__fit_intercept': False, 'ridge_reg__normalize': True}",-0.3292833337421931,"Pipeline(memory=None,
+         steps=[('poly_features',
+                 PolynomialFeatures(degree=3, include_bias=False,
+                                    interaction_only=False, order='C')),
+                ('ridge_reg',
+                 Ridge(alpha=0, copy_X=True, fit_intercept=False, max_iter=None,
+                       normalize=True, random_state=None, solver='auto',
+                       tol=0.001))],
+         verbose=False)","[20.39293155 19.84765212 19.42913355 ... 20.3965711  20.24608258
+ 19.2546881 ]"
+1,7779,Gaoua,"{'poly_features__degree': 3, 'poly_features__include_bias': False, 'poly_features__interaction_only': False, 'ridge_reg__alpha': 2, 'ridge_reg__fit_intercept': False, 'ridge_reg__normalize': True}",-0.33444139355742536,"Pipeline(memory=None,
+         steps=[('poly_features',
+                 PolynomialFeatures(degree=3, include_bias=False,
+                                    interaction_only=False, order='C')),
+                ('ridge_reg',
+                 Ridge(alpha=2, copy_X=True, fit_intercept=False, max_iter=None,
+                       normalize=True, random_state=None, solver='auto',
+                       tol=0.001))],
+         verbose=False)","[21.60442297 17.92608957 21.25775842 ... 21.47788512 20.884347
+ 20.88935656]"
+1,7779,Ouahigouya,"{'poly_features__degree': 3, 'poly_features__include_bias': True, 'poly_features__interaction_only': False, 'ridge_reg__alpha': 0, 'ridge_reg__fit_intercept': False, 'ridge_reg__normalize': True}",-0.5628994920133545,"Pipeline(memory=None,
+         steps=[('poly_features',
+                 PolynomialFeatures(degree=3, include_bias=True,
+                                    interaction_only=False, order='C')),
+                ('ridge_reg',
+                 Ridge(alpha=0, copy_X=True, fit_intercept=False, max_iter=None,
+                       normalize=True, random_state=None, solver='auto',
+                       tol=0.001))],
+         verbose=False)","[19.76077615 19.98568809 20.20518003 ... 19.14107625 19.1108141
+ 17.85456243]"
+1,7779,Po,"{'poly_features__degree': 3, 'poly_features__include_bias': True, 'poly_features__interaction_only': True, 'ridge_reg__alpha': 0, 'ridge_reg__fit_intercept': True, 'ridge_reg__normalize': False}",-0.5838107624420924,"Pipeline(memory=None,
+         steps=[('poly_features',
+                 PolynomialFeatures(degree=3, include_bias=True,
+                                    interaction_only=True, order='C')),
+                ('ridge_reg',
+                 Ridge(alpha=0, copy_X=True, fit_intercept=True, max_iter=None,
+                       normalize=False, random_state=None, solver='auto',
+                       tol=0.001))],
+         verbose=False)","[21.21490741 18.82610071 20.49589419 ... 21.01583254 20.93819487
+ 18.49755037]"
+2,7858,Bobo Dioulasso,"{'poly_features__degree': 3, 'poly_features__include_bias': False, 'poly_features__interaction_only': False, 'ridge_reg__alpha': 0, 'ridge_reg__fit_intercept': False, 'ridge_reg__normalize': True}",-0.3840803667464335,"Pipeline(memory=None,
+         steps=[('poly_features',
+                 PolynomialFeatures(degree=3, include_bias=False,
+                                    interaction_only=False, order='C')),
+                ('ridge_reg',
+                 Ridge(alpha=0, copy_X=True, fit_intercept=False, max_iter=None,
+                       normalize=True, random_state=None, solver='auto',
+                       tol=0.001))],
+         verbose=False)","[20.69768209 19.37763426 21.11407966 ... 21.41718418 21.57715644
+ 21.32847943]"
+2,7858,Boromo,"{'poly_features__degree': 3, 'poly_features__include_bias': False, 'poly_features__interaction_only': False, 'ridge_reg__alpha': 1, 'ridge_reg__fit_intercept': False, 'ridge_reg__normalize': True}",-0.47370849940103216,"Pipeline(memory=None,
+         steps=[('poly_features',
+                 PolynomialFeatures(degree=3, include_bias=False,
+                                    interaction_only=False, order='C')),
+                ('ridge_reg',
+                 Ridge(alpha=1, copy_X=True, fit_intercept=False, max_iter=None,
+                       normalize=True, random_state=None, solver='auto',
+                       tol=0.001))],
+         verbose=False)","[21.02174993 19.178055   20.77727047 ... 21.03889985 20.69244054
+ 20.95188152]"
+2,7858,Bur Dedougou,"{'poly_features__degree': 3, 'poly_features__include_bias': True, 'poly_features__interaction_only': False, 'ridge_reg__alpha': 0, 'ridge_reg__fit_intercept': True, 'ridge_reg__normalize': True}",-0.3611474656639463,"Pipeline(memory=None,
+         steps=[('poly_features',
+                 PolynomialFeatures(degree=3, include_bias=True,
+                                    interaction_only=False, order='C')),
+                ('ridge_reg',
+                 Ridge(alpha=0, copy_X=True, fit_intercept=True, max_iter=None,
+                       normalize=True, random_state=None, solver='auto',
+                       tol=0.001))],
+         verbose=False)","[20.40108962 19.21513496 19.72444427 ... 20.17797238 19.78846843
+ 19.74338828]"
+2,7858,Dori,"{'poly_features__degree': 2, 'poly_features__include_bias': True, 'poly_features__interaction_only': False, 'ridge_reg__alpha': 2, 'ridge_reg__fit_intercept': False, 'ridge_reg__normalize': True}",-8.996664867841242,"Pipeline(memory=None,
+         steps=[('poly_features',
+                 PolynomialFeatures(degree=2, include_bias=True,
+                                    interaction_only=False, order='C')),
+                ('ridge_reg',
+                 Ridge(alpha=2, copy_X=True, fit_intercept=False, max_iter=None,
+                       normalize=True, random_state=None, solver='auto',
+                       tol=0.001))],
+         verbose=False)","[21.22032754 20.4350781  20.90460936 ... 20.7250025  19.80138609
+ 22.59120338]"
+2,7858,Fada N'gourma,"{'poly_features__degree': 3, 'poly_features__include_bias': False, 'poly_features__interaction_only': False, 'ridge_reg__alpha': 0, 'ridge_reg__fit_intercept': False, 'ridge_reg__normalize': True}",-0.32588219382000727,"Pipeline(memory=None,
+         steps=[('poly_features',
+                 PolynomialFeatures(degree=3, include_bias=False,
+                                    interaction_only=False, order='C')),
+                ('ridge_reg',
+                 Ridge(alpha=0, copy_X=True, fit_intercept=False, max_iter=None,
+                       normalize=True, random_state=None, solver='auto',
+                       tol=0.001))],
+         verbose=False)","[20.39293155 19.84765212 19.42913355 ... 20.3965711  20.24608258
+ 19.2546881 ]"
+2,7858,Gaoua,"{'poly_features__degree': 3, 'poly_features__include_bias': False, 'poly_features__interaction_only': False, 'ridge_reg__alpha': 1, 'ridge_reg__fit_intercept': False, 'ridge_reg__normalize': True}",-0.32596200016637955,"Pipeline(memory=None,
+         steps=[('poly_features',
+                 PolynomialFeatures(degree=3, include_bias=False,
+                                    interaction_only=False, order='C')),
+                ('ridge_reg',
+                 Ridge(alpha=1, copy_X=True, fit_intercept=False, max_iter=None,
+                       normalize=True, random_state=None, solver='auto',
+                       tol=0.001))],
+         verbose=False)","[21.60860506 17.88486867 21.26533985 ... 21.47864879 20.88697598
+ 20.83540036]"
+2,7858,Ouahigouya,"{'poly_features__degree': 3, 'poly_features__include_bias': False, 'poly_features__interaction_only': False, 'ridge_reg__alpha': 0, 'ridge_reg__fit_intercept': True, 'ridge_reg__normalize': True}",-0.5706265064884032,"Pipeline(memory=None,
+         steps=[('poly_features',
+                 PolynomialFeatures(degree=3, include_bias=False,
+                                    interaction_only=False, order='C')),
+                ('ridge_reg',
+                 Ridge(alpha=0, copy_X=True, fit_intercept=True, max_iter=None,
+                       normalize=True, random_state=None, solver='auto',
+                       tol=0.001))],
+         verbose=False)","[19.76077658 19.98568829 20.20518024 ... 19.14107453 19.11081797
+ 17.85456376]"
+2,7858,Po,"{'poly_features__degree': 3, 'poly_features__include_bias': False, 'poly_features__interaction_only': True, 'ridge_reg__alpha': 0, 'ridge_reg__fit_intercept': False, 'ridge_reg__normalize': True}",-0.5835072496740927,"Pipeline(memory=None,
+         steps=[('poly_features',
+                 PolynomialFeatures(degree=3, include_bias=False,
+                                    interaction_only=True, order='C')),
+                ('ridge_reg',
+                 Ridge(alpha=0, copy_X=True, fit_intercept=False, max_iter=None,
+                       normalize=True, random_state=None, solver='auto',
+                       tol=0.001))],
+         verbose=False)","[21.16936791 18.80218518 20.48691262 ... 21.01410088 20.97688737
+ 18.4280697 ]"
+3,7939,Bobo Dioulasso,"{'poly_features__degree': 3, 'poly_features__include_bias': False, 'poly_features__interaction_only': False, 'ridge_reg__alpha': 0, 'ridge_reg__fit_intercept': False, 'ridge_reg__normalize': True}",-0.3747504979771292,"Pipeline(memory=None,
+         steps=[('poly_features',
+                 PolynomialFeatures(degree=3, include_bias=False,
+                                    interaction_only=False, order='C')),
+                ('ridge_reg',
+                 Ridge(alpha=0, copy_X=True, fit_intercept=False, max_iter=None,
+                       normalize=True, random_state=None, solver='auto',
+                       tol=0.001))],
+         verbose=False)","[20.69768209 19.37763426 21.11407966 ... 21.41718418 21.57715644
+ 21.32847943]"
+3,7939,Boromo,"{'poly_features__degree': 3, 'poly_features__include_bias': False, 'poly_features__interaction_only': False, 'ridge_reg__alpha': 1, 'ridge_reg__fit_intercept': False, 'ridge_reg__normalize': True}",-0.4652275824176833,"Pipeline(memory=None,
+         steps=[('poly_features',
+                 PolynomialFeatures(degree=3, include_bias=False,
+                                    interaction_only=False, order='C')),
+                ('ridge_reg',
+                 Ridge(alpha=1, copy_X=True, fit_intercept=False, max_iter=None,
+                       normalize=True, random_state=None, solver='auto',
+                       tol=0.001))],
+         verbose=False)","[21.02174993 19.178055   20.77727047 ... 21.03889985 20.69244054
+ 20.95188152]"
+3,7939,Bur Dedougou,"{'poly_features__degree': 3, 'poly_features__include_bias': True, 'poly_features__interaction_only': False, 'ridge_reg__alpha': 0, 'ridge_reg__fit_intercept': True, 'ridge_reg__normalize': False}",-0.3615682408382878,"Pipeline(memory=None,
+         steps=[('poly_features',
+                 PolynomialFeatures(degree=3, include_bias=True,
+                                    interaction_only=False, order='C')),
+                ('ridge_reg',
+                 Ridge(alpha=0, copy_X=True, fit_intercept=True, max_iter=None,
+                       normalize=False, random_state=None, solver='auto',
+                       tol=0.001))],
+         verbose=False)","[20.40257248 19.21513224 19.72390118 ... 20.17875329 19.78823099
+ 19.74147883]"
+3,7939,Dori,"{'poly_features__degree': 2, 'poly_features__include_bias': False, 'poly_features__interaction_only': False, 'ridge_reg__alpha': 1, 'ridge_reg__fit_intercept': True, 'ridge_reg__normalize': False}",-8.992888299583166,"Pipeline(memory=None,
+         steps=[('poly_features',
+                 PolynomialFeatures(degree=2, include_bias=False,
+                                    interaction_only=False, order='C')),
+                ('ridge_reg',
+                 Ridge(alpha=1, copy_X=True, fit_intercept=True, max_iter=None,
+                       normalize=False, random_state=None, solver='auto',
+                       tol=0.001))],
+         verbose=False)","[21.21415319 20.50465419 20.96101643 ... 20.81580417 19.90805381
+ 22.63609448]"
+3,7939,Fada N'gourma,"{'poly_features__degree': 3, 'poly_features__include_bias': True, 'poly_features__interaction_only': False, 'ridge_reg__alpha': 0, 'ridge_reg__fit_intercept': True, 'ridge_reg__normalize': False}",-0.32334844465433116,"Pipeline(memory=None,
+         steps=[('poly_features',
+                 PolynomialFeatures(degree=3, include_bias=True,
+                                    interaction_only=False, order='C')),
+                ('ridge_reg',
+                 Ridge(alpha=0, copy_X=True, fit_intercept=True, max_iter=None,
+                       normalize=False, random_state=None, solver='auto',
+                       tol=0.001))],
+         verbose=False)","[20.38879779 19.84407362 19.4302434  ... 20.39969447 20.24663737
+ 19.25520572]"
+3,7939,Gaoua,"{'poly_features__degree': 3, 'poly_features__include_bias': False, 'poly_features__interaction_only': False, 'ridge_reg__alpha': 0, 'ridge_reg__fit_intercept': False, 'ridge_reg__normalize': True}",-0.33516693424452637,"Pipeline(memory=None,
+         steps=[('poly_features',
+                 PolynomialFeatures(degree=3, include_bias=False,
+                                    interaction_only=False, order='C')),
+                ('ridge_reg',
+                 Ridge(alpha=0, copy_X=True, fit_intercept=False, max_iter=None,
+                       normalize=True, random_state=None, solver='auto',
+                       tol=0.001))],
+         verbose=False)","[21.66748893 17.69392518 21.24108399 ... 21.50330734 20.78335047
+ 20.49701448]"
+3,7939,Ouahigouya,"{'poly_features__degree': 3, 'poly_features__include_bias': True, 'poly_features__interaction_only': False, 'ridge_reg__alpha': 0, 'ridge_reg__fit_intercept': False, 'ridge_reg__normalize': True}",-0.5533086958119956,"Pipeline(memory=None,
+         steps=[('poly_features',
+                 PolynomialFeatures(degree=3, include_bias=True,
+                                    interaction_only=False, order='C')),
+                ('ridge_reg',
+                 Ridge(alpha=0, copy_X=True, fit_intercept=False, max_iter=None,
+                       normalize=True, random_state=None, solver='auto',
+                       tol=0.001))],
+         verbose=False)","[19.76077615 19.98568809 20.20518003 ... 19.14107625 19.1108141
+ 17.85456243]"
+3,7939,Po,"{'poly_features__degree': 3, 'poly_features__include_bias': True, 'poly_features__interaction_only': True, 'ridge_reg__alpha': 0, 'ridge_reg__fit_intercept': False, 'ridge_reg__normalize': True}",-0.576189449599821,"Pipeline(memory=None,
+         steps=[('poly_features',
+                 PolynomialFeatures(degree=3, include_bias=True,
+                                    interaction_only=True, order='C')),
+                ('ridge_reg',
+                 Ridge(alpha=0, copy_X=True, fit_intercept=False, max_iter=None,
+                       normalize=True, random_state=None, solver='auto',
+                       tol=0.001))],
+         verbose=False)","[21.21470192 18.82679661 20.49675918 ... 21.01678062 20.93861042
+ 18.49766286]"
+4,8024,Bobo Dioulasso,"{'poly_features__degree': 3, 'poly_features__include_bias': False, 'poly_features__interaction_only': False, 'ridge_reg__alpha': 0, 'ridge_reg__fit_intercept': False, 'ridge_reg__normalize': True}",-0.37602238091561285,"Pipeline(memory=None,
+         steps=[('poly_features',
+                 PolynomialFeatures(degree=3, include_bias=False,
+                                    interaction_only=False, order='C')),
+                ('ridge_reg',
+                 Ridge(alpha=0, copy_X=True, fit_intercept=False, max_iter=None,
+                       normalize=True, random_state=None, solver='auto',
+                       tol=0.001))],
+         verbose=False)","[20.69768209 19.37763426 21.11407966 ... 21.41718418 21.57715644
+ 21.32847943]"
+4,8024,Boromo,"{'poly_features__degree': 3, 'poly_features__include_bias': False, 'poly_features__interaction_only': False, 'ridge_reg__alpha': 1, 'ridge_reg__fit_intercept': False, 'ridge_reg__normalize': True}",-0.4751967611632749,"Pipeline(memory=None,
+         steps=[('poly_features',
+                 PolynomialFeatures(degree=3, include_bias=False,
+                                    interaction_only=False, order='C')),
+                ('ridge_reg',
+                 Ridge(alpha=1, copy_X=True, fit_intercept=False, max_iter=None,
+                       normalize=True, random_state=None, solver='auto',
+                       tol=0.001))],
+         verbose=False)","[21.02174993 19.178055   20.77727047 ... 21.03889985 20.69244054
+ 20.95188152]"
+4,8024,Bur Dedougou,"{'poly_features__degree': 3, 'poly_features__include_bias': True, 'poly_features__interaction_only': False, 'ridge_reg__alpha': 0, 'ridge_reg__fit_intercept': True, 'ridge_reg__normalize': False}",-0.36128757393999705,"Pipeline(memory=None,
+         steps=[('poly_features',
+                 PolynomialFeatures(degree=3, include_bias=True,
+                                    interaction_only=False, order='C')),
+                ('ridge_reg',
+                 Ridge(alpha=0, copy_X=True, fit_intercept=True, max_iter=None,
+                       normalize=False, random_state=None, solver='auto',
+                       tol=0.001))],
+         verbose=False)","[20.40257248 19.21513224 19.72390118 ... 20.17875329 19.78823099
+ 19.74147883]"
+4,8024,Dori,"{'poly_features__degree': 2, 'poly_features__include_bias': False, 'poly_features__interaction_only': False, 'ridge_reg__alpha': 2, 'ridge_reg__fit_intercept': True, 'ridge_reg__normalize': False}",-9.020584699791796,"Pipeline(memory=None,
+         steps=[('poly_features',
+                 PolynomialFeatures(degree=2, include_bias=False,
+                                    interaction_only=False, order='C')),
+                ('ridge_reg',
+                 Ridge(alpha=2, copy_X=True, fit_intercept=True, max_iter=None,
+                       normalize=False, random_state=None, solver='auto',
+                       tol=0.001))],
+         verbose=False)","[21.21433346 20.50202106 20.9508392  ... 20.80878035 19.90387963
+ 22.59659034]"
+4,8024,Fada N'gourma,"{'poly_features__degree': 3, 'poly_features__include_bias': False, 'poly_features__interaction_only': False, 'ridge_reg__alpha': 0, 'ridge_reg__fit_intercept': False, 'ridge_reg__normalize': True}",-0.315520696620725,"Pipeline(memory=None,
+         steps=[('poly_features',
+                 PolynomialFeatures(degree=3, include_bias=False,
+                                    interaction_only=False, order='C')),
+                ('ridge_reg',
+                 Ridge(alpha=0, copy_X=True, fit_intercept=False, max_iter=None,
+                       normalize=True, random_state=None, solver='auto',
+                       tol=0.001))],
+         verbose=False)","[20.39293155 19.84765212 19.42913355 ... 20.3965711  20.24608258
+ 19.2546881 ]"
+4,8024,Gaoua,"{'poly_features__degree': 3, 'poly_features__include_bias': False, 'poly_features__interaction_only': False, 'ridge_reg__alpha': 0, 'ridge_reg__fit_intercept': False, 'ridge_reg__normalize': True}",-0.3308132573074619,"Pipeline(memory=None,
+         steps=[('poly_features',
+                 PolynomialFeatures(degree=3, include_bias=False,
+                                    interaction_only=False, order='C')),
+                ('ridge_reg',
+                 Ridge(alpha=0, copy_X=True, fit_intercept=False, max_iter=None,
+                       normalize=True, random_state=None, solver='auto',
+                       tol=0.001))],
+         verbose=False)","[21.66748893 17.69392518 21.24108399 ... 21.50330734 20.78335047
+ 20.49701448]"
+4,8024,Ouahigouya,"{'poly_features__degree': 3, 'poly_features__include_bias': True, 'poly_features__interaction_only': False, 'ridge_reg__alpha': 0, 'ridge_reg__fit_intercept': False, 'ridge_reg__normalize': True}",-0.5767468351342913,"Pipeline(memory=None,
+         steps=[('poly_features',
+                 PolynomialFeatures(degree=3, include_bias=True,
+                                    interaction_only=False, order='C')),
+                ('ridge_reg',
+                 Ridge(alpha=0, copy_X=True, fit_intercept=False, max_iter=None,
+                       normalize=True, random_state=None, solver='auto',
+                       tol=0.001))],
+         verbose=False)","[19.76077615 19.98568809 20.20518003 ... 19.14107625 19.1108141
+ 17.85456243]"
+4,8024,Po,"{'poly_features__degree': 3, 'poly_features__include_bias': True, 'poly_features__interaction_only': True, 'ridge_reg__alpha': 0, 'ridge_reg__fit_intercept': True, 'ridge_reg__normalize': False}",-0.5838015671434842,"Pipeline(memory=None,
+         steps=[('poly_features',
+                 PolynomialFeatures(degree=3, include_bias=True,
+                                    interaction_only=True, order='C')),
+                ('ridge_reg',
+                 Ridge(alpha=0, copy_X=True, fit_intercept=True, max_iter=None,
+                       normalize=False, random_state=None, solver='auto',
+                       tol=0.001))],
+         verbose=False)","[21.21490741 18.82610071 20.49589419 ... 21.01583254 20.93819487
+ 18.49755037]"
+5,8117,Bobo Dioulasso,"{'poly_features__degree': 3, 'poly_features__include_bias': False, 'poly_features__interaction_only': False, 'ridge_reg__alpha': 0, 'ridge_reg__fit_intercept': False, 'ridge_reg__normalize': True}",-0.3818511061087781,"Pipeline(memory=None,
+         steps=[('poly_features',
+                 PolynomialFeatures(degree=3, include_bias=False,
+                                    interaction_only=False, order='C')),
+                ('ridge_reg',
+                 Ridge(alpha=0, copy_X=True, fit_intercept=False, max_iter=None,
+                       normalize=True, random_state=None, solver='auto',
+                       tol=0.001))],
+         verbose=False)","[20.69768209 19.37763426 21.11407966 ... 21.41718418 21.57715644
+ 21.32847943]"
+5,8117,Boromo,"{'poly_features__degree': 3, 'poly_features__include_bias': False, 'poly_features__interaction_only': False, 'ridge_reg__alpha': 1, 'ridge_reg__fit_intercept': False, 'ridge_reg__normalize': True}",-0.4725675446640943,"Pipeline(memory=None,
+         steps=[('poly_features',
+                 PolynomialFeatures(degree=3, include_bias=False,
+                                    interaction_only=False, order='C')),
+                ('ridge_reg',
+                 Ridge(alpha=1, copy_X=True, fit_intercept=False, max_iter=None,
+                       normalize=True, random_state=None, solver='auto',
+                       tol=0.001))],
+         verbose=False)","[21.02174993 19.178055   20.77727047 ... 21.03889985 20.69244054
+ 20.95188152]"
+5,8117,Bur Dedougou,"{'poly_features__degree': 3, 'poly_features__include_bias': False, 'poly_features__interaction_only': False, 'ridge_reg__alpha': 0, 'ridge_reg__fit_intercept': False, 'ridge_reg__normalize': True}",-0.3610349958857321,"Pipeline(memory=None,
+         steps=[('poly_features',
+                 PolynomialFeatures(degree=3, include_bias=False,
+                                    interaction_only=False, order='C')),
+                ('ridge_reg',
+                 Ridge(alpha=0, copy_X=True, fit_intercept=False, max_iter=None,
+                       normalize=True, random_state=None, solver='auto',
+                       tol=0.001))],
+         verbose=False)","[20.38982416 19.21164149 19.72034605 ... 20.16869445 19.78523958
+ 19.74158062]"
+5,8117,Dori,"{'poly_features__degree': 2, 'poly_features__include_bias': True, 'poly_features__interaction_only': False, 'ridge_reg__alpha': 2, 'ridge_reg__fit_intercept': True, 'ridge_reg__normalize': False}",-9.022729798997897,"Pipeline(memory=None,
+         steps=[('poly_features',
+                 PolynomialFeatures(degree=2, include_bias=True,
+                                    interaction_only=False, order='C')),
+                ('ridge_reg',
+                 Ridge(alpha=2, copy_X=True, fit_intercept=True, max_iter=None,
+                       normalize=False, random_state=None, solver='auto',
+                       tol=0.001))],
+         verbose=False)","[21.21433346 20.50202106 20.9508392  ... 20.80878035 19.90387963
+ 22.59659034]"
+5,8117,Fada N'gourma,"{'poly_features__degree': 3, 'poly_features__include_bias': False, 'poly_features__interaction_only': False, 'ridge_reg__alpha': 0, 'ridge_reg__fit_intercept': False, 'ridge_reg__normalize': True}",-0.3288835423449125,"Pipeline(memory=None,
+         steps=[('poly_features',
+                 PolynomialFeatures(degree=3, include_bias=False,
+                                    interaction_only=False, order='C')),
+                ('ridge_reg',
+                 Ridge(alpha=0, copy_X=True, fit_intercept=False, max_iter=None,
+                       normalize=True, random_state=None, solver='auto',
+                       tol=0.001))],
+         verbose=False)","[20.39293155 19.84765212 19.42913355 ... 20.3965711  20.24608258
+ 19.2546881 ]"
+5,8117,Gaoua,"{'poly_features__degree': 3, 'poly_features__include_bias': False, 'poly_features__interaction_only': False, 'ridge_reg__alpha': 2, 'ridge_reg__fit_intercept': True, 'ridge_reg__normalize': False}",-0.3336520955600511,"Pipeline(memory=None,
+         steps=[('poly_features',
+                 PolynomialFeatures(degree=3, include_bias=False,
+                                    interaction_only=False, order='C')),
+                ('ridge_reg',
+                 Ridge(alpha=2, copy_X=True, fit_intercept=True, max_iter=None,
+                       normalize=False, random_state=None, solver='auto',
+                       tol=0.001))],
+         verbose=False)","[21.60485142 17.92630978 21.25857872 ... 21.47769054 20.89083586
+ 20.88734   ]"
+5,8117,Ouahigouya,"{'poly_features__degree': 3, 'poly_features__include_bias': False, 'poly_features__interaction_only': False, 'ridge_reg__alpha': 0, 'ridge_reg__fit_intercept': False, 'ridge_reg__normalize': True}",-0.5717100656059569,"Pipeline(memory=None,
+         steps=[('poly_features',
+                 PolynomialFeatures(degree=3, include_bias=False,
+                                    interaction_only=False, order='C')),
+                ('ridge_reg',
+                 Ridge(alpha=0, copy_X=True, fit_intercept=False, max_iter=None,
+                       normalize=True, random_state=None, solver='auto',
+                       tol=0.001))],
+         verbose=False)","[19.77006992 19.99824265 20.22087737 ... 19.10792181 19.17160724
+ 17.84803992]"
+5,8117,Po,"{'poly_features__degree': 3, 'poly_features__include_bias': True, 'poly_features__interaction_only': True, 'ridge_reg__alpha': 0, 'ridge_reg__fit_intercept': True, 'ridge_reg__normalize': False}",-0.5865130176662314,"Pipeline(memory=None,
+         steps=[('poly_features',
+                 PolynomialFeatures(degree=3, include_bias=True,
+                                    interaction_only=True, order='C')),
+                ('ridge_reg',
+                 Ridge(alpha=0, copy_X=True, fit_intercept=True, max_iter=None,
+                       normalize=False, random_state=None, solver='auto',
+                       tol=0.001))],
+         verbose=False)","[21.21490741 18.82610071 20.49589419 ... 21.01583254 20.93819487
+ 18.49755037]"
+6,8226,Bobo Dioulasso,"{'poly_features__degree': 3, 'poly_features__include_bias': False, 'poly_features__interaction_only': False, 'ridge_reg__alpha': 0, 'ridge_reg__fit_intercept': False, 'ridge_reg__normalize': True}",-0.37367681892293303,"Pipeline(memory=None,
+         steps=[('poly_features',
+                 PolynomialFeatures(degree=3, include_bias=False,
+                                    interaction_only=False, order='C')),
+                ('ridge_reg',
+                 Ridge(alpha=0, copy_X=True, fit_intercept=False, max_iter=None,
+                       normalize=True, random_state=None, solver='auto',
+                       tol=0.001))],
+         verbose=False)","[20.69768209 19.37763426 21.11407966 ... 21.41718418 21.57715644
+ 21.32847943]"
+6,8226,Boromo,"{'poly_features__degree': 3, 'poly_features__include_bias': False, 'poly_features__interaction_only': False, 'ridge_reg__alpha': 1, 'ridge_reg__fit_intercept': False, 'ridge_reg__normalize': True}",-0.4788053871109074,"Pipeline(memory=None,
+         steps=[('poly_features',
+                 PolynomialFeatures(degree=3, include_bias=False,
+                                    interaction_only=False, order='C')),
+                ('ridge_reg',
+                 Ridge(alpha=1, copy_X=True, fit_intercept=False, max_iter=None,
+                       normalize=True, random_state=None, solver='auto',
+                       tol=0.001))],
+         verbose=False)","[21.02174993 19.178055   20.77727047 ... 21.03889985 20.69244054
+ 20.95188152]"
+6,8226,Bur Dedougou,"{'poly_features__degree': 3, 'poly_features__include_bias': True, 'poly_features__interaction_only': False, 'ridge_reg__alpha': 0, 'ridge_reg__fit_intercept': True, 'ridge_reg__normalize': False}",-0.3675221196905494,"Pipeline(memory=None,
+         steps=[('poly_features',
+                 PolynomialFeatures(degree=3, include_bias=True,
+                                    interaction_only=False, order='C')),
+                ('ridge_reg',
+                 Ridge(alpha=0, copy_X=True, fit_intercept=True, max_iter=None,
+                       normalize=False, random_state=None, solver='auto',
+                       tol=0.001))],
+         verbose=False)","[20.40257248 19.21513224 19.72390118 ... 20.17875329 19.78823099
+ 19.74147883]"
+6,8226,Dori,"{'poly_features__degree': 2, 'poly_features__include_bias': False, 'poly_features__interaction_only': False, 'ridge_reg__alpha': 1, 'ridge_reg__fit_intercept': False, 'ridge_reg__normalize': True}",-8.996214311761758,"Pipeline(memory=None,
+         steps=[('poly_features',
+                 PolynomialFeatures(degree=2, include_bias=False,
+                                    interaction_only=False, order='C')),
+                ('ridge_reg',
+                 Ridge(alpha=1, copy_X=True, fit_intercept=False, max_iter=None,
+                       normalize=True, random_state=None, solver='auto',
+                       tol=0.001))],
+         verbose=False)","[21.20830493 20.44928538 20.91419914 ... 20.74587391 19.83916439
+ 22.64845826]"
+6,8226,Fada N'gourma,"{'poly_features__degree': 3, 'poly_features__include_bias': True, 'poly_features__interaction_only': True, 'ridge_reg__alpha': 0, 'ridge_reg__fit_intercept': True, 'ridge_reg__normalize': False}",-0.3298491935487942,"Pipeline(memory=None,
+         steps=[('poly_features',
+                 PolynomialFeatures(degree=3, include_bias=True,
+                                    interaction_only=True, order='C')),
+                ('ridge_reg',
+                 Ridge(alpha=0, copy_X=True, fit_intercept=True, max_iter=None,
+                       normalize=False, random_state=None, solver='auto',
+                       tol=0.001))],
+         verbose=False)","[20.25477934 19.59169579 19.03043675 ... 20.34285665 20.18513656
+ 19.20772552]"
+6,8226,Gaoua,"{'poly_features__degree': 3, 'poly_features__include_bias': True, 'poly_features__interaction_only': False, 'ridge_reg__alpha': 2, 'ridge_reg__fit_intercept': True, 'ridge_reg__normalize': False}",-0.3306474269023367,"Pipeline(memory=None,
+         steps=[('poly_features',
+                 PolynomialFeatures(degree=3, include_bias=True,
+                                    interaction_only=False, order='C')),
+                ('ridge_reg',
+                 Ridge(alpha=2, copy_X=True, fit_intercept=True, max_iter=None,
+                       normalize=False, random_state=None, solver='auto',
+                       tol=0.001))],
+         verbose=False)","[21.60485142 17.92630978 21.25857871 ... 21.47769054 20.89083587
+ 20.88734   ]"
+6,8226,Ouahigouya,"{'poly_features__degree': 3, 'poly_features__include_bias': True, 'poly_features__interaction_only': False, 'ridge_reg__alpha': 0, 'ridge_reg__fit_intercept': False, 'ridge_reg__normalize': True}",-0.5551555469629184,"Pipeline(memory=None,
+         steps=[('poly_features',
+                 PolynomialFeatures(degree=3, include_bias=True,
+                                    interaction_only=False, order='C')),
+                ('ridge_reg',
+                 Ridge(alpha=0, copy_X=True, fit_intercept=False, max_iter=None,
+                       normalize=True, random_state=None, solver='auto',
+                       tol=0.001))],
+         verbose=False)","[19.76077615 19.98568809 20.20518003 ... 19.14107625 19.1108141
+ 17.85456243]"
+6,8226,Po,"{'poly_features__degree': 3, 'poly_features__include_bias': True, 'poly_features__interaction_only': True, 'ridge_reg__alpha': 0, 'ridge_reg__fit_intercept': True, 'ridge_reg__normalize': False}",-0.5902936271027249,"Pipeline(memory=None,
+         steps=[('poly_features',
+                 PolynomialFeatures(degree=3, include_bias=True,
+                                    interaction_only=True, order='C')),
+                ('ridge_reg',
+                 Ridge(alpha=0, copy_X=True, fit_intercept=True, max_iter=None,
+                       normalize=False, random_state=None, solver='auto',
+                       tol=0.001))],
+         verbose=False)","[21.21490741 18.82610071 20.49589419 ... 21.01583254 20.93819487
+ 18.49755037]"
+7,8367,Bobo Dioulasso,"{'poly_features__degree': 3, 'poly_features__include_bias': False, 'poly_features__interaction_only': False, 'ridge_reg__alpha': 0, 'ridge_reg__fit_intercept': False, 'ridge_reg__normalize': True}",-0.37312649577068996,"Pipeline(memory=None,
+         steps=[('poly_features',
+                 PolynomialFeatures(degree=3, include_bias=False,
+                                    interaction_only=False, order='C')),
+                ('ridge_reg',
+                 Ridge(alpha=0, copy_X=True, fit_intercept=False, max_iter=None,
+                       normalize=True, random_state=None, solver='auto',
+                       tol=0.001))],
+         verbose=False)","[20.69768209 19.37763426 21.11407966 ... 21.41718418 21.57715644
+ 21.32847943]"
+7,8367,Boromo,"{'poly_features__degree': 3, 'poly_features__include_bias': False, 'poly_features__interaction_only': False, 'ridge_reg__alpha': 2, 'ridge_reg__fit_intercept': False, 'ridge_reg__normalize': True}",-0.4755342947349076,"Pipeline(memory=None,
+         steps=[('poly_features',
+                 PolynomialFeatures(degree=3, include_bias=False,
+                                    interaction_only=False, order='C')),
+                ('ridge_reg',
+                 Ridge(alpha=2, copy_X=True, fit_intercept=False, max_iter=None,
+                       normalize=True, random_state=None, solver='auto',
+                       tol=0.001))],
+         verbose=False)","[21.01646126 19.20516359 20.77581852 ... 21.04031842 20.70616074
+ 20.93476035]"
+7,8367,Bur Dedougou,"{'poly_features__degree': 3, 'poly_features__include_bias': True, 'poly_features__interaction_only': False, 'ridge_reg__alpha': 0, 'ridge_reg__fit_intercept': True, 'ridge_reg__normalize': False}",-0.36687825078319625,"Pipeline(memory=None,
+         steps=[('poly_features',
+                 PolynomialFeatures(degree=3, include_bias=True,
+                                    interaction_only=False, order='C')),
+                ('ridge_reg',
+                 Ridge(alpha=0, copy_X=True, fit_intercept=True, max_iter=None,
+                       normalize=False, random_state=None, solver='auto',
+                       tol=0.001))],
+         verbose=False)","[20.40257248 19.21513224 19.72390118 ... 20.17875329 19.78823099
+ 19.74147883]"
+7,8367,Dori,"{'poly_features__degree': 2, 'poly_features__include_bias': False, 'poly_features__interaction_only': False, 'ridge_reg__alpha': 2, 'ridge_reg__fit_intercept': True, 'ridge_reg__normalize': False}",-9.010943653275957,"Pipeline(memory=None,
+         steps=[('poly_features',
+                 PolynomialFeatures(degree=2, include_bias=False,
+                                    interaction_only=False, order='C')),
+                ('ridge_reg',
+                 Ridge(alpha=2, copy_X=True, fit_intercept=True, max_iter=None,
+                       normalize=False, random_state=None, solver='auto',
+                       tol=0.001))],
+         verbose=False)","[21.21433346 20.50202106 20.9508392  ... 20.80878035 19.90387963
+ 22.59659034]"
+7,8367,Fada N'gourma,"{'poly_features__degree': 3, 'poly_features__include_bias': False, 'poly_features__interaction_only': False, 'ridge_reg__alpha': 0, 'ridge_reg__fit_intercept': False, 'ridge_reg__normalize': True}",-0.32311376807048103,"Pipeline(memory=None,
+         steps=[('poly_features',
+                 PolynomialFeatures(degree=3, include_bias=False,
+                                    interaction_only=False, order='C')),
+                ('ridge_reg',
+                 Ridge(alpha=0, copy_X=True, fit_intercept=False, max_iter=None,
+                       normalize=True, random_state=None, solver='auto',
+                       tol=0.001))],
+         verbose=False)","[20.39293155 19.84765212 19.42913355 ... 20.3965711  20.24608258
+ 19.2546881 ]"
+7,8367,Gaoua,"{'poly_features__degree': 3, 'poly_features__include_bias': False, 'poly_features__interaction_only': False, 'ridge_reg__alpha': 2, 'ridge_reg__fit_intercept': False, 'ridge_reg__normalize': True}",-0.3301780554219385,"Pipeline(memory=None,
+         steps=[('poly_features',
+                 PolynomialFeatures(degree=3, include_bias=False,
+                                    interaction_only=False, order='C')),
+                ('ridge_reg',
+                 Ridge(alpha=2, copy_X=True, fit_intercept=False, max_iter=None,
+                       normalize=True, random_state=None, solver='auto',
+                       tol=0.001))],
+         verbose=False)","[21.60442297 17.92608957 21.25775842 ... 21.47788512 20.884347
+ 20.88935656]"
+7,8367,Ouahigouya,"{'poly_features__degree': 3, 'poly_features__include_bias': True, 'poly_features__interaction_only': False, 'ridge_reg__alpha': 0, 'ridge_reg__fit_intercept': True, 'ridge_reg__normalize': True}",-0.5642696442083455,"Pipeline(memory=None,
+         steps=[('poly_features',
+                 PolynomialFeatures(degree=3, include_bias=True,
+                                    interaction_only=False, order='C')),
+                ('ridge_reg',
+                 Ridge(alpha=0, copy_X=True, fit_intercept=True, max_iter=None,
+                       normalize=True, random_state=None, solver='auto',
+                       tol=0.001))],
+         verbose=False)","[19.76077646 19.98568813 20.20518006 ... 19.14107494 19.11081723
+ 17.85456385]"
+7,8367,Po,"{'poly_features__degree': 3, 'poly_features__include_bias': True, 'poly_features__interaction_only': True, 'ridge_reg__alpha': 1, 'ridge_reg__fit_intercept': False, 'ridge_reg__normalize': True}",-0.5895811510905734,"Pipeline(memory=None,
+         steps=[('poly_features',
+                 PolynomialFeatures(degree=3, include_bias=True,
+                                    interaction_only=True, order='C')),
+                ('ridge_reg',
+                 Ridge(alpha=1, copy_X=True, fit_intercept=False, max_iter=None,
+                       normalize=True, random_state=None, solver='auto',
+                       tol=0.001))],
+         verbose=False)","[21.27319901 18.81143876 20.42558176 ... 21.04131235 20.90099722
+ 18.5354021 ]"
+8,8572,Bobo Dioulasso,"{'poly_features__degree': 3, 'poly_features__include_bias': False, 'poly_features__interaction_only': False, 'ridge_reg__alpha': 0, 'ridge_reg__fit_intercept': False, 'ridge_reg__normalize': True}",-0.38117002915386167,"Pipeline(memory=None,
+         steps=[('poly_features',
+                 PolynomialFeatures(degree=3, include_bias=False,
+                                    interaction_only=False, order='C')),
+                ('ridge_reg',
+                 Ridge(alpha=0, copy_X=True, fit_intercept=False, max_iter=None,
+                       normalize=True, random_state=None, solver='auto',
+                       tol=0.001))],
+         verbose=False)","[20.69768209 19.37763426 21.11407966 ... 21.41718418 21.57715644
+ 21.32847943]"
+8,8572,Boromo,"{'poly_features__degree': 3, 'poly_features__include_bias': True, 'poly_features__interaction_only': False, 'ridge_reg__alpha': 0, 'ridge_reg__fit_intercept': False, 'ridge_reg__normalize': True}",-0.45152690985532073,"Pipeline(memory=None,
+         steps=[('poly_features',
+                 PolynomialFeatures(degree=3, include_bias=True,
+                                    interaction_only=False, order='C')),
+                ('ridge_reg',
+                 Ridge(alpha=0, copy_X=True, fit_intercept=False, max_iter=None,
+                       normalize=True, random_state=None, solver='auto',
+                       tol=0.001))],
+         verbose=False)","[21.10822933 19.02477696 20.77940253 ... 20.94169611 20.483336
+ 20.82275932]"
+8,8572,Bur Dedougou,"{'poly_features__degree': 3, 'poly_features__include_bias': False, 'poly_features__interaction_only': False, 'ridge_reg__alpha': 0, 'ridge_reg__fit_intercept': False, 'ridge_reg__normalize': True}",-0.3566372322631842,"Pipeline(memory=None,
+         steps=[('poly_features',
+                 PolynomialFeatures(degree=3, include_bias=False,
+                                    interaction_only=False, order='C')),
+                ('ridge_reg',
+                 Ridge(alpha=0, copy_X=True, fit_intercept=False, max_iter=None,
+                       normalize=True, random_state=None, solver='auto',
+                       tol=0.001))],
+         verbose=False)","[20.38982416 19.21164149 19.72034605 ... 20.16869445 19.78523958
+ 19.74158062]"
+8,8572,Dori,"{'poly_features__degree': 2, 'poly_features__include_bias': False, 'poly_features__interaction_only': False, 'ridge_reg__alpha': 2, 'ridge_reg__fit_intercept': True, 'ridge_reg__normalize': False}",-9.015993072521487,"Pipeline(memory=None,
+         steps=[('poly_features',
+                 PolynomialFeatures(degree=2, include_bias=False,
+                                    interaction_only=False, order='C')),
+                ('ridge_reg',
+                 Ridge(alpha=2, copy_X=True, fit_intercept=True, max_iter=None,
+                       normalize=False, random_state=None, solver='auto',
+                       tol=0.001))],
+         verbose=False)","[21.21433346 20.50202106 20.9508392  ... 20.80878035 19.90387963
+ 22.59659034]"
+8,8572,Fada N'gourma,"{'poly_features__degree': 3, 'poly_features__include_bias': False, 'poly_features__interaction_only': False, 'ridge_reg__alpha': 0, 'ridge_reg__fit_intercept': False, 'ridge_reg__normalize': True}",-0.3238253924555822,"Pipeline(memory=None,
+         steps=[('poly_features',
+                 PolynomialFeatures(degree=3, include_bias=False,
+                                    interaction_only=False, order='C')),
+                ('ridge_reg',
+                 Ridge(alpha=0, copy_X=True, fit_intercept=False, max_iter=None,
+                       normalize=True, random_state=None, solver='auto',
+                       tol=0.001))],
+         verbose=False)","[20.39293155 19.84765212 19.42913355 ... 20.3965711  20.24608258
+ 19.2546881 ]"
+8,8572,Gaoua,"{'poly_features__degree': 3, 'poly_features__include_bias': False, 'poly_features__interaction_only': False, 'ridge_reg__alpha': 0, 'ridge_reg__fit_intercept': False, 'ridge_reg__normalize': True}",-0.3306924710666582,"Pipeline(memory=None,
+         steps=[('poly_features',
+                 PolynomialFeatures(degree=3, include_bias=False,
+                                    interaction_only=False, order='C')),
+                ('ridge_reg',
+                 Ridge(alpha=0, copy_X=True, fit_intercept=False, max_iter=None,
+                       normalize=True, random_state=None, solver='auto',
+                       tol=0.001))],
+         verbose=False)","[21.66748893 17.69392518 21.24108399 ... 21.50330734 20.78335047
+ 20.49701448]"
+8,8572,Ouahigouya,"{'poly_features__degree': 3, 'poly_features__include_bias': True, 'poly_features__interaction_only': False, 'ridge_reg__alpha': 0, 'ridge_reg__fit_intercept': False, 'ridge_reg__normalize': True}",-0.5699111586184715,"Pipeline(memory=None,
+         steps=[('poly_features',
+                 PolynomialFeatures(degree=3, include_bias=True,
+                                    interaction_only=False, order='C')),
+                ('ridge_reg',
+                 Ridge(alpha=0, copy_X=True, fit_intercept=False, max_iter=None,
+                       normalize=True, random_state=None, solver='auto',
+                       tol=0.001))],
+         verbose=False)","[19.76077615 19.98568809 20.20518003 ... 19.14107625 19.1108141
+ 17.85456243]"
+8,8572,Po,"{'poly_features__degree': 3, 'poly_features__include_bias': False, 'poly_features__interaction_only': True, 'ridge_reg__alpha': 1, 'ridge_reg__fit_intercept': False, 'ridge_reg__normalize': True}",-0.5934337616101338,"Pipeline(memory=None,
+         steps=[('poly_features',
+                 PolynomialFeatures(degree=3, include_bias=False,
+                                    interaction_only=True, order='C')),
+                ('ridge_reg',
+                 Ridge(alpha=1, copy_X=True, fit_intercept=False, max_iter=None,
+                       normalize=True, random_state=None, solver='auto',
+                       tol=0.001))],
+         verbose=False)","[21.2730729  18.81132599 20.42552759 ... 21.04123206 20.9010691
+ 18.53505159]"
+9,8905,Bobo Dioulasso,"{'poly_features__degree': 3, 'poly_features__include_bias': False, 'poly_features__interaction_only': False, 'ridge_reg__alpha': 0, 'ridge_reg__fit_intercept': False, 'ridge_reg__normalize': True}",-0.3781479994173732,"Pipeline(memory=None,
+         steps=[('poly_features',
+                 PolynomialFeatures(degree=3, include_bias=False,
+                                    interaction_only=False, order='C')),
+                ('ridge_reg',
+                 Ridge(alpha=0, copy_X=True, fit_intercept=False, max_iter=None,
+                       normalize=True, random_state=None, solver='auto',
+                       tol=0.001))],
+         verbose=False)","[20.69768209 19.37763426 21.11407966 ... 21.41718418 21.57715644
+ 21.32847943]"
+9,8905,Boromo,"{'poly_features__degree': 3, 'poly_features__include_bias': False, 'poly_features__interaction_only': False, 'ridge_reg__alpha': 1, 'ridge_reg__fit_intercept': False, 'ridge_reg__normalize': True}",-0.4694278693676878,"Pipeline(memory=None,
+         steps=[('poly_features',
+                 PolynomialFeatures(degree=3, include_bias=False,
+                                    interaction_only=False, order='C')),
+                ('ridge_reg',
+                 Ridge(alpha=1, copy_X=True, fit_intercept=False, max_iter=None,
+                       normalize=True, random_state=None, solver='auto',
+                       tol=0.001))],
+         verbose=False)","[21.02174993 19.178055   20.77727047 ... 21.03889985 20.69244054
+ 20.95188152]"
+9,8905,Bur Dedougou,"{'poly_features__degree': 3, 'poly_features__include_bias': False, 'poly_features__interaction_only': False, 'ridge_reg__alpha': 0, 'ridge_reg__fit_intercept': False, 'ridge_reg__normalize': True}",-0.3576410084444156,"Pipeline(memory=None,
+         steps=[('poly_features',
+                 PolynomialFeatures(degree=3, include_bias=False,
+                                    interaction_only=False, order='C')),
+                ('ridge_reg',
+                 Ridge(alpha=0, copy_X=True, fit_intercept=False, max_iter=None,
+                       normalize=True, random_state=None, solver='auto',
+                       tol=0.001))],
+         verbose=False)","[20.38982416 19.21164149 19.72034605 ... 20.16869445 19.78523958
+ 19.74158062]"
+9,8905,Dori,"{'poly_features__degree': 2, 'poly_features__include_bias': True, 'poly_features__interaction_only': False, 'ridge_reg__alpha': 2, 'ridge_reg__fit_intercept': False, 'ridge_reg__normalize': True}",-9.002914761041193,"Pipeline(memory=None,
+         steps=[('poly_features',
+                 PolynomialFeatures(degree=2, include_bias=True,
+                                    interaction_only=False, order='C')),
+                ('ridge_reg',
+                 Ridge(alpha=2, copy_X=True, fit_intercept=False, max_iter=None,
+                       normalize=True, random_state=None, solver='auto',
+                       tol=0.001))],
+         verbose=False)","[21.22032754 20.4350781  20.90460936 ... 20.7250025  19.80138609
+ 22.59120338]"
+9,8905,Fada N'gourma,"{'poly_features__degree': 3, 'poly_features__include_bias': False, 'poly_features__interaction_only': False, 'ridge_reg__alpha': 0, 'ridge_reg__fit_intercept': False, 'ridge_reg__normalize': True}",-0.3311322357794655,"Pipeline(memory=None,
+         steps=[('poly_features',
+                 PolynomialFeatures(degree=3, include_bias=False,
+                                    interaction_only=False, order='C')),
+                ('ridge_reg',
+                 Ridge(alpha=0, copy_X=True, fit_intercept=False, max_iter=None,
+                       normalize=True, random_state=None, solver='auto',
+                       tol=0.001))],
+         verbose=False)","[20.39293155 19.84765212 19.42913355 ... 20.3965711  20.24608258
+ 19.2546881 ]"
+9,8905,Gaoua,"{'poly_features__degree': 3, 'poly_features__include_bias': False, 'poly_features__interaction_only': False, 'ridge_reg__alpha': 0, 'ridge_reg__fit_intercept': False, 'ridge_reg__normalize': True}",-0.3316487500351314,"Pipeline(memory=None,
+         steps=[('poly_features',
+                 PolynomialFeatures(degree=3, include_bias=False,
+                                    interaction_only=False, order='C')),
+                ('ridge_reg',
+                 Ridge(alpha=0, copy_X=True, fit_intercept=False, max_iter=None,
+                       normalize=True, random_state=None, solver='auto',
+                       tol=0.001))],
+         verbose=False)","[21.66748893 17.69392518 21.24108399 ... 21.50330734 20.78335047
+ 20.49701448]"
+9,8905,Ouahigouya,"{'poly_features__degree': 3, 'poly_features__include_bias': True, 'poly_features__interaction_only': False, 'ridge_reg__alpha': 0, 'ridge_reg__fit_intercept': False, 'ridge_reg__normalize': True}",-0.5609772392345947,"Pipeline(memory=None,
+         steps=[('poly_features',
+                 PolynomialFeatures(degree=3, include_bias=True,
+                                    interaction_only=False, order='C')),
+                ('ridge_reg',
+                 Ridge(alpha=0, copy_X=True, fit_intercept=False, max_iter=None,
+                       normalize=True, random_state=None, solver='auto',
+                       tol=0.001))],
+         verbose=False)","[19.76077615 19.98568809 20.20518003 ... 19.14107625 19.1108141
+ 17.85456243]"
+9,8905,Po,"{'poly_features__degree': 3, 'poly_features__include_bias': False, 'poly_features__interaction_only': True, 'ridge_reg__alpha': 1, 'ridge_reg__fit_intercept': False, 'ridge_reg__normalize': True}",-0.5896642443240177,"Pipeline(memory=None,
+         steps=[('poly_features',
+                 PolynomialFeatures(degree=3, include_bias=False,
+                                    interaction_only=True, order='C')),
+                ('ridge_reg',
+                 Ridge(alpha=1, copy_X=True, fit_intercept=False, max_iter=None,
+                       normalize=True, random_state=None, solver='auto',
+                       tol=0.001))],
+         verbose=False)","[21.2730729  18.81132599 20.42552759 ... 21.04123206 20.9010691
+ 18.53505159]"
+10,9494,Bobo Dioulasso,"{'poly_features__degree': 3, 'poly_features__include_bias': False, 'poly_features__interaction_only': False, 'ridge_reg__alpha': 0, 'ridge_reg__fit_intercept': False, 'ridge_reg__normalize': True}",-0.37487040321546544,"Pipeline(memory=None,
+         steps=[('poly_features',
+                 PolynomialFeatures(degree=3, include_bias=False,
+                                    interaction_only=False, order='C')),
+                ('ridge_reg',
+                 Ridge(alpha=0, copy_X=True, fit_intercept=False, max_iter=None,
+                       normalize=True, random_state=None, solver='auto',
+                       tol=0.001))],
+         verbose=False)","[20.69768209 19.37763426 21.11407966 ... 21.41718418 21.57715644
+ 21.32847943]"
+10,9494,Boromo,"{'poly_features__degree': 3, 'poly_features__include_bias': False, 'poly_features__interaction_only': False, 'ridge_reg__alpha': 1, 'ridge_reg__fit_intercept': False, 'ridge_reg__normalize': True}",-0.4710165979840397,"Pipeline(memory=None,
+         steps=[('poly_features',
+                 PolynomialFeatures(degree=3, include_bias=False,
+                                    interaction_only=False, order='C')),
+                ('ridge_reg',
+                 Ridge(alpha=1, copy_X=True, fit_intercept=False, max_iter=None,
+                       normalize=True, random_state=None, solver='auto',
+                       tol=0.001))],
+         verbose=False)","[21.02174993 19.178055   20.77727047 ... 21.03889985 20.69244054
+ 20.95188152]"
+10,9494,Bur Dedougou,"{'poly_features__degree': 3, 'poly_features__include_bias': False, 'poly_features__interaction_only': False, 'ridge_reg__alpha': 0, 'ridge_reg__fit_intercept': False, 'ridge_reg__normalize': True}",-0.35953828631204965,"Pipeline(memory=None,
+         steps=[('poly_features',
+                 PolynomialFeatures(degree=3, include_bias=False,
+                                    interaction_only=False, order='C')),
+                ('ridge_reg',
+                 Ridge(alpha=0, copy_X=True, fit_intercept=False, max_iter=None,
+                       normalize=True, random_state=None, solver='auto',
+                       tol=0.001))],
+         verbose=False)","[20.38982416 19.21164149 19.72034605 ... 20.16869445 19.78523958
+ 19.74158062]"
+10,9494,Dori,"{'poly_features__degree': 2, 'poly_features__include_bias': True, 'poly_features__interaction_only': False, 'ridge_reg__alpha': 2, 'ridge_reg__fit_intercept': False, 'ridge_reg__normalize': True}",-9.003020529616672,"Pipeline(memory=None,
+         steps=[('poly_features',
+                 PolynomialFeatures(degree=2, include_bias=True,
+                                    interaction_only=False, order='C')),
+                ('ridge_reg',
+                 Ridge(alpha=2, copy_X=True, fit_intercept=False, max_iter=None,
+                       normalize=True, random_state=None, solver='auto',
+                       tol=0.001))],
+         verbose=False)","[21.22032754 20.4350781  20.90460936 ... 20.7250025  19.80138609
+ 22.59120338]"
+10,9494,Fada N'gourma,"{'poly_features__degree': 3, 'poly_features__include_bias': False, 'poly_features__interaction_only': False, 'ridge_reg__alpha': 0, 'ridge_reg__fit_intercept': False, 'ridge_reg__normalize': True}",-0.3301580442166236,"Pipeline(memory=None,
+         steps=[('poly_features',
+                 PolynomialFeatures(degree=3, include_bias=False,
+                                    interaction_only=False, order='C')),
+                ('ridge_reg',
+                 Ridge(alpha=0, copy_X=True, fit_intercept=False, max_iter=None,
+                       normalize=True, random_state=None, solver='auto',
+                       tol=0.001))],
+         verbose=False)","[20.39293155 19.84765212 19.42913355 ... 20.3965711  20.24608258
+ 19.2546881 ]"
+10,9494,Gaoua,"{'poly_features__degree': 3, 'poly_features__include_bias': False, 'poly_features__interaction_only': False, 'ridge_reg__alpha': 0, 'ridge_reg__fit_intercept': False, 'ridge_reg__normalize': True}",-0.3251506494606039,"Pipeline(memory=None,
+         steps=[('poly_features',
+                 PolynomialFeatures(degree=3, include_bias=False,
+                                    interaction_only=False, order='C')),
+                ('ridge_reg',
+                 Ridge(alpha=0, copy_X=True, fit_intercept=False, max_iter=None,
+                       normalize=True, random_state=None, solver='auto',
+                       tol=0.001))],
+         verbose=False)","[21.66748893 17.69392518 21.24108399 ... 21.50330734 20.78335047
+ 20.49701448]"
+10,9494,Ouahigouya,"{'poly_features__degree': 3, 'poly_features__include_bias': False, 'poly_features__interaction_only': False, 'ridge_reg__alpha': 0, 'ridge_reg__fit_intercept': True, 'ridge_reg__normalize': True}",-0.5684870258161588,"Pipeline(memory=None,
+         steps=[('poly_features',
+                 PolynomialFeatures(degree=3, include_bias=False,
+                                    interaction_only=False, order='C')),
+                ('ridge_reg',
+                 Ridge(alpha=0, copy_X=True, fit_intercept=True, max_iter=None,
+                       normalize=True, random_state=None, solver='auto',
+                       tol=0.001))],
+         verbose=False)","[19.76077658 19.98568829 20.20518024 ... 19.14107453 19.11081797
+ 17.85456376]"
+10,9494,Po,"{'poly_features__degree': 3, 'poly_features__include_bias': False, 'poly_features__interaction_only': True, 'ridge_reg__alpha': 1, 'ridge_reg__fit_intercept': False, 'ridge_reg__normalize': True}",-0.5919301137200879,"Pipeline(memory=None,
+         steps=[('poly_features',
+                 PolynomialFeatures(degree=3, include_bias=False,
+                                    interaction_only=True, order='C')),
+                ('ridge_reg',
+                 Ridge(alpha=1, copy_X=True, fit_intercept=False, max_iter=None,
+                       normalize=True, random_state=None, solver='auto',
+                       tol=0.001))],
+         verbose=False)","[21.2730729  18.81132599 20.42552759 ... 21.04123206 20.9010691
+ 18.53505159]"
+11,10595,Bobo Dioulasso,"{'poly_features__degree': 3, 'poly_features__include_bias': False, 'poly_features__interaction_only': False, 'ridge_reg__alpha': 1, 'ridge_reg__fit_intercept': False, 'ridge_reg__normalize': True}",-0.3885853210944191,"Pipeline(memory=None,
+         steps=[('poly_features',
+                 PolynomialFeatures(degree=3, include_bias=False,
+                                    interaction_only=False, order='C')),
+                ('ridge_reg',
+                 Ridge(alpha=1, copy_X=True, fit_intercept=False, max_iter=None,
+                       normalize=True, random_state=None, solver='auto',
+                       tol=0.001))],
+         verbose=False)","[20.64246504 19.48488544 21.09394331 ... 21.47870459 21.49420933
+ 21.42621898]"
+11,10595,Boromo,"{'poly_features__degree': 3, 'poly_features__include_bias': True, 'poly_features__interaction_only': False, 'ridge_reg__alpha': 0, 'ridge_reg__fit_intercept': True, 'ridge_reg__normalize': False}",-0.47170769449392635,"Pipeline(memory=None,
+         steps=[('poly_features',
+                 PolynomialFeatures(degree=3, include_bias=True,
+                                    interaction_only=False, order='C')),
+                ('ridge_reg',
+                 Ridge(alpha=0, copy_X=True, fit_intercept=True, max_iter=None,
+                       normalize=False, random_state=None, solver='auto',
+                       tol=0.001))],
+         verbose=False)","[21.10623631 19.02399716 20.77972779 ... 20.94271705 20.48383221
+ 20.82415494]"
+11,10595,Bur Dedougou,"{'poly_features__degree': 3, 'poly_features__include_bias': True, 'poly_features__interaction_only': False, 'ridge_reg__alpha': 0, 'ridge_reg__fit_intercept': True, 'ridge_reg__normalize': False}",-0.3595677817170939,"Pipeline(memory=None,
+         steps=[('poly_features',
+                 PolynomialFeatures(degree=3, include_bias=True,
+                                    interaction_only=False, order='C')),
+                ('ridge_reg',
+                 Ridge(alpha=0, copy_X=True, fit_intercept=True, max_iter=None,
+                       normalize=False, random_state=None, solver='auto',
+                       tol=0.001))],
+         verbose=False)","[20.40257248 19.21513224 19.72390118 ... 20.17875329 19.78823099
+ 19.74147883]"
+11,10595,Dori,"{'poly_features__degree': 2, 'poly_features__include_bias': False, 'poly_features__interaction_only': False, 'ridge_reg__alpha': 2, 'ridge_reg__fit_intercept': True, 'ridge_reg__normalize': False}",-9.029604057675197,"Pipeline(memory=None,
+         steps=[('poly_features',
+                 PolynomialFeatures(degree=2, include_bias=False,
+                                    interaction_only=False, order='C')),
+                ('ridge_reg',
+                 Ridge(alpha=2, copy_X=True, fit_intercept=True, max_iter=None,
+                       normalize=False, random_state=None, solver='auto',
+                       tol=0.001))],
+         verbose=False)","[21.21433346 20.50202106 20.9508392  ... 20.80878035 19.90387963
+ 22.59659034]"
+11,10595,Fada N'gourma,"{'poly_features__degree': 3, 'poly_features__include_bias': False, 'poly_features__interaction_only': False, 'ridge_reg__alpha': 0, 'ridge_reg__fit_intercept': False, 'ridge_reg__normalize': True}",-0.3211056013877465,"Pipeline(memory=None,
+         steps=[('poly_features',
+                 PolynomialFeatures(degree=3, include_bias=False,
+                                    interaction_only=False, order='C')),
+                ('ridge_reg',
+                 Ridge(alpha=0, copy_X=True, fit_intercept=False, max_iter=None,
+                       normalize=True, random_state=None, solver='auto',
+                       tol=0.001))],
+         verbose=False)","[20.39293155 19.84765212 19.42913355 ... 20.3965711  20.24608258
+ 19.2546881 ]"
+11,10595,Gaoua,"{'poly_features__degree': 3, 'poly_features__include_bias': False, 'poly_features__interaction_only': False, 'ridge_reg__alpha': 0, 'ridge_reg__fit_intercept': False, 'ridge_reg__normalize': True}",-0.3291385817522154,"Pipeline(memory=None,
+         steps=[('poly_features',
+                 PolynomialFeatures(degree=3, include_bias=False,
+                                    interaction_only=False, order='C')),
+                ('ridge_reg',
+                 Ridge(alpha=0, copy_X=True, fit_intercept=False, max_iter=None,
+                       normalize=True, random_state=None, solver='auto',
+                       tol=0.001))],
+         verbose=False)","[21.66748893 17.69392518 21.24108399 ... 21.50330734 20.78335047
+ 20.49701448]"
+11,10595,Ouahigouya,"{'poly_features__degree': 3, 'poly_features__include_bias': True, 'poly_features__interaction_only': False, 'ridge_reg__alpha': 0, 'ridge_reg__fit_intercept': False, 'ridge_reg__normalize': True}",-0.5615531744201072,"Pipeline(memory=None,
+         steps=[('poly_features',
+                 PolynomialFeatures(degree=3, include_bias=True,
+                                    interaction_only=False, order='C')),
+                ('ridge_reg',
+                 Ridge(alpha=0, copy_X=True, fit_intercept=False, max_iter=None,
+                       normalize=True, random_state=None, solver='auto',
+                       tol=0.001))],
+         verbose=False)","[19.76077615 19.98568809 20.20518003 ... 19.14107625 19.1108141
+ 17.85456243]"
+11,10595,Po,"{'poly_features__degree': 3, 'poly_features__include_bias': True, 'poly_features__interaction_only': True, 'ridge_reg__alpha': 0, 'ridge_reg__fit_intercept': True, 'ridge_reg__normalize': False}",-0.5838494240487495,"Pipeline(memory=None,
+         steps=[('poly_features',
+                 PolynomialFeatures(degree=3, include_bias=True,
+                                    interaction_only=True, order='C')),
+                ('ridge_reg',
+                 Ridge(alpha=0, copy_X=True, fit_intercept=True, max_iter=None,
+                       normalize=False, random_state=None, solver='auto',
+                       tol=0.001))],
+         verbose=False)","[21.21490741 18.82610071 20.49589419 ... 21.01583254 20.93819487
+ 18.49755037]"
+12,12720,Bobo Dioulasso,"{'poly_features__degree': 3, 'poly_features__include_bias': False, 'poly_features__interaction_only': False, 'ridge_reg__alpha': 0, 'ridge_reg__fit_intercept': False, 'ridge_reg__normalize': True}",-0.3685751951151177,"Pipeline(memory=None,
+         steps=[('poly_features',
+                 PolynomialFeatures(degree=3, include_bias=False,
+                                    interaction_only=False, order='C')),
+                ('ridge_reg',
+                 Ridge(alpha=0, copy_X=True, fit_intercept=False, max_iter=None,
+                       normalize=True, random_state=None, solver='auto',
+                       tol=0.001))],
+         verbose=False)","[20.69768209 19.37763426 21.11407966 ... 21.41718418 21.57715644
+ 21.32847943]"
+12,12720,Boromo,"{'poly_features__degree': 3, 'poly_features__include_bias': False, 'poly_features__interaction_only': False, 'ridge_reg__alpha': 1, 'ridge_reg__fit_intercept': False, 'ridge_reg__normalize': True}",-0.4679708220846138,"Pipeline(memory=None,
+         steps=[('poly_features',
+                 PolynomialFeatures(degree=3, include_bias=False,
+                                    interaction_only=False, order='C')),
+                ('ridge_reg',
+                 Ridge(alpha=1, copy_X=True, fit_intercept=False, max_iter=None,
+                       normalize=True, random_state=None, solver='auto',
+                       tol=0.001))],
+         verbose=False)","[21.02174993 19.178055   20.77727047 ... 21.03889985 20.69244054
+ 20.95188152]"
+12,12720,Bur Dedougou,"{'poly_features__degree': 3, 'poly_features__include_bias': True, 'poly_features__interaction_only': False, 'ridge_reg__alpha': 0, 'ridge_reg__fit_intercept': False, 'ridge_reg__normalize': True}",-0.37162039144415815,"Pipeline(memory=None,
+         steps=[('poly_features',
+                 PolynomialFeatures(degree=3, include_bias=True,
+                                    interaction_only=False, order='C')),
+                ('ridge_reg',
+                 Ridge(alpha=0, copy_X=True, fit_intercept=False, max_iter=None,
+                       normalize=True, random_state=None, solver='auto',
+                       tol=0.001))],
+         verbose=False)","[20.40108925 19.21513492 19.72444383 ... 20.17797218 19.78846824
+ 19.74338864]"
+12,12720,Dori,"{'poly_features__degree': 2, 'poly_features__include_bias': False, 'poly_features__interaction_only': False, 'ridge_reg__alpha': 2, 'ridge_reg__fit_intercept': False, 'ridge_reg__normalize': True}",-9.016994346015688,"Pipeline(memory=None,
+         steps=[('poly_features',
+                 PolynomialFeatures(degree=2, include_bias=False,
+                                    interaction_only=False, order='C')),
+                ('ridge_reg',
+                 Ridge(alpha=2, copy_X=True, fit_intercept=False, max_iter=None,
+                       normalize=True, random_state=None, solver='auto',
+                       tol=0.001))],
+         verbose=False)","[21.2204309  20.43392372 20.90381216 ... 20.72355781 19.79961866
+ 22.59111048]"
+12,12720,Fada N'gourma,"{'poly_features__degree': 3, 'poly_features__include_bias': False, 'poly_features__interaction_only': False, 'ridge_reg__alpha': 0, 'ridge_reg__fit_intercept': False, 'ridge_reg__normalize': True}",-0.32713639987465876,"Pipeline(memory=None,
+         steps=[('poly_features',
+                 PolynomialFeatures(degree=3, include_bias=False,
+                                    interaction_only=False, order='C')),
+                ('ridge_reg',
+                 Ridge(alpha=0, copy_X=True, fit_intercept=False, max_iter=None,
+                       normalize=True, random_state=None, solver='auto',
+                       tol=0.001))],
+         verbose=False)","[20.39293155 19.84765212 19.42913355 ... 20.3965711  20.24608258
+ 19.2546881 ]"
+12,12720,Gaoua,"{'poly_features__degree': 3, 'poly_features__include_bias': True, 'poly_features__interaction_only': False, 'ridge_reg__alpha': 0, 'ridge_reg__fit_intercept': True, 'ridge_reg__normalize': False}",-0.33112505416269894,"Pipeline(memory=None,
+         steps=[('poly_features',
+                 PolynomialFeatures(degree=3, include_bias=True,
+                                    interaction_only=False, order='C')),
+                ('ridge_reg',
+                 Ridge(alpha=0, copy_X=True, fit_intercept=True, max_iter=None,
+                       normalize=False, random_state=None, solver='auto',
+                       tol=0.001))],
+         verbose=False)","[21.67236513 17.69449478 21.24025729 ... 21.50006497 20.78646804
+ 20.49589559]"
+12,12720,Ouahigouya,"{'poly_features__degree': 3, 'poly_features__include_bias': False, 'poly_features__interaction_only': False, 'ridge_reg__alpha': 0, 'ridge_reg__fit_intercept': True, 'ridge_reg__normalize': False}",-0.5889662135803471,"Pipeline(memory=None,
+         steps=[('poly_features',
+                 PolynomialFeatures(degree=3, include_bias=False,
+                                    interaction_only=False, order='C')),
+                ('ridge_reg',
+                 Ridge(alpha=0, copy_X=True, fit_intercept=True, max_iter=None,
+                       normalize=False, random_state=None, solver='auto',
+                       tol=0.001))],
+         verbose=False)","[19.76077646 19.98568817 20.20518014 ... 19.14107505 19.11081719
+ 17.85456385]"
+12,12720,Po,"{'poly_features__degree': 3, 'poly_features__include_bias': True, 'poly_features__interaction_only': True, 'ridge_reg__alpha': 0, 'ridge_reg__fit_intercept': True, 'ridge_reg__normalize': False}",-0.5809059912521951,"Pipeline(memory=None,
+         steps=[('poly_features',
+                 PolynomialFeatures(degree=3, include_bias=True,
+                                    interaction_only=True, order='C')),
+                ('ridge_reg',
+                 Ridge(alpha=0, copy_X=True, fit_intercept=True, max_iter=None,
+                       normalize=False, random_state=None, solver='auto',
+                       tol=0.001))],
+         verbose=False)","[21.21490741 18.82610071 20.49589419 ... 21.01583254 20.93819487
+ 18.49755037]"
+13,16893,Bobo Dioulasso,"{'poly_features__degree': 3, 'poly_features__include_bias': False, 'poly_features__interaction_only': False, 'ridge_reg__alpha': 0, 'ridge_reg__fit_intercept': False, 'ridge_reg__normalize': True}",-0.3641081022044181,"Pipeline(memory=None,
+         steps=[('poly_features',
+                 PolynomialFeatures(degree=3, include_bias=False,
+                                    interaction_only=False, order='C')),
+                ('ridge_reg',
+                 Ridge(alpha=0, copy_X=True, fit_intercept=False, max_iter=None,
+                       normalize=True, random_state=None, solver='auto',
+                       tol=0.001))],
+         verbose=False)","[20.69768209 19.37763426 21.11407966 ... 21.41718418 21.57715644
+ 21.32847943]"
+13,16893,Boromo,"{'poly_features__degree': 3, 'poly_features__include_bias': False, 'poly_features__interaction_only': False, 'ridge_reg__alpha': 1, 'ridge_reg__fit_intercept': False, 'ridge_reg__normalize': True}",-0.478041691222476,"Pipeline(memory=None,
+         steps=[('poly_features',
+                 PolynomialFeatures(degree=3, include_bias=False,
+                                    interaction_only=False, order='C')),
+                ('ridge_reg',
+                 Ridge(alpha=1, copy_X=True, fit_intercept=False, max_iter=None,
+                       normalize=True, random_state=None, solver='auto',
+                       tol=0.001))],
+         verbose=False)","[21.02174993 19.178055   20.77727047 ... 21.03889985 20.69244054
+ 20.95188152]"
+13,16893,Bur Dedougou,"{'poly_features__degree': 3, 'poly_features__include_bias': True, 'poly_features__interaction_only': False, 'ridge_reg__alpha': 0, 'ridge_reg__fit_intercept': True, 'ridge_reg__normalize': False}",-0.3630587875755983,"Pipeline(memory=None,
+         steps=[('poly_features',
+                 PolynomialFeatures(degree=3, include_bias=True,
+                                    interaction_only=False, order='C')),
+                ('ridge_reg',
+                 Ridge(alpha=0, copy_X=True, fit_intercept=True, max_iter=None,
+                       normalize=False, random_state=None, solver='auto',
+                       tol=0.001))],
+         verbose=False)","[20.40257248 19.21513224 19.72390118 ... 20.17875329 19.78823099
+ 19.74147883]"
+13,16893,Dori,"{'poly_features__degree': 2, 'poly_features__include_bias': True, 'poly_features__interaction_only': False, 'ridge_reg__alpha': 2, 'ridge_reg__fit_intercept': False, 'ridge_reg__normalize': True}",-9.004317899489354,"Pipeline(memory=None,
+         steps=[('poly_features',
+                 PolynomialFeatures(degree=2, include_bias=True,
+                                    interaction_only=False, order='C')),
+                ('ridge_reg',
+                 Ridge(alpha=2, copy_X=True, fit_intercept=False, max_iter=None,
+                       normalize=True, random_state=None, solver='auto',
+                       tol=0.001))],
+         verbose=False)","[21.22032754 20.4350781  20.90460936 ... 20.7250025  19.80138609
+ 22.59120338]"
+13,16893,Fada N'gourma,"{'poly_features__degree': 3, 'poly_features__include_bias': False, 'poly_features__interaction_only': False, 'ridge_reg__alpha': 0, 'ridge_reg__fit_intercept': False, 'ridge_reg__normalize': True}",-0.327535086881342,"Pipeline(memory=None,
+         steps=[('poly_features',
+                 PolynomialFeatures(degree=3, include_bias=False,
+                                    interaction_only=False, order='C')),
+                ('ridge_reg',
+                 Ridge(alpha=0, copy_X=True, fit_intercept=False, max_iter=None,
+                       normalize=True, random_state=None, solver='auto',
+                       tol=0.001))],
+         verbose=False)","[20.39293155 19.84765212 19.42913355 ... 20.3965711  20.24608258
+ 19.2546881 ]"
+13,16893,Gaoua,"{'poly_features__degree': 3, 'poly_features__include_bias': False, 'poly_features__interaction_only': False, 'ridge_reg__alpha': 0, 'ridge_reg__fit_intercept': False, 'ridge_reg__normalize': True}",-0.32929450278676764,"Pipeline(memory=None,
+         steps=[('poly_features',
+                 PolynomialFeatures(degree=3, include_bias=False,
+                                    interaction_only=False, order='C')),
+                ('ridge_reg',
+                 Ridge(alpha=0, copy_X=True, fit_intercept=False, max_iter=None,
+                       normalize=True, random_state=None, solver='auto',
+                       tol=0.001))],
+         verbose=False)","[21.66748893 17.69392518 21.24108399 ... 21.50330734 20.78335047
+ 20.49701448]"
+13,16893,Ouahigouya,"{'poly_features__degree': 3, 'poly_features__include_bias': False, 'poly_features__interaction_only': False, 'ridge_reg__alpha': 0, 'ridge_reg__fit_intercept': False, 'ridge_reg__normalize': True}",-0.5885364152853901,"Pipeline(memory=None,
+         steps=[('poly_features',
+                 PolynomialFeatures(degree=3, include_bias=False,
+                                    interaction_only=False, order='C')),
+                ('ridge_reg',
+                 Ridge(alpha=0, copy_X=True, fit_intercept=False, max_iter=None,
+                       normalize=True, random_state=None, solver='auto',
+                       tol=0.001))],
+         verbose=False)","[19.77006992 19.99824265 20.22087737 ... 19.10792181 19.17160724
+ 17.84803992]"
+13,16893,Po,"{'poly_features__degree': 3, 'poly_features__include_bias': True, 'poly_features__interaction_only': True, 'ridge_reg__alpha': 0, 'ridge_reg__fit_intercept': True, 'ridge_reg__normalize': False}",-0.5891354594505774,"Pipeline(memory=None,
+         steps=[('poly_features',
+                 PolynomialFeatures(degree=3, include_bias=True,
+                                    interaction_only=True, order='C')),
+                ('ridge_reg',
+                 Ridge(alpha=0, copy_X=True, fit_intercept=True, max_iter=None,
+                       normalize=False, random_state=None, solver='auto',
+                       tol=0.001))],
+         verbose=False)","[21.21490741 18.82610071 20.49589419 ... 21.01583254 20.93819487
+ 18.49755037]"
+14,25162,Bobo Dioulasso,"{'poly_features__degree': 3, 'poly_features__include_bias': False, 'poly_features__interaction_only': False, 'ridge_reg__alpha': 0, 'ridge_reg__fit_intercept': False, 'ridge_reg__normalize': True}",-0.37731229534949595,"Pipeline(memory=None,
+         steps=[('poly_features',
+                 PolynomialFeatures(degree=3, include_bias=False,
+                                    interaction_only=False, order='C')),
+                ('ridge_reg',
+                 Ridge(alpha=0, copy_X=True, fit_intercept=False, max_iter=None,
+                       normalize=True, random_state=None, solver='auto',
+                       tol=0.001))],
+         verbose=False)","[20.69768209 19.37763426 21.11407966 ... 21.41718418 21.57715644
+ 21.32847943]"
+14,25162,Boromo,"{'poly_features__degree': 3, 'poly_features__include_bias': False, 'poly_features__interaction_only': False, 'ridge_reg__alpha': 0, 'ridge_reg__fit_intercept': False, 'ridge_reg__normalize': True}",-0.47292784024295165,"Pipeline(memory=None,
+         steps=[('poly_features',
+                 PolynomialFeatures(degree=3, include_bias=False,
+                                    interaction_only=False, order='C')),
+                ('ridge_reg',
+                 Ridge(alpha=0, copy_X=True, fit_intercept=False, max_iter=None,
+                       normalize=True, random_state=None, solver='auto',
+                       tol=0.001))],
+         verbose=False)","[21.1013522  19.04057447 20.79253312 ... 20.87042676 20.50832656
+ 20.78903813]"
+14,25162,Bur Dedougou,"{'poly_features__degree': 3, 'poly_features__include_bias': False, 'poly_features__interaction_only': False, 'ridge_reg__alpha': 0, 'ridge_reg__fit_intercept': False, 'ridge_reg__normalize': True}",-0.35807397216737114,"Pipeline(memory=None,
+         steps=[('poly_features',
+                 PolynomialFeatures(degree=3, include_bias=False,
+                                    interaction_only=False, order='C')),
+                ('ridge_reg',
+                 Ridge(alpha=0, copy_X=True, fit_intercept=False, max_iter=None,
+                       normalize=True, random_state=None, solver='auto',
+                       tol=0.001))],
+         verbose=False)","[20.38982416 19.21164149 19.72034605 ... 20.16869445 19.78523958
+ 19.74158062]"
+14,25162,Dori,"{'poly_features__degree': 2, 'poly_features__include_bias': True, 'poly_features__interaction_only': False, 'ridge_reg__alpha': 2, 'ridge_reg__fit_intercept': True, 'ridge_reg__normalize': False}",-9.007368812003785,"Pipeline(memory=None,
+         steps=[('poly_features',
+                 PolynomialFeatures(degree=2, include_bias=True,
+                                    interaction_only=False, order='C')),
+                ('ridge_reg',
+                 Ridge(alpha=2, copy_X=True, fit_intercept=True, max_iter=None,
+                       normalize=False, random_state=None, solver='auto',
+                       tol=0.001))],
+         verbose=False)","[21.21433346 20.50202106 20.9508392  ... 20.80878035 19.90387963
+ 22.59659034]"
+14,25162,Fada N'gourma,"{'poly_features__degree': 3, 'poly_features__include_bias': True, 'poly_features__interaction_only': False, 'ridge_reg__alpha': 0, 'ridge_reg__fit_intercept': True, 'ridge_reg__normalize': False}",-0.3168880494348785,"Pipeline(memory=None,
+         steps=[('poly_features',
+                 PolynomialFeatures(degree=3, include_bias=True,
+                                    interaction_only=False, order='C')),
+                ('ridge_reg',
+                 Ridge(alpha=0, copy_X=True, fit_intercept=True, max_iter=None,
+                       normalize=False, random_state=None, solver='auto',
+                       tol=0.001))],
+         verbose=False)","[20.38879779 19.84407362 19.4302434  ... 20.39969447 20.24663737
+ 19.25520572]"
+14,25162,Gaoua,"{'poly_features__degree': 3, 'poly_features__include_bias': False, 'poly_features__interaction_only': False, 'ridge_reg__alpha': 0, 'ridge_reg__fit_intercept': False, 'ridge_reg__normalize': True}",-0.329062509097063,"Pipeline(memory=None,
+         steps=[('poly_features',
+                 PolynomialFeatures(degree=3, include_bias=False,
+                                    interaction_only=False, order='C')),
+                ('ridge_reg',
+                 Ridge(alpha=0, copy_X=True, fit_intercept=False, max_iter=None,
+                       normalize=True, random_state=None, solver='auto',
+                       tol=0.001))],
+         verbose=False)","[21.66748893 17.69392518 21.24108399 ... 21.50330734 20.78335047
+ 20.49701448]"
+14,25162,Ouahigouya,"{'poly_features__degree': 3, 'poly_features__include_bias': True, 'poly_features__interaction_only': False, 'ridge_reg__alpha': 0, 'ridge_reg__fit_intercept': False, 'ridge_reg__normalize': True}",-0.5748516941761644,"Pipeline(memory=None,
+         steps=[('poly_features',
+                 PolynomialFeatures(degree=3, include_bias=True,
+                                    interaction_only=False, order='C')),
+                ('ridge_reg',
+                 Ridge(alpha=0, copy_X=True, fit_intercept=False, max_iter=None,
+                       normalize=True, random_state=None, solver='auto',
+                       tol=0.001))],
+         verbose=False)","[19.76077615 19.98568809 20.20518003 ... 19.14107625 19.1108141
+ 17.85456243]"
+14,25162,Po,"{'poly_features__degree': 3, 'poly_features__include_bias': False, 'poly_features__interaction_only': True, 'ridge_reg__alpha': 1, 'ridge_reg__fit_intercept': False, 'ridge_reg__normalize': True}",-0.5934503393143259,"Pipeline(memory=None,
+         steps=[('poly_features',
+                 PolynomialFeatures(degree=3, include_bias=False,
+                                    interaction_only=True, order='C')),
+                ('ridge_reg',
+                 Ridge(alpha=1, copy_X=True, fit_intercept=False, max_iter=None,
+                       normalize=True, random_state=None, solver='auto',
+                       tol=0.001))],
+         verbose=False)","[21.2730729  18.81132599 20.42552759 ... 21.04123206 20.9010691
+ 18.53505159]"
+15,41623,Bobo Dioulasso,"{'poly_features__degree': 3, 'poly_features__include_bias': False, 'poly_features__interaction_only': False, 'ridge_reg__alpha': 0, 'ridge_reg__fit_intercept': False, 'ridge_reg__normalize': True}",-0.3725771017186508,"Pipeline(memory=None,
+         steps=[('poly_features',
+                 PolynomialFeatures(degree=3, include_bias=False,
+                                    interaction_only=False, order='C')),
+                ('ridge_reg',
+                 Ridge(alpha=0, copy_X=True, fit_intercept=False, max_iter=None,
+                       normalize=True, random_state=None, solver='auto',
+                       tol=0.001))],
+         verbose=False)","[20.69768209 19.37763426 21.11407966 ... 21.41718418 21.57715644
+ 21.32847943]"
+15,41623,Boromo,"{'poly_features__degree': 3, 'poly_features__include_bias': False, 'poly_features__interaction_only': False, 'ridge_reg__alpha': 2, 'ridge_reg__fit_intercept': False, 'ridge_reg__normalize': True}",-0.48595344465897217,"Pipeline(memory=None,
+         steps=[('poly_features',
+                 PolynomialFeatures(degree=3, include_bias=False,
+                                    interaction_only=False, order='C')),
+                ('ridge_reg',
+                 Ridge(alpha=2, copy_X=True, fit_intercept=False, max_iter=None,
+                       normalize=True, random_state=None, solver='auto',
+                       tol=0.001))],
+         verbose=False)","[21.01646126 19.20516359 20.77581852 ... 21.04031842 20.70616074
+ 20.93476035]"
+15,41623,Bur Dedougou,"{'poly_features__degree': 3, 'poly_features__include_bias': False, 'poly_features__interaction_only': False, 'ridge_reg__alpha': 0, 'ridge_reg__fit_intercept': True, 'ridge_reg__normalize': False}",-0.37559496829851874,"Pipeline(memory=None,
+         steps=[('poly_features',
+                 PolynomialFeatures(degree=3, include_bias=False,
+                                    interaction_only=False, order='C')),
+                ('ridge_reg',
+                 Ridge(alpha=0, copy_X=True, fit_intercept=True, max_iter=None,
+                       normalize=False, random_state=None, solver='auto',
+                       tol=0.001))],
+         verbose=False)","[20.40108967 19.21513497 19.72444433 ... 20.1779725  19.78846849
+ 19.74338833]"
+15,41623,Dori,"{'poly_features__degree': 2, 'poly_features__include_bias': False, 'poly_features__interaction_only': False, 'ridge_reg__alpha': 2, 'ridge_reg__fit_intercept': True, 'ridge_reg__normalize': False}",-9.004454551100814,"Pipeline(memory=None,
+         steps=[('poly_features',
+                 PolynomialFeatures(degree=2, include_bias=False,
+                                    interaction_only=False, order='C')),
+                ('ridge_reg',
+                 Ridge(alpha=2, copy_X=True, fit_intercept=True, max_iter=None,
+                       normalize=False, random_state=None, solver='auto',
+                       tol=0.001))],
+         verbose=False)","[21.21433346 20.50202106 20.9508392  ... 20.80878035 19.90387963
+ 22.59659034]"
+15,41623,Fada N'gourma,"{'poly_features__degree': 3, 'poly_features__include_bias': False, 'poly_features__interaction_only': False, 'ridge_reg__alpha': 0, 'ridge_reg__fit_intercept': False, 'ridge_reg__normalize': True}",-0.3299081595131429,"Pipeline(memory=None,
+         steps=[('poly_features',
+                 PolynomialFeatures(degree=3, include_bias=False,
+                                    interaction_only=False, order='C')),
+                ('ridge_reg',
+                 Ridge(alpha=0, copy_X=True, fit_intercept=False, max_iter=None,
+                       normalize=True, random_state=None, solver='auto',
+                       tol=0.001))],
+         verbose=False)","[20.39293155 19.84765212 19.42913355 ... 20.3965711  20.24608258
+ 19.2546881 ]"
+15,41623,Gaoua,"{'poly_features__degree': 3, 'poly_features__include_bias': False, 'poly_features__interaction_only': False, 'ridge_reg__alpha': 2, 'ridge_reg__fit_intercept': True, 'ridge_reg__normalize': False}",-0.33988150985101173,"Pipeline(memory=None,
+         steps=[('poly_features',
+                 PolynomialFeatures(degree=3, include_bias=False,
+                                    interaction_only=False, order='C')),
+                ('ridge_reg',
+                 Ridge(alpha=2, copy_X=True, fit_intercept=True, max_iter=None,
+                       normalize=False, random_state=None, solver='auto',
+                       tol=0.001))],
+         verbose=False)","[21.60485142 17.92630978 21.25857872 ... 21.47769054 20.89083586
+ 20.88734   ]"
+15,41623,Ouahigouya,"{'poly_features__degree': 3, 'poly_features__include_bias': True, 'poly_features__interaction_only': False, 'ridge_reg__alpha': 0, 'ridge_reg__fit_intercept': False, 'ridge_reg__normalize': True}",-0.5572278868072551,"Pipeline(memory=None,
+         steps=[('poly_features',
+                 PolynomialFeatures(degree=3, include_bias=True,
+                                    interaction_only=False, order='C')),
+                ('ridge_reg',
+                 Ridge(alpha=0, copy_X=True, fit_intercept=False, max_iter=None,
+                       normalize=True, random_state=None, solver='auto',
+                       tol=0.001))],
+         verbose=False)","[19.76077615 19.98568809 20.20518003 ... 19.14107625 19.1108141
+ 17.85456243]"
+15,41623,Po,"{'poly_features__degree': 3, 'poly_features__include_bias': True, 'poly_features__interaction_only': True, 'ridge_reg__alpha': 0, 'ridge_reg__fit_intercept': True, 'ridge_reg__normalize': False}",-0.5922408438153594,"Pipeline(memory=None,
+         steps=[('poly_features',
+                 PolynomialFeatures(degree=3, include_bias=True,
+                                    interaction_only=True, order='C')),
+                ('ridge_reg',
+                 Ridge(alpha=0, copy_X=True, fit_intercept=True, max_iter=None,
+                       normalize=False, random_state=None, solver='auto',
+                       tol=0.001))],
+         verbose=False)","[21.21490741 18.82610071 20.49589419 ... 21.01583254 20.93819487
+ 18.49755037]"
+16,74468,Bobo Dioulasso,"{'poly_features__degree': 3, 'poly_features__include_bias': False, 'poly_features__interaction_only': False, 'ridge_reg__alpha': 0, 'ridge_reg__fit_intercept': False, 'ridge_reg__normalize': True}",-0.3791172567522442,"Pipeline(memory=None,
+         steps=[('poly_features',
+                 PolynomialFeatures(degree=3, include_bias=False,
+                                    interaction_only=False, order='C')),
+                ('ridge_reg',
+                 Ridge(alpha=0, copy_X=True, fit_intercept=False, max_iter=None,
+                       normalize=True, random_state=None, solver='auto',
+                       tol=0.001))],
+         verbose=False)","[20.69768209 19.37763426 21.11407966 ... 21.41718418 21.57715644
+ 21.32847943]"
+16,74468,Boromo,"{'poly_features__degree': 3, 'poly_features__include_bias': False, 'poly_features__interaction_only': False, 'ridge_reg__alpha': 2, 'ridge_reg__fit_intercept': False, 'ridge_reg__normalize': True}",-0.48566859404562857,"Pipeline(memory=None,
+         steps=[('poly_features',
+                 PolynomialFeatures(degree=3, include_bias=False,
+                                    interaction_only=False, order='C')),
+                ('ridge_reg',
+                 Ridge(alpha=2, copy_X=True, fit_intercept=False, max_iter=None,
+                       normalize=True, random_state=None, solver='auto',
+                       tol=0.001))],
+         verbose=False)","[21.01646126 19.20516359 20.77581852 ... 21.04031842 20.70616074
+ 20.93476035]"
+16,74468,Bur Dedougou,"{'poly_features__degree': 3, 'poly_features__include_bias': True, 'poly_features__interaction_only': False, 'ridge_reg__alpha': 0, 'ridge_reg__fit_intercept': True, 'ridge_reg__normalize': False}",-0.37015874445681296,"Pipeline(memory=None,
+         steps=[('poly_features',
+                 PolynomialFeatures(degree=3, include_bias=True,
+                                    interaction_only=False, order='C')),
+                ('ridge_reg',
+                 Ridge(alpha=0, copy_X=True, fit_intercept=True, max_iter=None,
+                       normalize=False, random_state=None, solver='auto',
+                       tol=0.001))],
+         verbose=False)","[20.40257248 19.21513224 19.72390118 ... 20.17875329 19.78823099
+ 19.74147883]"
+16,74468,Dori,"{'poly_features__degree': 2, 'poly_features__include_bias': False, 'poly_features__interaction_only': False, 'ridge_reg__alpha': 2, 'ridge_reg__fit_intercept': False, 'ridge_reg__normalize': True}",-9.010601302245796,"Pipeline(memory=None,
+         steps=[('poly_features',
+                 PolynomialFeatures(degree=2, include_bias=False,
+                                    interaction_only=False, order='C')),
+                ('ridge_reg',
+                 Ridge(alpha=2, copy_X=True, fit_intercept=False, max_iter=None,
+                       normalize=True, random_state=None, solver='auto',
+                       tol=0.001))],
+         verbose=False)","[21.2204309  20.43392372 20.90381216 ... 20.72355781 19.79961866
+ 22.59111048]"
+16,74468,Fada N'gourma,"{'poly_features__degree': 3, 'poly_features__include_bias': False, 'poly_features__interaction_only': False, 'ridge_reg__alpha': 0, 'ridge_reg__fit_intercept': False, 'ridge_reg__normalize': True}",-0.3217529307915239,"Pipeline(memory=None,
+         steps=[('poly_features',
+                 PolynomialFeatures(degree=3, include_bias=False,
+                                    interaction_only=False, order='C')),
+                ('ridge_reg',
+                 Ridge(alpha=0, copy_X=True, fit_intercept=False, max_iter=None,
+                       normalize=True, random_state=None, solver='auto',
+                       tol=0.001))],
+         verbose=False)","[20.39293155 19.84765212 19.42913355 ... 20.3965711  20.24608258
+ 19.2546881 ]"
+16,74468,Gaoua,"{'poly_features__degree': 3, 'poly_features__include_bias': False, 'poly_features__interaction_only': False, 'ridge_reg__alpha': 0, 'ridge_reg__fit_intercept': False, 'ridge_reg__normalize': True}",-0.3270446060822235,"Pipeline(memory=None,
+         steps=[('poly_features',
+                 PolynomialFeatures(degree=3, include_bias=False,
+                                    interaction_only=False, order='C')),
+                ('ridge_reg',
+                 Ridge(alpha=0, copy_X=True, fit_intercept=False, max_iter=None,
+                       normalize=True, random_state=None, solver='auto',
+                       tol=0.001))],
+         verbose=False)","[21.66748893 17.69392518 21.24108399 ... 21.50330734 20.78335047
+ 20.49701448]"
+16,74468,Ouahigouya,"{'poly_features__degree': 3, 'poly_features__include_bias': False, 'poly_features__interaction_only': False, 'ridge_reg__alpha': 0, 'ridge_reg__fit_intercept': False, 'ridge_reg__normalize': True}",-0.5896938355337222,"Pipeline(memory=None,
+         steps=[('poly_features',
+                 PolynomialFeatures(degree=3, include_bias=False,
+                                    interaction_only=False, order='C')),
+                ('ridge_reg',
+                 Ridge(alpha=0, copy_X=True, fit_intercept=False, max_iter=None,
+                       normalize=True, random_state=None, solver='auto',
+                       tol=0.001))],
+         verbose=False)","[19.77006992 19.99824265 20.22087737 ... 19.10792181 19.17160724
+ 17.84803992]"
+16,74468,Po,"{'poly_features__degree': 3, 'poly_features__include_bias': True, 'poly_features__interaction_only': True, 'ridge_reg__alpha': 0, 'ridge_reg__fit_intercept': True, 'ridge_reg__normalize': False}",-0.5857326411471109,"Pipeline(memory=None,
+         steps=[('poly_features',
+                 PolynomialFeatures(degree=3, include_bias=True,
+                                    interaction_only=True, order='C')),
+                ('ridge_reg',
+                 Ridge(alpha=0, copy_X=True, fit_intercept=True, max_iter=None,
+                       normalize=False, random_state=None, solver='auto',
+                       tol=0.001))],
+         verbose=False)","[21.21490741 18.82610071 20.49589419 ... 21.01583254 20.93819487
+ 18.49755037]"
+17,140081,Bobo Dioulasso,"{'poly_features__degree': 3, 'poly_features__include_bias': False, 'poly_features__interaction_only': False, 'ridge_reg__alpha': 0, 'ridge_reg__fit_intercept': False, 'ridge_reg__normalize': True}",-0.3790348046335063,"Pipeline(memory=None,
+         steps=[('poly_features',
+                 PolynomialFeatures(degree=3, include_bias=False,
+                                    interaction_only=False, order='C')),
+                ('ridge_reg',
+                 Ridge(alpha=0, copy_X=True, fit_intercept=False, max_iter=None,
+                       normalize=True, random_state=None, solver='auto',
+                       tol=0.001))],
+         verbose=False)","[20.69768209 19.37763426 21.11407966 ... 21.41718418 21.57715644
+ 21.32847943]"
+17,140081,Boromo,"{'poly_features__degree': 3, 'poly_features__include_bias': True, 'poly_features__interaction_only': False, 'ridge_reg__alpha': 0, 'ridge_reg__fit_intercept': True, 'ridge_reg__normalize': False}",-0.4625671808803672,"Pipeline(memory=None,
+         steps=[('poly_features',
+                 PolynomialFeatures(degree=3, include_bias=True,
+                                    interaction_only=False, order='C')),
+                ('ridge_reg',
+                 Ridge(alpha=0, copy_X=True, fit_intercept=True, max_iter=None,
+                       normalize=False, random_state=None, solver='auto',
+                       tol=0.001))],
+         verbose=False)","[21.10623631 19.02399716 20.77972779 ... 20.94271705 20.48383221
+ 20.82415494]"
+17,140081,Bur Dedougou,"{'poly_features__degree': 3, 'poly_features__include_bias': False, 'poly_features__interaction_only': False, 'ridge_reg__alpha': 0, 'ridge_reg__fit_intercept': False, 'ridge_reg__normalize': True}",-0.36064697148221136,"Pipeline(memory=None,
+         steps=[('poly_features',
+                 PolynomialFeatures(degree=3, include_bias=False,
+                                    interaction_only=False, order='C')),
+                ('ridge_reg',
+                 Ridge(alpha=0, copy_X=True, fit_intercept=False, max_iter=None,
+                       normalize=True, random_state=None, solver='auto',
+                       tol=0.001))],
+         verbose=False)","[20.38982416 19.21164149 19.72034605 ... 20.16869445 19.78523958
+ 19.74158062]"
+17,140081,Dori,"{'poly_features__degree': 2, 'poly_features__include_bias': True, 'poly_features__interaction_only': False, 'ridge_reg__alpha': 2, 'ridge_reg__fit_intercept': False, 'ridge_reg__normalize': True}",-9.006116178920443,"Pipeline(memory=None,
+         steps=[('poly_features',
+                 PolynomialFeatures(degree=2, include_bias=True,
+                                    interaction_only=False, order='C')),
+                ('ridge_reg',
+                 Ridge(alpha=2, copy_X=True, fit_intercept=False, max_iter=None,
+                       normalize=True, random_state=None, solver='auto',
+                       tol=0.001))],
+         verbose=False)","[21.22032754 20.4350781  20.90460936 ... 20.7250025  19.80138609
+ 22.59120338]"
+17,140081,Fada N'gourma,"{'poly_features__degree': 3, 'poly_features__include_bias': True, 'poly_features__interaction_only': False, 'ridge_reg__alpha': 0, 'ridge_reg__fit_intercept': True, 'ridge_reg__normalize': False}",-0.3260192789902839,"Pipeline(memory=None,
+         steps=[('poly_features',
+                 PolynomialFeatures(degree=3, include_bias=True,
+                                    interaction_only=False, order='C')),
+                ('ridge_reg',
+                 Ridge(alpha=0, copy_X=True, fit_intercept=True, max_iter=None,
+                       normalize=False, random_state=None, solver='auto',
+                       tol=0.001))],
+         verbose=False)","[20.38879779 19.84407362 19.4302434  ... 20.39969447 20.24663737
+ 19.25520572]"
+17,140081,Gaoua,"{'poly_features__degree': 3, 'poly_features__include_bias': False, 'poly_features__interaction_only': False, 'ridge_reg__alpha': 1, 'ridge_reg__fit_intercept': False, 'ridge_reg__normalize': True}",-0.3268502551247268,"Pipeline(memory=None,
+         steps=[('poly_features',
+                 PolynomialFeatures(degree=3, include_bias=False,
+                                    interaction_only=False, order='C')),
+                ('ridge_reg',
+                 Ridge(alpha=1, copy_X=True, fit_intercept=False, max_iter=None,
+                       normalize=True, random_state=None, solver='auto',
+                       tol=0.001))],
+         verbose=False)","[21.60860506 17.88486867 21.26533985 ... 21.47864879 20.88697598
+ 20.83540036]"
+17,140081,Ouahigouya,"{'poly_features__degree': 3, 'poly_features__include_bias': False, 'poly_features__interaction_only': False, 'ridge_reg__alpha': 0, 'ridge_reg__fit_intercept': False, 'ridge_reg__normalize': True}",-0.5747613154955686,"Pipeline(memory=None,
+         steps=[('poly_features',
+                 PolynomialFeatures(degree=3, include_bias=False,
+                                    interaction_only=False, order='C')),
+                ('ridge_reg',
+                 Ridge(alpha=0, copy_X=True, fit_intercept=False, max_iter=None,
+                       normalize=True, random_state=None, solver='auto',
+                       tol=0.001))],
+         verbose=False)","[19.77006992 19.99824265 20.22087737 ... 19.10792181 19.17160724
+ 17.84803992]"
+17,140081,Po,"{'poly_features__degree': 3, 'poly_features__include_bias': True, 'poly_features__interaction_only': True, 'ridge_reg__alpha': 0, 'ridge_reg__fit_intercept': True, 'ridge_reg__normalize': False}",-0.5904396639397815,"Pipeline(memory=None,
+         steps=[('poly_features',
+                 PolynomialFeatures(degree=3, include_bias=True,
+                                    interaction_only=True, order='C')),
+                ('ridge_reg',
+                 Ridge(alpha=0, copy_X=True, fit_intercept=True, max_iter=None,
+                       normalize=False, random_state=None, solver='auto',
+                       tol=0.001))],
+         verbose=False)","[21.21490741 18.82610071 20.49589419 ... 21.01583254 20.93819487
+ 18.49755037]"
+18,271230,Bobo Dioulasso,"{'poly_features__degree': 3, 'poly_features__include_bias': False, 'poly_features__interaction_only': False, 'ridge_reg__alpha': 0, 'ridge_reg__fit_intercept': False, 'ridge_reg__normalize': True}",-0.3724192817740202,"Pipeline(memory=None,
+         steps=[('poly_features',
+                 PolynomialFeatures(degree=3, include_bias=False,
+                                    interaction_only=False, order='C')),
+                ('ridge_reg',
+                 Ridge(alpha=0, copy_X=True, fit_intercept=False, max_iter=None,
+                       normalize=True, random_state=None, solver='auto',
+                       tol=0.001))],
+         verbose=False)","[20.69768209 19.37763426 21.11407966 ... 21.41718418 21.57715644
+ 21.32847943]"
+18,271230,Boromo,"{'poly_features__degree': 3, 'poly_features__include_bias': False, 'poly_features__interaction_only': False, 'ridge_reg__alpha': 1, 'ridge_reg__fit_intercept': False, 'ridge_reg__normalize': True}",-0.47739332256014266,"Pipeline(memory=None,
+         steps=[('poly_features',
+                 PolynomialFeatures(degree=3, include_bias=False,
+                                    interaction_only=False, order='C')),
+                ('ridge_reg',
+                 Ridge(alpha=1, copy_X=True, fit_intercept=False, max_iter=None,
+                       normalize=True, random_state=None, solver='auto',
+                       tol=0.001))],
+         verbose=False)","[21.02174993 19.178055   20.77727047 ... 21.03889985 20.69244054
+ 20.95188152]"
+18,271230,Bur Dedougou,"{'poly_features__degree': 3, 'poly_features__include_bias': True, 'poly_features__interaction_only': False, 'ridge_reg__alpha': 0, 'ridge_reg__fit_intercept': True, 'ridge_reg__normalize': False}",-0.3613033310058671,"Pipeline(memory=None,
+         steps=[('poly_features',
+                 PolynomialFeatures(degree=3, include_bias=True,
+                                    interaction_only=False, order='C')),
+                ('ridge_reg',
+                 Ridge(alpha=0, copy_X=True, fit_intercept=True, max_iter=None,
+                       normalize=False, random_state=None, solver='auto',
+                       tol=0.001))],
+         verbose=False)","[20.40257248 19.21513224 19.72390118 ... 20.17875329 19.78823099
+ 19.74147883]"
+18,271230,Dori,"{'poly_features__degree': 2, 'poly_features__include_bias': False, 'poly_features__interaction_only': False, 'ridge_reg__alpha': 2, 'ridge_reg__fit_intercept': True, 'ridge_reg__normalize': False}",-8.994473602051023,"Pipeline(memory=None,
+         steps=[('poly_features',
+                 PolynomialFeatures(degree=2, include_bias=False,
+                                    interaction_only=False, order='C')),
+                ('ridge_reg',
+                 Ridge(alpha=2, copy_X=True, fit_intercept=True, max_iter=None,
+                       normalize=False, random_state=None, solver='auto',
+                       tol=0.001))],
+         verbose=False)","[21.21433346 20.50202106 20.9508392  ... 20.80878035 19.90387963
+ 22.59659034]"
+18,271230,Fada N'gourma,"{'poly_features__degree': 3, 'poly_features__include_bias': False, 'poly_features__interaction_only': False, 'ridge_reg__alpha': 0, 'ridge_reg__fit_intercept': False, 'ridge_reg__normalize': True}",-0.3251699449729487,"Pipeline(memory=None,
+         steps=[('poly_features',
+                 PolynomialFeatures(degree=3, include_bias=False,
+                                    interaction_only=False, order='C')),
+                ('ridge_reg',
+                 Ridge(alpha=0, copy_X=True, fit_intercept=False, max_iter=None,
+                       normalize=True, random_state=None, solver='auto',
+                       tol=0.001))],
+         verbose=False)","[20.39293155 19.84765212 19.42913355 ... 20.3965711  20.24608258
+ 19.2546881 ]"
+18,271230,Gaoua,"{'poly_features__degree': 3, 'poly_features__include_bias': True, 'poly_features__interaction_only': False, 'ridge_reg__alpha': 2, 'ridge_reg__fit_intercept': False, 'ridge_reg__normalize': True}",-0.33356227495842594,"Pipeline(memory=None,
+         steps=[('poly_features',
+                 PolynomialFeatures(degree=3, include_bias=True,
+                                    interaction_only=False, order='C')),
+                ('ridge_reg',
+                 Ridge(alpha=2, copy_X=True, fit_intercept=False, max_iter=None,
+                       normalize=True, random_state=None, solver='auto',
+                       tol=0.001))],
+         verbose=False)","[21.60442377 17.92608996 21.2577599  ... 21.47788481 20.88435842
+ 20.88935314]"
+18,271230,Ouahigouya,"{'poly_features__degree': 3, 'poly_features__include_bias': True, 'poly_features__interaction_only': False, 'ridge_reg__alpha': 0, 'ridge_reg__fit_intercept': False, 'ridge_reg__normalize': True}",-0.5795848278837766,"Pipeline(memory=None,
+         steps=[('poly_features',
+                 PolynomialFeatures(degree=3, include_bias=True,
+                                    interaction_only=False, order='C')),
+                ('ridge_reg',
+                 Ridge(alpha=0, copy_X=True, fit_intercept=False, max_iter=None,
+                       normalize=True, random_state=None, solver='auto',
+                       tol=0.001))],
+         verbose=False)","[19.76077615 19.98568809 20.20518003 ... 19.14107625 19.1108141
+ 17.85456243]"
+18,271230,Po,"{'poly_features__degree': 3, 'poly_features__include_bias': True, 'poly_features__interaction_only': True, 'ridge_reg__alpha': 0, 'ridge_reg__fit_intercept': False, 'ridge_reg__normalize': True}",-0.5794018406216415,"Pipeline(memory=None,
+         steps=[('poly_features',
+                 PolynomialFeatures(degree=3, include_bias=True,
+                                    interaction_only=True, order='C')),
+                ('ridge_reg',
+                 Ridge(alpha=0, copy_X=True, fit_intercept=False, max_iter=None,
+                       normalize=True, random_state=None, solver='auto',
+                       tol=0.001))],
+         verbose=False)","[21.21470192 18.82679661 20.49675918 ... 21.01678062 20.93861042
+ 18.49766286]"
+19,533451,Bobo Dioulasso,"{'poly_features__degree': 3, 'poly_features__include_bias': False, 'poly_features__interaction_only': False, 'ridge_reg__alpha': 0, 'ridge_reg__fit_intercept': False, 'ridge_reg__normalize': True}",-0.3798091984653301,"Pipeline(memory=None,
+         steps=[('poly_features',
+                 PolynomialFeatures(degree=3, include_bias=False,
+                                    interaction_only=False, order='C')),
+                ('ridge_reg',
+                 Ridge(alpha=0, copy_X=True, fit_intercept=False, max_iter=None,
+                       normalize=True, random_state=None, solver='auto',
+                       tol=0.001))],
+         verbose=False)","[20.69768209 19.37763426 21.11407966 ... 21.41718418 21.57715644
+ 21.32847943]"
+19,533451,Boromo,"{'poly_features__degree': 3, 'poly_features__include_bias': False, 'poly_features__interaction_only': False, 'ridge_reg__alpha': 2, 'ridge_reg__fit_intercept': False, 'ridge_reg__normalize': True}",-0.47292174318652813,"Pipeline(memory=None,
+         steps=[('poly_features',
+                 PolynomialFeatures(degree=3, include_bias=False,
+                                    interaction_only=False, order='C')),
+                ('ridge_reg',
+                 Ridge(alpha=2, copy_X=True, fit_intercept=False, max_iter=None,
+                       normalize=True, random_state=None, solver='auto',
+                       tol=0.001))],
+         verbose=False)","[21.01646126 19.20516359 20.77581852 ... 21.04031842 20.70616074
+ 20.93476035]"
+19,533451,Bur Dedougou,"{'poly_features__degree': 3, 'poly_features__include_bias': False, 'poly_features__interaction_only': False, 'ridge_reg__alpha': 0, 'ridge_reg__fit_intercept': False, 'ridge_reg__normalize': True}",-0.3582724848359561,"Pipeline(memory=None,
+         steps=[('poly_features',
+                 PolynomialFeatures(degree=3, include_bias=False,
+                                    interaction_only=False, order='C')),
+                ('ridge_reg',
+                 Ridge(alpha=0, copy_X=True, fit_intercept=False, max_iter=None,
+                       normalize=True, random_state=None, solver='auto',
+                       tol=0.001))],
+         verbose=False)","[20.38982416 19.21164149 19.72034605 ... 20.16869445 19.78523958
+ 19.74158062]"
+19,533451,Dori,"{'poly_features__degree': 2, 'poly_features__include_bias': True, 'poly_features__interaction_only': False, 'ridge_reg__alpha': 2, 'ridge_reg__fit_intercept': False, 'ridge_reg__normalize': True}",-9.018337515868035,"Pipeline(memory=None,
+         steps=[('poly_features',
+                 PolynomialFeatures(degree=2, include_bias=True,
+                                    interaction_only=False, order='C')),
+                ('ridge_reg',
+                 Ridge(alpha=2, copy_X=True, fit_intercept=False, max_iter=None,
+                       normalize=True, random_state=None, solver='auto',
+                       tol=0.001))],
+         verbose=False)","[21.22032754 20.4350781  20.90460936 ... 20.7250025  19.80138609
+ 22.59120338]"
+19,533451,Fada N'gourma,"{'poly_features__degree': 3, 'poly_features__include_bias': False, 'poly_features__interaction_only': False, 'ridge_reg__alpha': 0, 'ridge_reg__fit_intercept': False, 'ridge_reg__normalize': True}",-0.326148967899907,"Pipeline(memory=None,
+         steps=[('poly_features',
+                 PolynomialFeatures(degree=3, include_bias=False,
+                                    interaction_only=False, order='C')),
+                ('ridge_reg',
+                 Ridge(alpha=0, copy_X=True, fit_intercept=False, max_iter=None,
+                       normalize=True, random_state=None, solver='auto',
+                       tol=0.001))],
+         verbose=False)","[20.39293155 19.84765212 19.42913355 ... 20.3965711  20.24608258
+ 19.2546881 ]"
+19,533451,Gaoua,"{'poly_features__degree': 3, 'poly_features__include_bias': False, 'poly_features__interaction_only': False, 'ridge_reg__alpha': 2, 'ridge_reg__fit_intercept': False, 'ridge_reg__normalize': True}",-0.33519830025269487,"Pipeline(memory=None,
+         steps=[('poly_features',
+                 PolynomialFeatures(degree=3, include_bias=False,
+                                    interaction_only=False, order='C')),
+                ('ridge_reg',
+                 Ridge(alpha=2, copy_X=True, fit_intercept=False, max_iter=None,
+                       normalize=True, random_state=None, solver='auto',
+                       tol=0.001))],
+         verbose=False)","[21.60442297 17.92608957 21.25775842 ... 21.47788512 20.884347
+ 20.88935656]"
+19,533451,Ouahigouya,"{'poly_features__degree': 3, 'poly_features__include_bias': True, 'poly_features__interaction_only': False, 'ridge_reg__alpha': 0, 'ridge_reg__fit_intercept': True, 'ridge_reg__normalize': True}",-0.5596933183527253,"Pipeline(memory=None,
+         steps=[('poly_features',
+                 PolynomialFeatures(degree=3, include_bias=True,
+                                    interaction_only=False, order='C')),
+                ('ridge_reg',
+                 Ridge(alpha=0, copy_X=True, fit_intercept=True, max_iter=None,
+                       normalize=True, random_state=None, solver='auto',
+                       tol=0.001))],
+         verbose=False)","[19.76077646 19.98568813 20.20518006 ... 19.14107494 19.11081723
+ 17.85456385]"
+19,533451,Po,"{'poly_features__degree': 3, 'poly_features__include_bias': True, 'poly_features__interaction_only': True, 'ridge_reg__alpha': 0, 'ridge_reg__fit_intercept': True, 'ridge_reg__normalize': False}",-0.5911240577903907,"Pipeline(memory=None,
+         steps=[('poly_features',
+                 PolynomialFeatures(degree=3, include_bias=True,
+                                    interaction_only=True, order='C')),
+                ('ridge_reg',
+                 Ridge(alpha=0, copy_X=True, fit_intercept=True, max_iter=None,
+                       normalize=False, random_state=None, solver='auto',
+                       tol=0.001))],
+         verbose=False)","[21.21490741 18.82610071 20.49589419 ... 21.01583254 20.93819487
+ 18.49755037]"
+20,1057816,Bobo Dioulasso,"{'poly_features__degree': 3, 'poly_features__include_bias': False, 'poly_features__interaction_only': False, 'ridge_reg__alpha': 0, 'ridge_reg__fit_intercept': False, 'ridge_reg__normalize': True}",-0.377773546963127,"Pipeline(memory=None,
+         steps=[('poly_features',
+                 PolynomialFeatures(degree=3, include_bias=False,
+                                    interaction_only=False, order='C')),
+                ('ridge_reg',
+                 Ridge(alpha=0, copy_X=True, fit_intercept=False, max_iter=None,
+                       normalize=True, random_state=None, solver='auto',
+                       tol=0.001))],
+         verbose=False)","[20.69768209 19.37763426 21.11407966 ... 21.41718418 21.57715644
+ 21.32847943]"
+20,1057816,Boromo,"{'poly_features__degree': 3, 'poly_features__include_bias': False, 'poly_features__interaction_only': False, 'ridge_reg__alpha': 1, 'ridge_reg__fit_intercept': False, 'ridge_reg__normalize': True}",-0.4666379669593576,"Pipeline(memory=None,
+         steps=[('poly_features',
+                 PolynomialFeatures(degree=3, include_bias=False,
+                                    interaction_only=False, order='C')),
+                ('ridge_reg',
+                 Ridge(alpha=1, copy_X=True, fit_intercept=False, max_iter=None,
+                       normalize=True, random_state=None, solver='auto',
+                       tol=0.001))],
+         verbose=False)","[21.02174993 19.178055   20.77727047 ... 21.03889985 20.69244054
+ 20.95188152]"
+20,1057816,Bur Dedougou,"{'poly_features__degree': 3, 'poly_features__include_bias': False, 'poly_features__interaction_only': False, 'ridge_reg__alpha': 0, 'ridge_reg__fit_intercept': False, 'ridge_reg__normalize': True}",-0.35988780495534684,"Pipeline(memory=None,
+         steps=[('poly_features',
+                 PolynomialFeatures(degree=3, include_bias=False,
+                                    interaction_only=False, order='C')),
+                ('ridge_reg',
+                 Ridge(alpha=0, copy_X=True, fit_intercept=False, max_iter=None,
+                       normalize=True, random_state=None, solver='auto',
+                       tol=0.001))],
+         verbose=False)","[20.38982416 19.21164149 19.72034605 ... 20.16869445 19.78523958
+ 19.74158062]"
+20,1057816,Dori,"{'poly_features__degree': 2, 'poly_features__include_bias': True, 'poly_features__interaction_only': False, 'ridge_reg__alpha': 2, 'ridge_reg__fit_intercept': False, 'ridge_reg__normalize': True}",-9.017920948425118,"Pipeline(memory=None,
+         steps=[('poly_features',
+                 PolynomialFeatures(degree=2, include_bias=True,
+                                    interaction_only=False, order='C')),
+                ('ridge_reg',
+                 Ridge(alpha=2, copy_X=True, fit_intercept=False, max_iter=None,
+                       normalize=True, random_state=None, solver='auto',
+                       tol=0.001))],
+         verbose=False)","[21.22032754 20.4350781  20.90460936 ... 20.7250025  19.80138609
+ 22.59120338]"
+20,1057816,Fada N'gourma,"{'poly_features__degree': 3, 'poly_features__include_bias': True, 'poly_features__interaction_only': True, 'ridge_reg__alpha': 0, 'ridge_reg__fit_intercept': True, 'ridge_reg__normalize': False}",-0.32915292006544516,"Pipeline(memory=None,
+         steps=[('poly_features',
+                 PolynomialFeatures(degree=3, include_bias=True,
+                                    interaction_only=True, order='C')),
+                ('ridge_reg',
+                 Ridge(alpha=0, copy_X=True, fit_intercept=True, max_iter=None,
+                       normalize=False, random_state=None, solver='auto',
+                       tol=0.001))],
+         verbose=False)","[20.25477934 19.59169579 19.03043675 ... 20.34285665 20.18513656
+ 19.20772552]"
+20,1057816,Gaoua,"{'poly_features__degree': 3, 'poly_features__include_bias': False, 'poly_features__interaction_only': False, 'ridge_reg__alpha': 0, 'ridge_reg__fit_intercept': False, 'ridge_reg__normalize': True}",-0.33201657916821575,"Pipeline(memory=None,
+         steps=[('poly_features',
+                 PolynomialFeatures(degree=3, include_bias=False,
+                                    interaction_only=False, order='C')),
+                ('ridge_reg',
+                 Ridge(alpha=0, copy_X=True, fit_intercept=False, max_iter=None,
+                       normalize=True, random_state=None, solver='auto',
+                       tol=0.001))],
+         verbose=False)","[21.66748893 17.69392518 21.24108399 ... 21.50330734 20.78335047
+ 20.49701448]"
+20,1057816,Ouahigouya,"{'poly_features__degree': 3, 'poly_features__include_bias': True, 'poly_features__interaction_only': False, 'ridge_reg__alpha': 0, 'ridge_reg__fit_intercept': False, 'ridge_reg__normalize': True}",-0.5525358909202046,"Pipeline(memory=None,
+         steps=[('poly_features',
+                 PolynomialFeatures(degree=3, include_bias=True,
+                                    interaction_only=False, order='C')),
+                ('ridge_reg',
+                 Ridge(alpha=0, copy_X=True, fit_intercept=False, max_iter=None,
+                       normalize=True, random_state=None, solver='auto',
+                       tol=0.001))],
+         verbose=False)","[19.76077615 19.98568809 20.20518003 ... 19.14107625 19.1108141
+ 17.85456243]"
+20,1057816,Po,"{'poly_features__degree': 3, 'poly_features__include_bias': True, 'poly_features__interaction_only': True, 'ridge_reg__alpha': 0, 'ridge_reg__fit_intercept': True, 'ridge_reg__normalize': False}",-0.5825202291306734,"Pipeline(memory=None,
+         steps=[('poly_features',
+                 PolynomialFeatures(degree=3, include_bias=True,
+                                    interaction_only=True, order='C')),
+                ('ridge_reg',
+                 Ridge(alpha=0, copy_X=True, fit_intercept=True, max_iter=None,
+                       normalize=False, random_state=None, solver='auto',
+                       tol=0.001))],
+         verbose=False)","[21.21490741 18.82610071 20.49589419 ... 21.01583254 20.93819487
+ 18.49755037]"
+21,2106469,Bobo Dioulasso,"{'poly_features__degree': 3, 'poly_features__include_bias': False, 'poly_features__interaction_only': False, 'ridge_reg__alpha': 0, 'ridge_reg__fit_intercept': False, 'ridge_reg__normalize': True}",-0.3770969432421227,"Pipeline(memory=None,
+         steps=[('poly_features',
+                 PolynomialFeatures(degree=3, include_bias=False,
+                                    interaction_only=False, order='C')),
+                ('ridge_reg',
+                 Ridge(alpha=0, copy_X=True, fit_intercept=False, max_iter=None,
+                       normalize=True, random_state=None, solver='auto',
+                       tol=0.001))],
+         verbose=False)","[20.69768209 19.37763426 21.11407966 ... 21.41718418 21.57715644
+ 21.32847943]"
+21,2106469,Boromo,"{'poly_features__degree': 3, 'poly_features__include_bias': True, 'poly_features__interaction_only': False, 'ridge_reg__alpha': 0, 'ridge_reg__fit_intercept': True, 'ridge_reg__normalize': False}",-0.46277140978039843,"Pipeline(memory=None,
+         steps=[('poly_features',
+                 PolynomialFeatures(degree=3, include_bias=True,
+                                    interaction_only=False, order='C')),
+                ('ridge_reg',
+                 Ridge(alpha=0, copy_X=True, fit_intercept=True, max_iter=None,
+                       normalize=False, random_state=None, solver='auto',
+                       tol=0.001))],
+         verbose=False)","[21.10623631 19.02399716 20.77972779 ... 20.94271705 20.48383221
+ 20.82415494]"
+21,2106469,Bur Dedougou,"{'poly_features__degree': 3, 'poly_features__include_bias': False, 'poly_features__interaction_only': False, 'ridge_reg__alpha': 0, 'ridge_reg__fit_intercept': False, 'ridge_reg__normalize': True}",-0.3693793676190753,"Pipeline(memory=None,
+         steps=[('poly_features',
+                 PolynomialFeatures(degree=3, include_bias=False,
+                                    interaction_only=False, order='C')),
+                ('ridge_reg',
+                 Ridge(alpha=0, copy_X=True, fit_intercept=False, max_iter=None,
+                       normalize=True, random_state=None, solver='auto',
+                       tol=0.001))],
+         verbose=False)","[20.38982416 19.21164149 19.72034605 ... 20.16869445 19.78523958
+ 19.74158062]"
+21,2106469,Dori,"{'poly_features__degree': 2, 'poly_features__include_bias': True, 'poly_features__interaction_only': False, 'ridge_reg__alpha': 2, 'ridge_reg__fit_intercept': True, 'ridge_reg__normalize': False}",-9.029047405310699,"Pipeline(memory=None,
+         steps=[('poly_features',
+                 PolynomialFeatures(degree=2, include_bias=True,
+                                    interaction_only=False, order='C')),
+                ('ridge_reg',
+                 Ridge(alpha=2, copy_X=True, fit_intercept=True, max_iter=None,
+                       normalize=False, random_state=None, solver='auto',
+                       tol=0.001))],
+         verbose=False)","[21.21433346 20.50202106 20.9508392  ... 20.80878035 19.90387963
+ 22.59659034]"
+21,2106469,Fada N'gourma,"{'poly_features__degree': 3, 'poly_features__include_bias': False, 'poly_features__interaction_only': False, 'ridge_reg__alpha': 0, 'ridge_reg__fit_intercept': False, 'ridge_reg__normalize': True}",-0.32181154272983875,"Pipeline(memory=None,
+         steps=[('poly_features',
+                 PolynomialFeatures(degree=3, include_bias=False,
+                                    interaction_only=False, order='C')),
+                ('ridge_reg',
+                 Ridge(alpha=0, copy_X=True, fit_intercept=False, max_iter=None,
+                       normalize=True, random_state=None, solver='auto',
+                       tol=0.001))],
+         verbose=False)","[20.39293155 19.84765212 19.42913355 ... 20.3965711  20.24608258
+ 19.2546881 ]"
+21,2106469,Gaoua,"{'poly_features__degree': 3, 'poly_features__include_bias': False, 'poly_features__interaction_only': False, 'ridge_reg__alpha': 0, 'ridge_reg__fit_intercept': False, 'ridge_reg__normalize': True}",-0.332054332268871,"Pipeline(memory=None,
+         steps=[('poly_features',
+                 PolynomialFeatures(degree=3, include_bias=False,
+                                    interaction_only=False, order='C')),
+                ('ridge_reg',
+                 Ridge(alpha=0, copy_X=True, fit_intercept=False, max_iter=None,
+                       normalize=True, random_state=None, solver='auto',
+                       tol=0.001))],
+         verbose=False)","[21.66748893 17.69392518 21.24108399 ... 21.50330734 20.78335047
+ 20.49701448]"
+21,2106469,Ouahigouya,"{'poly_features__degree': 3, 'poly_features__include_bias': False, 'poly_features__interaction_only': False, 'ridge_reg__alpha': 0, 'ridge_reg__fit_intercept': False, 'ridge_reg__normalize': True}",-0.5670592378414702,"Pipeline(memory=None,
+         steps=[('poly_features',
+                 PolynomialFeatures(degree=3, include_bias=False,
+                                    interaction_only=False, order='C')),
+                ('ridge_reg',
+                 Ridge(alpha=0, copy_X=True, fit_intercept=False, max_iter=None,
+                       normalize=True, random_state=None, solver='auto',
+                       tol=0.001))],
+         verbose=False)","[19.77006992 19.99824265 20.22087737 ... 19.10792181 19.17160724
+ 17.84803992]"
+21,2106469,Po,"{'poly_features__degree': 3, 'poly_features__include_bias': True, 'poly_features__interaction_only': True, 'ridge_reg__alpha': 0, 'ridge_reg__fit_intercept': True, 'ridge_reg__normalize': False}",-0.596909361597564,"Pipeline(memory=None,
+         steps=[('poly_features',
+                 PolynomialFeatures(degree=3, include_bias=True,
+                                    interaction_only=True, order='C')),
+                ('ridge_reg',
+                 Ridge(alpha=0, copy_X=True, fit_intercept=True, max_iter=None,
+                       normalize=False, random_state=None, solver='auto',
+                       tol=0.001))],
+         verbose=False)","[21.21490741 18.82610071 20.49589419 ... 21.01583254 20.93819487
+ 18.49755037]"
+22,4203698,Bobo Dioulasso,"{'poly_features__degree': 3, 'poly_features__include_bias': False, 'poly_features__interaction_only': False, 'ridge_reg__alpha': 0, 'ridge_reg__fit_intercept': False, 'ridge_reg__normalize': True}",-0.3707580959690739,"Pipeline(memory=None,
+         steps=[('poly_features',
+                 PolynomialFeatures(degree=3, include_bias=False,
+                                    interaction_only=False, order='C')),
+                ('ridge_reg',
+                 Ridge(alpha=0, copy_X=True, fit_intercept=False, max_iter=None,
+                       normalize=True, random_state=None, solver='auto',
+                       tol=0.001))],
+         verbose=False)","[20.69768209 19.37763426 21.11407966 ... 21.41718418 21.57715644
+ 21.32847943]"
+22,4203698,Boromo,"{'poly_features__degree': 3, 'poly_features__include_bias': False, 'poly_features__interaction_only': False, 'ridge_reg__alpha': 1, 'ridge_reg__fit_intercept': False, 'ridge_reg__normalize': True}",-0.46083271111996804,"Pipeline(memory=None,
+         steps=[('poly_features',
+                 PolynomialFeatures(degree=3, include_bias=False,
+                                    interaction_only=False, order='C')),
+                ('ridge_reg',
+                 Ridge(alpha=1, copy_X=True, fit_intercept=False, max_iter=None,
+                       normalize=True, random_state=None, solver='auto',
+                       tol=0.001))],
+         verbose=False)","[21.02174993 19.178055   20.77727047 ... 21.03889985 20.69244054
+ 20.95188152]"
+22,4203698,Bur Dedougou,"{'poly_features__degree': 3, 'poly_features__include_bias': False, 'poly_features__interaction_only': False, 'ridge_reg__alpha': 0, 'ridge_reg__fit_intercept': False, 'ridge_reg__normalize': True}",-0.363173717527311,"Pipeline(memory=None,
+         steps=[('poly_features',
+                 PolynomialFeatures(degree=3, include_bias=False,
+                                    interaction_only=False, order='C')),
+                ('ridge_reg',
+                 Ridge(alpha=0, copy_X=True, fit_intercept=False, max_iter=None,
+                       normalize=True, random_state=None, solver='auto',
+                       tol=0.001))],
+         verbose=False)","[20.38982416 19.21164149 19.72034605 ... 20.16869445 19.78523958
+ 19.74158062]"
+22,4203698,Dori,"{'poly_features__degree': 2, 'poly_features__include_bias': False, 'poly_features__interaction_only': False, 'ridge_reg__alpha': 2, 'ridge_reg__fit_intercept': True, 'ridge_reg__normalize': False}",-9.003576007104593,"Pipeline(memory=None,
+         steps=[('poly_features',
+                 PolynomialFeatures(degree=2, include_bias=False,
+                                    interaction_only=False, order='C')),
+                ('ridge_reg',
+                 Ridge(alpha=2, copy_X=True, fit_intercept=True, max_iter=None,
+                       normalize=False, random_state=None, solver='auto',
+                       tol=0.001))],
+         verbose=False)","[21.21433346 20.50202106 20.9508392  ... 20.80878035 19.90387963
+ 22.59659034]"
+22,4203698,Fada N'gourma,"{'poly_features__degree': 3, 'poly_features__include_bias': False, 'poly_features__interaction_only': False, 'ridge_reg__alpha': 0, 'ridge_reg__fit_intercept': True, 'ridge_reg__normalize': False}",-0.33004933538110964,"Pipeline(memory=None,
+         steps=[('poly_features',
+                 PolynomialFeatures(degree=3, include_bias=False,
+                                    interaction_only=False, order='C')),
+                ('ridge_reg',
+                 Ridge(alpha=0, copy_X=True, fit_intercept=True, max_iter=None,
+                       normalize=False, random_state=None, solver='auto',
+                       tol=0.001))],
+         verbose=False)","[20.38950214 19.84509775 19.43297316 ... 20.40015184 20.24757617
+ 19.25410945]"
+22,4203698,Gaoua,"{'poly_features__degree': 3, 'poly_features__include_bias': True, 'poly_features__interaction_only': False, 'ridge_reg__alpha': 2, 'ridge_reg__fit_intercept': False, 'ridge_reg__normalize': True}",-0.33465559328505246,"Pipeline(memory=None,
+         steps=[('poly_features',
+                 PolynomialFeatures(degree=3, include_bias=True,
+                                    interaction_only=False, order='C')),
+                ('ridge_reg',
+                 Ridge(alpha=2, copy_X=True, fit_intercept=False, max_iter=None,
+                       normalize=True, random_state=None, solver='auto',
+                       tol=0.001))],
+         verbose=False)","[21.60442377 17.92608996 21.2577599  ... 21.47788481 20.88435842
+ 20.88935314]"
+22,4203698,Ouahigouya,"{'poly_features__degree': 3, 'poly_features__include_bias': True, 'poly_features__interaction_only': False, 'ridge_reg__alpha': 0, 'ridge_reg__fit_intercept': False, 'ridge_reg__normalize': True}",-0.5614240670482828,"Pipeline(memory=None,
+         steps=[('poly_features',
+                 PolynomialFeatures(degree=3, include_bias=True,
+                                    interaction_only=False, order='C')),
+                ('ridge_reg',
+                 Ridge(alpha=0, copy_X=True, fit_intercept=False, max_iter=None,
+                       normalize=True, random_state=None, solver='auto',
+                       tol=0.001))],
+         verbose=False)","[19.76077615 19.98568809 20.20518003 ... 19.14107625 19.1108141
+ 17.85456243]"
+22,4203698,Po,"{'poly_features__degree': 3, 'poly_features__include_bias': True, 'poly_features__interaction_only': True, 'ridge_reg__alpha': 0, 'ridge_reg__fit_intercept': True, 'ridge_reg__normalize': False}",-0.5822191812016705,"Pipeline(memory=None,
+         steps=[('poly_features',
+                 PolynomialFeatures(degree=3, include_bias=True,
+                                    interaction_only=True, order='C')),
+                ('ridge_reg',
+                 Ridge(alpha=0, copy_X=True, fit_intercept=True, max_iter=None,
+                       normalize=False, random_state=None, solver='auto',
+                       tol=0.001))],
+         verbose=False)","[21.21490741 18.82610071 20.49589419 ... 21.01583254 20.93819487
+ 18.49755037]"
+23,8398079,Bobo Dioulasso,"{'poly_features__degree': 3, 'poly_features__include_bias': False, 'poly_features__interaction_only': False, 'ridge_reg__alpha': 0, 'ridge_reg__fit_intercept': False, 'ridge_reg__normalize': True}",-0.36847817543601213,"Pipeline(memory=None,
+         steps=[('poly_features',
+                 PolynomialFeatures(degree=3, include_bias=False,
+                                    interaction_only=False, order='C')),
+                ('ridge_reg',
+                 Ridge(alpha=0, copy_X=True, fit_intercept=False, max_iter=None,
+                       normalize=True, random_state=None, solver='auto',
+                       tol=0.001))],
+         verbose=False)","[20.69768209 19.37763426 21.11407966 ... 21.41718418 21.57715644
+ 21.32847943]"
+23,8398079,Boromo,"{'poly_features__degree': 3, 'poly_features__include_bias': True, 'poly_features__interaction_only': False, 'ridge_reg__alpha': 0, 'ridge_reg__fit_intercept': True, 'ridge_reg__normalize': False}",-0.4689752056061443,"Pipeline(memory=None,
+         steps=[('poly_features',
+                 PolynomialFeatures(degree=3, include_bias=True,
+                                    interaction_only=False, order='C')),
+                ('ridge_reg',
+                 Ridge(alpha=0, copy_X=True, fit_intercept=True, max_iter=None,
+                       normalize=False, random_state=None, solver='auto',
+                       tol=0.001))],
+         verbose=False)","[21.10623631 19.02399716 20.77972779 ... 20.94271705 20.48383221
+ 20.82415494]"
+23,8398079,Bur Dedougou,"{'poly_features__degree': 3, 'poly_features__include_bias': False, 'poly_features__interaction_only': False, 'ridge_reg__alpha': 0, 'ridge_reg__fit_intercept': False, 'ridge_reg__normalize': True}",-0.3648488941175779,"Pipeline(memory=None,
+         steps=[('poly_features',
+                 PolynomialFeatures(degree=3, include_bias=False,
+                                    interaction_only=False, order='C')),
+                ('ridge_reg',
+                 Ridge(alpha=0, copy_X=True, fit_intercept=False, max_iter=None,
+                       normalize=True, random_state=None, solver='auto',
+                       tol=0.001))],
+         verbose=False)","[20.38982416 19.21164149 19.72034605 ... 20.16869445 19.78523958
+ 19.74158062]"
+23,8398079,Dori,"{'poly_features__degree': 2, 'poly_features__include_bias': True, 'poly_features__interaction_only': False, 'ridge_reg__alpha': 2, 'ridge_reg__fit_intercept': False, 'ridge_reg__normalize': True}",-9.004018053352988,"Pipeline(memory=None,
+         steps=[('poly_features',
+                 PolynomialFeatures(degree=2, include_bias=True,
+                                    interaction_only=False, order='C')),
+                ('ridge_reg',
+                 Ridge(alpha=2, copy_X=True, fit_intercept=False, max_iter=None,
+                       normalize=True, random_state=None, solver='auto',
+                       tol=0.001))],
+         verbose=False)","[21.22032754 20.4350781  20.90460936 ... 20.7250025  19.80138609
+ 22.59120338]"
+23,8398079,Fada N'gourma,"{'poly_features__degree': 3, 'poly_features__include_bias': False, 'poly_features__interaction_only': False, 'ridge_reg__alpha': 0, 'ridge_reg__fit_intercept': False, 'ridge_reg__normalize': True}",-0.320572515333758,"Pipeline(memory=None,
+         steps=[('poly_features',
+                 PolynomialFeatures(degree=3, include_bias=False,
+                                    interaction_only=False, order='C')),
+                ('ridge_reg',
+                 Ridge(alpha=0, copy_X=True, fit_intercept=False, max_iter=None,
+                       normalize=True, random_state=None, solver='auto',
+                       tol=0.001))],
+         verbose=False)","[20.39293155 19.84765212 19.42913355 ... 20.3965711  20.24608258
+ 19.2546881 ]"
+23,8398079,Gaoua,"{'poly_features__degree': 3, 'poly_features__include_bias': False, 'poly_features__interaction_only': False, 'ridge_reg__alpha': 2, 'ridge_reg__fit_intercept': True, 'ridge_reg__normalize': False}",-0.3300390743978099,"Pipeline(memory=None,
+         steps=[('poly_features',
+                 PolynomialFeatures(degree=3, include_bias=False,
+                                    interaction_only=False, order='C')),
+                ('ridge_reg',
+                 Ridge(alpha=2, copy_X=True, fit_intercept=True, max_iter=None,
+                       normalize=False, random_state=None, solver='auto',
+                       tol=0.001))],
+         verbose=False)","[21.60485142 17.92630978 21.25857872 ... 21.47769054 20.89083586
+ 20.88734   ]"
+23,8398079,Ouahigouya,"{'poly_features__degree': 3, 'poly_features__include_bias': True, 'poly_features__interaction_only': False, 'ridge_reg__alpha': 0, 'ridge_reg__fit_intercept': False, 'ridge_reg__normalize': True}",-0.5597155854642208,"Pipeline(memory=None,
+         steps=[('poly_features',
+                 PolynomialFeatures(degree=3, include_bias=True,
+                                    interaction_only=False, order='C')),
+                ('ridge_reg',
+                 Ridge(alpha=0, copy_X=True, fit_intercept=False, max_iter=None,
+                       normalize=True, random_state=None, solver='auto',
+                       tol=0.001))],
+         verbose=False)","[19.76077615 19.98568809 20.20518003 ... 19.14107625 19.1108141
+ 17.85456243]"
+23,8398079,Po,"{'poly_features__degree': 3, 'poly_features__include_bias': True, 'poly_features__interaction_only': True, 'ridge_reg__alpha': 0, 'ridge_reg__fit_intercept': True, 'ridge_reg__normalize': False}",-0.585594625139185,"Pipeline(memory=None,
+         steps=[('poly_features',
+                 PolynomialFeatures(degree=3, include_bias=True,
+                                    interaction_only=True, order='C')),
+                ('ridge_reg',
+                 Ridge(alpha=0, copy_X=True, fit_intercept=True, max_iter=None,
+                       normalize=False, random_state=None, solver='auto',
+                       tol=0.001))],
+         verbose=False)","[21.21490741 18.82610071 20.49589419 ... 21.01583254 20.93819487
+ 18.49755037]"
+24,16786764,Bobo Dioulasso,"{'poly_features__degree': 3, 'poly_features__include_bias': False, 'poly_features__interaction_only': False, 'ridge_reg__alpha': 0, 'ridge_reg__fit_intercept': False, 'ridge_reg__normalize': True}",-0.37977932854815055,"Pipeline(memory=None,
+         steps=[('poly_features',
+                 PolynomialFeatures(degree=3, include_bias=False,
+                                    interaction_only=False, order='C')),
+                ('ridge_reg',
+                 Ridge(alpha=0, copy_X=True, fit_intercept=False, max_iter=None,
+                       normalize=True, random_state=None, solver='auto',
+                       tol=0.001))],
+         verbose=False)","[20.69768209 19.37763426 21.11407966 ... 21.41718418 21.57715644
+ 21.32847943]"
+24,16786764,Boromo,"{'poly_features__degree': 3, 'poly_features__include_bias': False, 'poly_features__interaction_only': False, 'ridge_reg__alpha': 1, 'ridge_reg__fit_intercept': False, 'ridge_reg__normalize': True}",-0.4711135642563061,"Pipeline(memory=None,
+         steps=[('poly_features',
+                 PolynomialFeatures(degree=3, include_bias=False,
+                                    interaction_only=False, order='C')),
+                ('ridge_reg',
+                 Ridge(alpha=1, copy_X=True, fit_intercept=False, max_iter=None,
+                       normalize=True, random_state=None, solver='auto',
+                       tol=0.001))],
+         verbose=False)","[21.02174993 19.178055   20.77727047 ... 21.03889985 20.69244054
+ 20.95188152]"
+24,16786764,Bur Dedougou,"{'poly_features__degree': 3, 'poly_features__include_bias': False, 'poly_features__interaction_only': False, 'ridge_reg__alpha': 0, 'ridge_reg__fit_intercept': False, 'ridge_reg__normalize': True}",-0.36679226405384247,"Pipeline(memory=None,
+         steps=[('poly_features',
+                 PolynomialFeatures(degree=3, include_bias=False,
+                                    interaction_only=False, order='C')),
+                ('ridge_reg',
+                 Ridge(alpha=0, copy_X=True, fit_intercept=False, max_iter=None,
+                       normalize=True, random_state=None, solver='auto',
+                       tol=0.001))],
+         verbose=False)","[20.38982416 19.21164149 19.72034605 ... 20.16869445 19.78523958
+ 19.74158062]"
+24,16786764,Dori,"{'poly_features__degree': 2, 'poly_features__include_bias': True, 'poly_features__interaction_only': False, 'ridge_reg__alpha': 2, 'ridge_reg__fit_intercept': False, 'ridge_reg__normalize': True}",-9.004438660908866,"Pipeline(memory=None,
+         steps=[('poly_features',
+                 PolynomialFeatures(degree=2, include_bias=True,
+                                    interaction_only=False, order='C')),
+                ('ridge_reg',
+                 Ridge(alpha=2, copy_X=True, fit_intercept=False, max_iter=None,
+                       normalize=True, random_state=None, solver='auto',
+                       tol=0.001))],
+         verbose=False)","[21.22032754 20.4350781  20.90460936 ... 20.7250025  19.80138609
+ 22.59120338]"
+24,16786764,Fada N'gourma,"{'poly_features__degree': 3, 'poly_features__include_bias': True, 'poly_features__interaction_only': False, 'ridge_reg__alpha': 0, 'ridge_reg__fit_intercept': True, 'ridge_reg__normalize': False}",-0.3219034853531841,"Pipeline(memory=None,
+         steps=[('poly_features',
+                 PolynomialFeatures(degree=3, include_bias=True,
+                                    interaction_only=False, order='C')),
+                ('ridge_reg',
+                 Ridge(alpha=0, copy_X=True, fit_intercept=True, max_iter=None,
+                       normalize=False, random_state=None, solver='auto',
+                       tol=0.001))],
+         verbose=False)","[20.38879779 19.84407362 19.4302434  ... 20.39969447 20.24663737
+ 19.25520572]"
+24,16786764,Gaoua,"{'poly_features__degree': 3, 'poly_features__include_bias': True, 'poly_features__interaction_only': False, 'ridge_reg__alpha': 0, 'ridge_reg__fit_intercept': True, 'ridge_reg__normalize': False}",-0.3290511548865761,"Pipeline(memory=None,
+         steps=[('poly_features',
+                 PolynomialFeatures(degree=3, include_bias=True,
+                                    interaction_only=False, order='C')),
+                ('ridge_reg',
+                 Ridge(alpha=0, copy_X=True, fit_intercept=True, max_iter=None,
+                       normalize=False, random_state=None, solver='auto',
+                       tol=0.001))],
+         verbose=False)","[21.67236513 17.69449478 21.24025729 ... 21.50006497 20.78646804
+ 20.49589559]"
+24,16786764,Ouahigouya,"{'poly_features__degree': 3, 'poly_features__include_bias': False, 'poly_features__interaction_only': False, 'ridge_reg__alpha': 0, 'ridge_reg__fit_intercept': False, 'ridge_reg__normalize': True}",-0.5592674994778336,"Pipeline(memory=None,
+         steps=[('poly_features',
+                 PolynomialFeatures(degree=3, include_bias=False,
+                                    interaction_only=False, order='C')),
+                ('ridge_reg',
+                 Ridge(alpha=0, copy_X=True, fit_intercept=False, max_iter=None,
+                       normalize=True, random_state=None, solver='auto',
+                       tol=0.001))],
+         verbose=False)","[19.77006992 19.99824265 20.22087737 ... 19.10792181 19.17160724
+ 17.84803992]"
+24,16786764,Po,"{'poly_features__degree': 3, 'poly_features__include_bias': False, 'poly_features__interaction_only': True, 'ridge_reg__alpha': 0, 'ridge_reg__fit_intercept': False, 'ridge_reg__normalize': True}",-0.5968096416577362,"Pipeline(memory=None,
+         steps=[('poly_features',
+                 PolynomialFeatures(degree=3, include_bias=False,
+                                    interaction_only=True, order='C')),
+                ('ridge_reg',
+                 Ridge(alpha=0, copy_X=True, fit_intercept=False, max_iter=None,
+                       normalize=True, random_state=None, solver='auto',
+                       tol=0.001))],
+         verbose=False)","[21.16936791 18.80218518 20.48691262 ... 21.01410088 20.97688737
+ 18.4280697 ]"
+25,33564057,Bobo Dioulasso,"{'poly_features__degree': 3, 'poly_features__include_bias': False, 'poly_features__interaction_only': False, 'ridge_reg__alpha': 0, 'ridge_reg__fit_intercept': False, 'ridge_reg__normalize': True}",-0.3754307291904755,"Pipeline(memory=None,
+         steps=[('poly_features',
+                 PolynomialFeatures(degree=3, include_bias=False,
+                                    interaction_only=False, order='C')),
+                ('ridge_reg',
+                 Ridge(alpha=0, copy_X=True, fit_intercept=False, max_iter=None,
+                       normalize=True, random_state=None, solver='auto',
+                       tol=0.001))],
+         verbose=False)","[20.69768209 19.37763426 21.11407966 ... 21.41718418 21.57715644
+ 21.32847943]"
+25,33564057,Boromo,"{'poly_features__degree': 3, 'poly_features__include_bias': True, 'poly_features__interaction_only': False, 'ridge_reg__alpha': 0, 'ridge_reg__fit_intercept': True, 'ridge_reg__normalize': False}",-0.4719878304339226,"Pipeline(memory=None,
+         steps=[('poly_features',
+                 PolynomialFeatures(degree=3, include_bias=True,
+                                    interaction_only=False, order='C')),
+                ('ridge_reg',
+                 Ridge(alpha=0, copy_X=True, fit_intercept=True, max_iter=None,
+                       normalize=False, random_state=None, solver='auto',
+                       tol=0.001))],
+         verbose=False)","[21.10623631 19.02399716 20.77972779 ... 20.94271705 20.48383221
+ 20.82415494]"
+25,33564057,Bur Dedougou,"{'poly_features__degree': 3, 'poly_features__include_bias': True, 'poly_features__interaction_only': False, 'ridge_reg__alpha': 0, 'ridge_reg__fit_intercept': False, 'ridge_reg__normalize': True}",-0.3601754297794319,"Pipeline(memory=None,
+         steps=[('poly_features',
+                 PolynomialFeatures(degree=3, include_bias=True,
+                                    interaction_only=False, order='C')),
+                ('ridge_reg',
+                 Ridge(alpha=0, copy_X=True, fit_intercept=False, max_iter=None,
+                       normalize=True, random_state=None, solver='auto',
+                       tol=0.001))],
+         verbose=False)","[20.40108925 19.21513492 19.72444383 ... 20.17797218 19.78846824
+ 19.74338864]"
+25,33564057,Dori,"{'poly_features__degree': 2, 'poly_features__include_bias': False, 'poly_features__interaction_only': False, 'ridge_reg__alpha': 2, 'ridge_reg__fit_intercept': True, 'ridge_reg__normalize': False}",-9.01138199799588,"Pipeline(memory=None,
+         steps=[('poly_features',
+                 PolynomialFeatures(degree=2, include_bias=False,
+                                    interaction_only=False, order='C')),
+                ('ridge_reg',
+                 Ridge(alpha=2, copy_X=True, fit_intercept=True, max_iter=None,
+                       normalize=False, random_state=None, solver='auto',
+                       tol=0.001))],
+         verbose=False)","[21.21433346 20.50202106 20.9508392  ... 20.80878035 19.90387963
+ 22.59659034]"
+25,33564057,Fada N'gourma,"{'poly_features__degree': 3, 'poly_features__include_bias': False, 'poly_features__interaction_only': False, 'ridge_reg__alpha': 0, 'ridge_reg__fit_intercept': False, 'ridge_reg__normalize': True}",-0.32001055472970225,"Pipeline(memory=None,
+         steps=[('poly_features',
+                 PolynomialFeatures(degree=3, include_bias=False,
+                                    interaction_only=False, order='C')),
+                ('ridge_reg',
+                 Ridge(alpha=0, copy_X=True, fit_intercept=False, max_iter=None,
+                       normalize=True, random_state=None, solver='auto',
+                       tol=0.001))],
+         verbose=False)","[20.39293155 19.84765212 19.42913355 ... 20.3965711  20.24608258
+ 19.2546881 ]"
+25,33564057,Gaoua,"{'poly_features__degree': 3, 'poly_features__include_bias': False, 'poly_features__interaction_only': False, 'ridge_reg__alpha': 2, 'ridge_reg__fit_intercept': False, 'ridge_reg__normalize': True}",-0.32988244032715575,"Pipeline(memory=None,
+         steps=[('poly_features',
+                 PolynomialFeatures(degree=3, include_bias=False,
+                                    interaction_only=False, order='C')),
+                ('ridge_reg',
+                 Ridge(alpha=2, copy_X=True, fit_intercept=False, max_iter=None,
+                       normalize=True, random_state=None, solver='auto',
+                       tol=0.001))],
+         verbose=False)","[21.60442297 17.92608957 21.25775842 ... 21.47788512 20.884347
+ 20.88935656]"
+25,33564057,Ouahigouya,"{'poly_features__degree': 3, 'poly_features__include_bias': False, 'poly_features__interaction_only': False, 'ridge_reg__alpha': 0, 'ridge_reg__fit_intercept': True, 'ridge_reg__normalize': False}",-0.5678125374391698,"Pipeline(memory=None,
+         steps=[('poly_features',
+                 PolynomialFeatures(degree=3, include_bias=False,
+                                    interaction_only=False, order='C')),
+                ('ridge_reg',
+                 Ridge(alpha=0, copy_X=True, fit_intercept=True, max_iter=None,
+                       normalize=False, random_state=None, solver='auto',
+                       tol=0.001))],
+         verbose=False)","[19.76077646 19.98568817 20.20518014 ... 19.14107505 19.11081719
+ 17.85456385]"
+25,33564057,Po,"{'poly_features__degree': 3, 'poly_features__include_bias': True, 'poly_features__interaction_only': True, 'ridge_reg__alpha': 0, 'ridge_reg__fit_intercept': True, 'ridge_reg__normalize': False}",-0.5850836588715923,"Pipeline(memory=None,
+         steps=[('poly_features',
+                 PolynomialFeatures(degree=3, include_bias=True,
+                                    interaction_only=True, order='C')),
+                ('ridge_reg',
+                 Ridge(alpha=0, copy_X=True, fit_intercept=True, max_iter=None,
+                       normalize=False, random_state=None, solver='auto',
+                       tol=0.001))],
+         verbose=False)","[21.21490741 18.82610071 20.49589419 ... 21.01583254 20.93819487
+ 18.49755037]"
+26,67118566,Bobo Dioulasso,"{'poly_features__degree': 3, 'poly_features__include_bias': False, 'poly_features__interaction_only': False, 'ridge_reg__alpha': 0, 'ridge_reg__fit_intercept': False, 'ridge_reg__normalize': True}",-0.3789403987210575,"Pipeline(memory=None,
+         steps=[('poly_features',
+                 PolynomialFeatures(degree=3, include_bias=False,
+                                    interaction_only=False, order='C')),
+                ('ridge_reg',
+                 Ridge(alpha=0, copy_X=True, fit_intercept=False, max_iter=None,
+                       normalize=True, random_state=None, solver='auto',
+                       tol=0.001))],
+         verbose=False)","[20.69768209 19.37763426 21.11407966 ... 21.41718418 21.57715644
+ 21.32847943]"
+26,67118566,Boromo,"{'poly_features__degree': 3, 'poly_features__include_bias': False, 'poly_features__interaction_only': False, 'ridge_reg__alpha': 1, 'ridge_reg__fit_intercept': False, 'ridge_reg__normalize': True}",-0.46621201048476574,"Pipeline(memory=None,
+         steps=[('poly_features',
+                 PolynomialFeatures(degree=3, include_bias=False,
+                                    interaction_only=False, order='C')),
+                ('ridge_reg',
+                 Ridge(alpha=1, copy_X=True, fit_intercept=False, max_iter=None,
+                       normalize=True, random_state=None, solver='auto',
+                       tol=0.001))],
+         verbose=False)","[21.02174993 19.178055   20.77727047 ... 21.03889985 20.69244054
+ 20.95188152]"
+26,67118566,Bur Dedougou,"{'poly_features__degree': 3, 'poly_features__include_bias': True, 'poly_features__interaction_only': False, 'ridge_reg__alpha': 0, 'ridge_reg__fit_intercept': True, 'ridge_reg__normalize': True}",-0.3737425801828419,"Pipeline(memory=None,
+         steps=[('poly_features',
+                 PolynomialFeatures(degree=3, include_bias=True,
+                                    interaction_only=False, order='C')),
+                ('ridge_reg',
+                 Ridge(alpha=0, copy_X=True, fit_intercept=True, max_iter=None,
+                       normalize=True, random_state=None, solver='auto',
+                       tol=0.001))],
+         verbose=False)","[20.40108962 19.21513496 19.72444427 ... 20.17797238 19.78846843
+ 19.74338828]"
+26,67118566,Dori,"{'poly_features__degree': 2, 'poly_features__include_bias': True, 'poly_features__interaction_only': False, 'ridge_reg__alpha': 2, 'ridge_reg__fit_intercept': True, 'ridge_reg__normalize': False}",-8.987286653291218,"Pipeline(memory=None,
+         steps=[('poly_features',
+                 PolynomialFeatures(degree=2, include_bias=True,
+                                    interaction_only=False, order='C')),
+                ('ridge_reg',
+                 Ridge(alpha=2, copy_X=True, fit_intercept=True, max_iter=None,
+                       normalize=False, random_state=None, solver='auto',
+                       tol=0.001))],
+         verbose=False)","[21.21433346 20.50202106 20.9508392  ... 20.80878035 19.90387963
+ 22.59659034]"
+26,67118566,Fada N'gourma,"{'poly_features__degree': 3, 'poly_features__include_bias': False, 'poly_features__interaction_only': False, 'ridge_reg__alpha': 0, 'ridge_reg__fit_intercept': False, 'ridge_reg__normalize': True}",-0.32259463735633015,"Pipeline(memory=None,
+         steps=[('poly_features',
+                 PolynomialFeatures(degree=3, include_bias=False,
+                                    interaction_only=False, order='C')),
+                ('ridge_reg',
+                 Ridge(alpha=0, copy_X=True, fit_intercept=False, max_iter=None,
+                       normalize=True, random_state=None, solver='auto',
+                       tol=0.001))],
+         verbose=False)","[20.39293155 19.84765212 19.42913355 ... 20.3965711  20.24608258
+ 19.2546881 ]"
+26,67118566,Gaoua,"{'poly_features__degree': 3, 'poly_features__include_bias': True, 'poly_features__interaction_only': False, 'ridge_reg__alpha': 2, 'ridge_reg__fit_intercept': True, 'ridge_reg__normalize': False}",-0.3314001173416684,"Pipeline(memory=None,
+         steps=[('poly_features',
+                 PolynomialFeatures(degree=3, include_bias=True,
+                                    interaction_only=False, order='C')),
+                ('ridge_reg',
+                 Ridge(alpha=2, copy_X=True, fit_intercept=True, max_iter=None,
+                       normalize=False, random_state=None, solver='auto',
+                       tol=0.001))],
+         verbose=False)","[21.60485142 17.92630978 21.25857871 ... 21.47769054 20.89083587
+ 20.88734   ]"
+26,67118566,Ouahigouya,"{'poly_features__degree': 3, 'poly_features__include_bias': False, 'poly_features__interaction_only': False, 'ridge_reg__alpha': 0, 'ridge_reg__fit_intercept': True, 'ridge_reg__normalize': False}",-0.5719340690466344,"Pipeline(memory=None,
+         steps=[('poly_features',
+                 PolynomialFeatures(degree=3, include_bias=False,
+                                    interaction_only=False, order='C')),
+                ('ridge_reg',
+                 Ridge(alpha=0, copy_X=True, fit_intercept=True, max_iter=None,
+                       normalize=False, random_state=None, solver='auto',
+                       tol=0.001))],
+         verbose=False)","[19.76077646 19.98568817 20.20518014 ... 19.14107505 19.11081719
+ 17.85456385]"
+26,67118566,Po,"{'poly_features__degree': 3, 'poly_features__include_bias': True, 'poly_features__interaction_only': True, 'ridge_reg__alpha': 0, 'ridge_reg__fit_intercept': True, 'ridge_reg__normalize': False}",-0.5951395680744491,"Pipeline(memory=None,
+         steps=[('poly_features',
+                 PolynomialFeatures(degree=3, include_bias=True,
+                                    interaction_only=True, order='C')),
+                ('ridge_reg',
+                 Ridge(alpha=0, copy_X=True, fit_intercept=True, max_iter=None,
+                       normalize=False, random_state=None, solver='auto',
+                       tol=0.001))],
+         verbose=False)","[21.21490741 18.82610071 20.49589419 ... 21.01583254 20.93819487
+ 18.49755037]"
+27,134227507,Bobo Dioulasso,"{'poly_features__degree': 3, 'poly_features__include_bias': False, 'poly_features__interaction_only': False, 'ridge_reg__alpha': 0, 'ridge_reg__fit_intercept': False, 'ridge_reg__normalize': True}",-0.37196777167532996,"Pipeline(memory=None,
+         steps=[('poly_features',
+                 PolynomialFeatures(degree=3, include_bias=False,
+                                    interaction_only=False, order='C')),
+                ('ridge_reg',
+                 Ridge(alpha=0, copy_X=True, fit_intercept=False, max_iter=None,
+                       normalize=True, random_state=None, solver='auto',
+                       tol=0.001))],
+         verbose=False)","[20.69768209 19.37763426 21.11407966 ... 21.41718418 21.57715644
+ 21.32847943]"
+27,134227507,Boromo,"{'poly_features__degree': 3, 'poly_features__include_bias': True, 'poly_features__interaction_only': False, 'ridge_reg__alpha': 0, 'ridge_reg__fit_intercept': True, 'ridge_reg__normalize': False}",-0.46901248841123994,"Pipeline(memory=None,
+         steps=[('poly_features',
+                 PolynomialFeatures(degree=3, include_bias=True,
+                                    interaction_only=False, order='C')),
+                ('ridge_reg',
+                 Ridge(alpha=0, copy_X=True, fit_intercept=True, max_iter=None,
+                       normalize=False, random_state=None, solver='auto',
+                       tol=0.001))],
+         verbose=False)","[21.10623631 19.02399716 20.77972779 ... 20.94271705 20.48383221
+ 20.82415494]"
+27,134227507,Bur Dedougou,"{'poly_features__degree': 3, 'poly_features__include_bias': False, 'poly_features__interaction_only': False, 'ridge_reg__alpha': 0, 'ridge_reg__fit_intercept': False, 'ridge_reg__normalize': True}",-0.35974255729005067,"Pipeline(memory=None,
+         steps=[('poly_features',
+                 PolynomialFeatures(degree=3, include_bias=False,
+                                    interaction_only=False, order='C')),
+                ('ridge_reg',
+                 Ridge(alpha=0, copy_X=True, fit_intercept=False, max_iter=None,
+                       normalize=True, random_state=None, solver='auto',
+                       tol=0.001))],
+         verbose=False)","[20.38982416 19.21164149 19.72034605 ... 20.16869445 19.78523958
+ 19.74158062]"
+27,134227507,Dori,"{'poly_features__degree': 2, 'poly_features__include_bias': False, 'poly_features__interaction_only': False, 'ridge_reg__alpha': 2, 'ridge_reg__fit_intercept': True, 'ridge_reg__normalize': False}",-9.004267335393408,"Pipeline(memory=None,
+         steps=[('poly_features',
+                 PolynomialFeatures(degree=2, include_bias=False,
+                                    interaction_only=False, order='C')),
+                ('ridge_reg',
+                 Ridge(alpha=2, copy_X=True, fit_intercept=True, max_iter=None,
+                       normalize=False, random_state=None, solver='auto',
+                       tol=0.001))],
+         verbose=False)","[21.21433346 20.50202106 20.9508392  ... 20.80878035 19.90387963
+ 22.59659034]"
+27,134227507,Fada N'gourma,"{'poly_features__degree': 3, 'poly_features__include_bias': False, 'poly_features__interaction_only': False, 'ridge_reg__alpha': 0, 'ridge_reg__fit_intercept': False, 'ridge_reg__normalize': True}",-0.32201363664005,"Pipeline(memory=None,
+         steps=[('poly_features',
+                 PolynomialFeatures(degree=3, include_bias=False,
+                                    interaction_only=False, order='C')),
+                ('ridge_reg',
+                 Ridge(alpha=0, copy_X=True, fit_intercept=False, max_iter=None,
+                       normalize=True, random_state=None, solver='auto',
+                       tol=0.001))],
+         verbose=False)","[20.39293155 19.84765212 19.42913355 ... 20.3965711  20.24608258
+ 19.2546881 ]"
+27,134227507,Gaoua,"{'poly_features__degree': 3, 'poly_features__include_bias': True, 'poly_features__interaction_only': False, 'ridge_reg__alpha': 0, 'ridge_reg__fit_intercept': True, 'ridge_reg__normalize': False}",-0.33156834319515105,"Pipeline(memory=None,
+         steps=[('poly_features',
+                 PolynomialFeatures(degree=3, include_bias=True,
+                                    interaction_only=False, order='C')),
+                ('ridge_reg',
+                 Ridge(alpha=0, copy_X=True, fit_intercept=True, max_iter=None,
+                       normalize=False, random_state=None, solver='auto',
+                       tol=0.001))],
+         verbose=False)","[21.67236513 17.69449478 21.24025729 ... 21.50006497 20.78646804
+ 20.49589559]"
+27,134227507,Ouahigouya,"{'poly_features__degree': 3, 'poly_features__include_bias': True, 'poly_features__interaction_only': False, 'ridge_reg__alpha': 0, 'ridge_reg__fit_intercept': True, 'ridge_reg__normalize': True}",-0.5606782171433062,"Pipeline(memory=None,
+         steps=[('poly_features',
+                 PolynomialFeatures(degree=3, include_bias=True,
+                                    interaction_only=False, order='C')),
+                ('ridge_reg',
+                 Ridge(alpha=0, copy_X=True, fit_intercept=True, max_iter=None,
+                       normalize=True, random_state=None, solver='auto',
+                       tol=0.001))],
+         verbose=False)","[19.76077646 19.98568813 20.20518006 ... 19.14107494 19.11081723
+ 17.85456385]"
+27,134227507,Po,"{'poly_features__degree': 3, 'poly_features__include_bias': False, 'poly_features__interaction_only': True, 'ridge_reg__alpha': 0, 'ridge_reg__fit_intercept': False, 'ridge_reg__normalize': True}",-0.5836246908917931,"Pipeline(memory=None,
+         steps=[('poly_features',
+                 PolynomialFeatures(degree=3, include_bias=False,
+                                    interaction_only=True, order='C')),
+                ('ridge_reg',
+                 Ridge(alpha=0, copy_X=True, fit_intercept=False, max_iter=None,
+                       normalize=True, random_state=None, solver='auto',
+                       tol=0.001))],
+         verbose=False)","[21.16936791 18.80218518 20.48691262 ... 21.01410088 20.97688737
+ 18.4280697 ]"
+28,268445312,Bobo Dioulasso,"{'poly_features__degree': 3, 'poly_features__include_bias': True, 'poly_features__interaction_only': False, 'ridge_reg__alpha': 0, 'ridge_reg__fit_intercept': True, 'ridge_reg__normalize': False}",-0.3749967660336142,"Pipeline(memory=None,
+         steps=[('poly_features',
+                 PolynomialFeatures(degree=3, include_bias=True,
+                                    interaction_only=False, order='C')),
+                ('ridge_reg',
+                 Ridge(alpha=0, copy_X=True, fit_intercept=True, max_iter=None,
+                       normalize=False, random_state=None, solver='auto',
+                       tol=0.001))],
+         verbose=False)","[20.6973829  19.37694624 21.11348987 ... 21.41746402 21.58023059
+ 21.32754904]"
+28,268445312,Boromo,"{'poly_features__degree': 3, 'poly_features__include_bias': False, 'poly_features__interaction_only': False, 'ridge_reg__alpha': 1, 'ridge_reg__fit_intercept': False, 'ridge_reg__normalize': True}",-0.46555402693073367,"Pipeline(memory=None,
+         steps=[('poly_features',
+                 PolynomialFeatures(degree=3, include_bias=False,
+                                    interaction_only=False, order='C')),
+                ('ridge_reg',
+                 Ridge(alpha=1, copy_X=True, fit_intercept=False, max_iter=None,
+                       normalize=True, random_state=None, solver='auto',
+                       tol=0.001))],
+         verbose=False)","[21.02174993 19.178055   20.77727047 ... 21.03889985 20.69244054
+ 20.95188152]"
+28,268445312,Bur Dedougou,"{'poly_features__degree': 3, 'poly_features__include_bias': True, 'poly_features__interaction_only': False, 'ridge_reg__alpha': 0, 'ridge_reg__fit_intercept': True, 'ridge_reg__normalize': False}",-0.36413160529920446,"Pipeline(memory=None,
+         steps=[('poly_features',
+                 PolynomialFeatures(degree=3, include_bias=True,
+                                    interaction_only=False, order='C')),
+                ('ridge_reg',
+                 Ridge(alpha=0, copy_X=True, fit_intercept=True, max_iter=None,
+                       normalize=False, random_state=None, solver='auto',
+                       tol=0.001))],
+         verbose=False)","[20.40257248 19.21513224 19.72390118 ... 20.17875329 19.78823099
+ 19.74147883]"
+28,268445312,Dori,"{'poly_features__degree': 2, 'poly_features__include_bias': True, 'poly_features__interaction_only': False, 'ridge_reg__alpha': 2, 'ridge_reg__fit_intercept': True, 'ridge_reg__normalize': False}",-9.009964910175775,"Pipeline(memory=None,
+         steps=[('poly_features',
+                 PolynomialFeatures(degree=2, include_bias=True,
+                                    interaction_only=False, order='C')),
+                ('ridge_reg',
+                 Ridge(alpha=2, copy_X=True, fit_intercept=True, max_iter=None,
+                       normalize=False, random_state=None, solver='auto',
+                       tol=0.001))],
+         verbose=False)","[21.21433346 20.50202106 20.9508392  ... 20.80878035 19.90387963
+ 22.59659034]"
+28,268445312,Fada N'gourma,"{'poly_features__degree': 3, 'poly_features__include_bias': False, 'poly_features__interaction_only': False, 'ridge_reg__alpha': 0, 'ridge_reg__fit_intercept': False, 'ridge_reg__normalize': True}",-0.32335520972793425,"Pipeline(memory=None,
+         steps=[('poly_features',
+                 PolynomialFeatures(degree=3, include_bias=False,
+                                    interaction_only=False, order='C')),
+                ('ridge_reg',
+                 Ridge(alpha=0, copy_X=True, fit_intercept=False, max_iter=None,
+                       normalize=True, random_state=None, solver='auto',
+                       tol=0.001))],
+         verbose=False)","[20.39293155 19.84765212 19.42913355 ... 20.3965711  20.24608258
+ 19.2546881 ]"
+28,268445312,Gaoua,"{'poly_features__degree': 3, 'poly_features__include_bias': True, 'poly_features__interaction_only': False, 'ridge_reg__alpha': 2, 'ridge_reg__fit_intercept': False, 'ridge_reg__normalize': True}",-0.3267126994286621,"Pipeline(memory=None,
+         steps=[('poly_features',
+                 PolynomialFeatures(degree=3, include_bias=True,
+                                    interaction_only=False, order='C')),
+                ('ridge_reg',
+                 Ridge(alpha=2, copy_X=True, fit_intercept=False, max_iter=None,
+                       normalize=True, random_state=None, solver='auto',
+                       tol=0.001))],
+         verbose=False)","[21.60442377 17.92608996 21.2577599  ... 21.47788481 20.88435842
+ 20.88935314]"
+28,268445312,Ouahigouya,"{'poly_features__degree': 3, 'poly_features__include_bias': False, 'poly_features__interaction_only': False, 'ridge_reg__alpha': 0, 'ridge_reg__fit_intercept': True, 'ridge_reg__normalize': False}",-0.5622301660558016,"Pipeline(memory=None,
+         steps=[('poly_features',
+                 PolynomialFeatures(degree=3, include_bias=False,
+                                    interaction_only=False, order='C')),
+                ('ridge_reg',
+                 Ridge(alpha=0, copy_X=True, fit_intercept=True, max_iter=None,
+                       normalize=False, random_state=None, solver='auto',
+                       tol=0.001))],
+         verbose=False)","[19.76077646 19.98568817 20.20518014 ... 19.14107505 19.11081719
+ 17.85456385]"
+28,268445312,Po,"{'poly_features__degree': 3, 'poly_features__include_bias': False, 'poly_features__interaction_only': True, 'ridge_reg__alpha': 1, 'ridge_reg__fit_intercept': False, 'ridge_reg__normalize': True}",-0.5963416614789809,"Pipeline(memory=None,
+         steps=[('poly_features',
+                 PolynomialFeatures(degree=3, include_bias=False,
+                                    interaction_only=True, order='C')),
+                ('ridge_reg',
+                 Ridge(alpha=1, copy_X=True, fit_intercept=False, max_iter=None,
+                       normalize=True, random_state=None, solver='auto',
+                       tol=0.001))],
+         verbose=False)","[21.2730729  18.81132599 20.42552759 ... 21.04123206 20.9010691
+ 18.53505159]"
+29,536880845,Bobo Dioulasso,"{'poly_features__degree': 3, 'poly_features__include_bias': False, 'poly_features__interaction_only': False, 'ridge_reg__alpha': 0, 'ridge_reg__fit_intercept': False, 'ridge_reg__normalize': True}",-0.37452409169239864,"Pipeline(memory=None,
+         steps=[('poly_features',
+                 PolynomialFeatures(degree=3, include_bias=False,
+                                    interaction_only=False, order='C')),
+                ('ridge_reg',
+                 Ridge(alpha=0, copy_X=True, fit_intercept=False, max_iter=None,
+                       normalize=True, random_state=None, solver='auto',
+                       tol=0.001))],
+         verbose=False)","[20.69768209 19.37763426 21.11407966 ... 21.41718418 21.57715644
+ 21.32847943]"
+29,536880845,Boromo,"{'poly_features__degree': 3, 'poly_features__include_bias': False, 'poly_features__interaction_only': False, 'ridge_reg__alpha': 1, 'ridge_reg__fit_intercept': False, 'ridge_reg__normalize': True}",-0.47102976722786327,"Pipeline(memory=None,
+         steps=[('poly_features',
+                 PolynomialFeatures(degree=3, include_bias=False,
+                                    interaction_only=False, order='C')),
+                ('ridge_reg',
+                 Ridge(alpha=1, copy_X=True, fit_intercept=False, max_iter=None,
+                       normalize=True, random_state=None, solver='auto',
+                       tol=0.001))],
+         verbose=False)","[21.02174993 19.178055   20.77727047 ... 21.03889985 20.69244054
+ 20.95188152]"
+29,536880845,Bur Dedougou,"{'poly_features__degree': 3, 'poly_features__include_bias': False, 'poly_features__interaction_only': False, 'ridge_reg__alpha': 0, 'ridge_reg__fit_intercept': False, 'ridge_reg__normalize': True}",-0.35860833147708054,"Pipeline(memory=None,
+         steps=[('poly_features',
+                 PolynomialFeatures(degree=3, include_bias=False,
+                                    interaction_only=False, order='C')),
+                ('ridge_reg',
+                 Ridge(alpha=0, copy_X=True, fit_intercept=False, max_iter=None,
+                       normalize=True, random_state=None, solver='auto',
+                       tol=0.001))],
+         verbose=False)","[20.38982416 19.21164149 19.72034605 ... 20.16869445 19.78523958
+ 19.74158062]"
+29,536880845,Dori,"{'poly_features__degree': 2, 'poly_features__include_bias': False, 'poly_features__interaction_only': False, 'ridge_reg__alpha': 2, 'ridge_reg__fit_intercept': True, 'ridge_reg__normalize': False}",-9.014267092964326,"Pipeline(memory=None,
+         steps=[('poly_features',
+                 PolynomialFeatures(degree=2, include_bias=False,
+                                    interaction_only=False, order='C')),
+                ('ridge_reg',
+                 Ridge(alpha=2, copy_X=True, fit_intercept=True, max_iter=None,
+                       normalize=False, random_state=None, solver='auto',
+                       tol=0.001))],
+         verbose=False)","[21.21433346 20.50202106 20.9508392  ... 20.80878035 19.90387963
+ 22.59659034]"
+29,536880845,Fada N'gourma,"{'poly_features__degree': 3, 'poly_features__include_bias': False, 'poly_features__interaction_only': False, 'ridge_reg__alpha': 0, 'ridge_reg__fit_intercept': False, 'ridge_reg__normalize': True}",-0.3181944468616717,"Pipeline(memory=None,
+         steps=[('poly_features',
+                 PolynomialFeatures(degree=3, include_bias=False,
+                                    interaction_only=False, order='C')),
+                ('ridge_reg',
+                 Ridge(alpha=0, copy_X=True, fit_intercept=False, max_iter=None,
+                       normalize=True, random_state=None, solver='auto',
+                       tol=0.001))],
+         verbose=False)","[20.39293155 19.84765212 19.42913355 ... 20.3965711  20.24608258
+ 19.2546881 ]"
+29,536880845,Gaoua,"{'poly_features__degree': 3, 'poly_features__include_bias': False, 'poly_features__interaction_only': False, 'ridge_reg__alpha': 0, 'ridge_reg__fit_intercept': False, 'ridge_reg__normalize': True}",-0.332268236486788,"Pipeline(memory=None,
+         steps=[('poly_features',
+                 PolynomialFeatures(degree=3, include_bias=False,
+                                    interaction_only=False, order='C')),
+                ('ridge_reg',
+                 Ridge(alpha=0, copy_X=True, fit_intercept=False, max_iter=None,
+                       normalize=True, random_state=None, solver='auto',
+                       tol=0.001))],
+         verbose=False)","[21.66748893 17.69392518 21.24108399 ... 21.50330734 20.78335047
+ 20.49701448]"
+29,536880845,Ouahigouya,"{'poly_features__degree': 3, 'poly_features__include_bias': True, 'poly_features__interaction_only': False, 'ridge_reg__alpha': 0, 'ridge_reg__fit_intercept': False, 'ridge_reg__normalize': True}",-0.5668979231509848,"Pipeline(memory=None,
+         steps=[('poly_features',
+                 PolynomialFeatures(degree=3, include_bias=True,
+                                    interaction_only=False, order='C')),
+                ('ridge_reg',
+                 Ridge(alpha=0, copy_X=True, fit_intercept=False, max_iter=None,
+                       normalize=True, random_state=None, solver='auto',
+                       tol=0.001))],
+         verbose=False)","[19.76077615 19.98568809 20.20518003 ... 19.14107625 19.1108141
+ 17.85456243]"
+29,536880845,Po,"{'poly_features__degree': 3, 'poly_features__include_bias': True, 'poly_features__interaction_only': True, 'ridge_reg__alpha': 0, 'ridge_reg__fit_intercept': True, 'ridge_reg__normalize': False}",-0.5939167093664458,"Pipeline(memory=None,
+         steps=[('poly_features',
+                 PolynomialFeatures(degree=3, include_bias=True,
+                                    interaction_only=True, order='C')),
+                ('ridge_reg',
+                 Ridge(alpha=0, copy_X=True, fit_intercept=True, max_iter=None,
+                       normalize=False, random_state=None, solver='auto',
+                       tol=0.001))],
+         verbose=False)","[21.21490741 18.82610071 20.49589419 ... 21.01583254 20.93819487
+ 18.49755037]"
+30,1073751834,Bobo Dioulasso,"{'poly_features__degree': 3, 'poly_features__include_bias': False, 'poly_features__interaction_only': False, 'ridge_reg__alpha': 0, 'ridge_reg__fit_intercept': False, 'ridge_reg__normalize': True}",-0.3772551524011164,"Pipeline(memory=None,
+         steps=[('poly_features',
+                 PolynomialFeatures(degree=3, include_bias=False,
+                                    interaction_only=False, order='C')),
+                ('ridge_reg',
+                 Ridge(alpha=0, copy_X=True, fit_intercept=False, max_iter=None,
+                       normalize=True, random_state=None, solver='auto',
+                       tol=0.001))],
+         verbose=False)","[20.69768209 19.37763426 21.11407966 ... 21.41718418 21.57715644
+ 21.32847943]"
+30,1073751834,Boromo,"{'poly_features__degree': 3, 'poly_features__include_bias': True, 'poly_features__interaction_only': False, 'ridge_reg__alpha': 0, 'ridge_reg__fit_intercept': True, 'ridge_reg__normalize': False}",-0.4732595179957252,"Pipeline(memory=None,
+         steps=[('poly_features',
+                 PolynomialFeatures(degree=3, include_bias=True,
+                                    interaction_only=False, order='C')),
+                ('ridge_reg',
+                 Ridge(alpha=0, copy_X=True, fit_intercept=True, max_iter=None,
+                       normalize=False, random_state=None, solver='auto',
+                       tol=0.001))],
+         verbose=False)","[21.10623631 19.02399716 20.77972779 ... 20.94271705 20.48383221
+ 20.82415494]"
+30,1073751834,Bur Dedougou,"{'poly_features__degree': 3, 'poly_features__include_bias': True, 'poly_features__interaction_only': False, 'ridge_reg__alpha': 0, 'ridge_reg__fit_intercept': True, 'ridge_reg__normalize': False}",-0.36288983736926633,"Pipeline(memory=None,
+         steps=[('poly_features',
+                 PolynomialFeatures(degree=3, include_bias=True,
+                                    interaction_only=False, order='C')),
+                ('ridge_reg',
+                 Ridge(alpha=0, copy_X=True, fit_intercept=True, max_iter=None,
+                       normalize=False, random_state=None, solver='auto',
+                       tol=0.001))],
+         verbose=False)","[20.40257248 19.21513224 19.72390118 ... 20.17875329 19.78823099
+ 19.74147883]"
+30,1073751834,Dori,"{'poly_features__degree': 2, 'poly_features__include_bias': False, 'poly_features__interaction_only': False, 'ridge_reg__alpha': 2, 'ridge_reg__fit_intercept': True, 'ridge_reg__normalize': False}",-8.995696485231635,"Pipeline(memory=None,
+         steps=[('poly_features',
+                 PolynomialFeatures(degree=2, include_bias=False,
+                                    interaction_only=False, order='C')),
+                ('ridge_reg',
+                 Ridge(alpha=2, copy_X=True, fit_intercept=True, max_iter=None,
+                       normalize=False, random_state=None, solver='auto',
+                       tol=0.001))],
+         verbose=False)","[21.21433346 20.50202106 20.9508392  ... 20.80878035 19.90387963
+ 22.59659034]"
+30,1073751834,Fada N'gourma,"{'poly_features__degree': 3, 'poly_features__include_bias': False, 'poly_features__interaction_only': False, 'ridge_reg__alpha': 0, 'ridge_reg__fit_intercept': False, 'ridge_reg__normalize': True}",-0.329967463196614,"Pipeline(memory=None,
+         steps=[('poly_features',
+                 PolynomialFeatures(degree=3, include_bias=False,
+                                    interaction_only=False, order='C')),
+                ('ridge_reg',
+                 Ridge(alpha=0, copy_X=True, fit_intercept=False, max_iter=None,
+                       normalize=True, random_state=None, solver='auto',
+                       tol=0.001))],
+         verbose=False)","[20.39293155 19.84765212 19.42913355 ... 20.3965711  20.24608258
+ 19.2546881 ]"
+30,1073751834,Gaoua,"{'poly_features__degree': 3, 'poly_features__include_bias': True, 'poly_features__interaction_only': False, 'ridge_reg__alpha': 0, 'ridge_reg__fit_intercept': True, 'ridge_reg__normalize': False}",-0.32803792893884764,"Pipeline(memory=None,
+         steps=[('poly_features',
+                 PolynomialFeatures(degree=3, include_bias=True,
+                                    interaction_only=False, order='C')),
+                ('ridge_reg',
+                 Ridge(alpha=0, copy_X=True, fit_intercept=True, max_iter=None,
+                       normalize=False, random_state=None, solver='auto',
+                       tol=0.001))],
+         verbose=False)","[21.67236513 17.69449478 21.24025729 ... 21.50006497 20.78646804
+ 20.49589559]"
+30,1073751834,Ouahigouya,"{'poly_features__degree': 3, 'poly_features__include_bias': False, 'poly_features__interaction_only': False, 'ridge_reg__alpha': 0, 'ridge_reg__fit_intercept': True, 'ridge_reg__normalize': True}",-0.5688899098094355,"Pipeline(memory=None,
+         steps=[('poly_features',
+                 PolynomialFeatures(degree=3, include_bias=False,
+                                    interaction_only=False, order='C')),
+                ('ridge_reg',
+                 Ridge(alpha=0, copy_X=True, fit_intercept=True, max_iter=None,
+                       normalize=True, random_state=None, solver='auto',
+                       tol=0.001))],
+         verbose=False)","[19.76077658 19.98568829 20.20518024 ... 19.14107453 19.11081797
+ 17.85456376]"
+30,1073751834,Po,"{'poly_features__degree': 3, 'poly_features__include_bias': True, 'poly_features__interaction_only': True, 'ridge_reg__alpha': 0, 'ridge_reg__fit_intercept': True, 'ridge_reg__normalize': False}",-0.5797734884350251,"Pipeline(memory=None,
+         steps=[('poly_features',
+                 PolynomialFeatures(degree=3, include_bias=True,
+                                    interaction_only=True, order='C')),
+                ('ridge_reg',
+                 Ridge(alpha=0, copy_X=True, fit_intercept=True, max_iter=None,
+                       normalize=False, random_state=None, solver='auto',
+                       tol=0.001))],
+         verbose=False)","[21.21490741 18.82610071 20.49589419 ... 21.01583254 20.93819487
+ 18.49755037]"

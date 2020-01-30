@@ -1,14 +1,17 @@
 import os
+import warnings
 import numpy as np
 import pandas as pd
-import matplotlib.pyplot as plt
 from sklearn.pipeline import Pipeline
 from sklearn.linear_model import Ridge
 from sklearn.model_selection import KFold
 from sklearn.model_selection import GridSearchCV
 from sklearn.preprocessing import PolynomialFeatures
 import time
+
+
 t = time.time()
+warnings.filterwarnings("ignore")
 
 
 # Data structure to store the final results
@@ -17,25 +20,28 @@ L = []
 
 # Selecting data folder
 data_dir = os.getcwd() + "\\data\\raw"
+# G.col instructions
+# data_dir = os.getcwd() + "/drive/My Drive/data/raw"
 files = os.listdir(data_dir)
-files.pop(0)
+files.pop(0)  # G.col (-)
 
 
 # Independent and generalized executions (executions = 30)
 for exec in range(1, 31):
 
-    print("Execução:", exec)
+    print("=============================================\nExecution nº:", exec)
     # Setting random number generator seed
     semente = ((exec + 100) * 77) + 2**exec
 
     # Iteration over the different stations
     for station in files:
+
         d = {}
 
         station_name = station[:-5]
         df = pd.read_excel(data_dir + "\\" + station, header=1)
 
-        print("Estação:", station_name)
+        print("'\tStation:", station_name, end='')
 
         # Data preprocessing
         df.columns = ['date', 'wind speed', 't max', 't min', 'humidity max',
@@ -65,47 +71,55 @@ for exec in range(1, 31):
             'poly_features__degree': [1, 2, 3],
             'poly_features__interaction_only': [True, False],
             'poly_features__include_bias': [True, False],
-            'ridge_reg__alpha': [0, 1, 2],
+            'ridge_reg__alpha': [0, 1],
             'ridge_reg__fit_intercept': [True, False],
             'ridge_reg__normalize': [True, False]
         }
 
         # Scores
-        scoring = ['neg_mean_squared_error', 'neg_mean_absolute_error', 'r2']
+        scoring = ['neg_root_mean_squared_error', 'neg_mean_squared_error',
+                   'neg_mean_absolute_error', 'r2']
 
-        # Do CV for each of the possible combinations of the parameter values
+        # Cross-Validation procedure
         grid = GridSearchCV(pipeline, cv=KFold(n_splits=10, shuffle=True,
                                                random_state=semente),
                             param_grid=param_grid,
-                            refit='neg_mean_squared_error', scoring=scoring,
+                            refit='neg_root_mean_squared_error',
+                            scoring=scoring,
                             iid=False, return_train_score=True)
         grid.fit(X_train, y_train)
 
-        # Predict test instances using the best configs found in the CV step
+        # Predict test instances using the refit model
         y_pred = grid.predict(X_test)
 
         # Save the results for each station
         d = {
-             'Exec': exec,
-             'Seed': semente,
-             'Station': station_name,
-             'Best Params': grid.best_params_,
-             'Best Score': grid.best_score_,
-             'Best Estimator': grid.best_estimator_,
-             'y_pred': y_pred
+             'exec': exec,
+             'seed': semente,
+             'station': station_name,
+             'best params': grid.best_params_,
+             'best score': grid.best_score_,
+             'best estimator': grid.best_estimator_,
+             'y_pred': y_pred,
+             'best index': grid.best_index_,
+             'cv_results': pd.DataFrame(grid.cv_results_)
         }
 
         L.append(d)
+        print(" - Ok.")
 
 
-# Sava final results into a .csv file
+print("Done!")
+
+
+# Save the final results into a .csv file
 results = pd.DataFrame(L)
 results.to_csv('results.csv', index=False)
 
 
-# Displays the elapsed time
+# Display the elapsed time
+print("=============================================\nelapsed time:\n")
 elapsed = time.time() - t
-h = int(elapsed / 3600)
-m = int((elapsed % 3600) / 60)
-s = (elapsed % 3600) % 60
-print(h, 'HORA(S)', m, 'MINUTO(S)', s, 'SEGUNDO(S)')
+print(int(elapsed / 3600), 'hours', int((elapsed % 3600) / 60),
+      'minutes', (elapsed % 3600) % 60, 'seconds')
+print("=============================================\n")
