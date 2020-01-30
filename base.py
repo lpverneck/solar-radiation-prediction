@@ -100,6 +100,7 @@ for exec in range(1, 31):
              'best params': grid.best_params_,
              'best score': grid.best_score_,
              'best estimator': grid.best_estimator_,
+             'y_true': y_test,
              'y_pred': y_pred,
              'best index': grid.best_index_,
              'cv_results': pd.DataFrame(grid.cv_results_)
