@@ -68,7 +68,7 @@ for exec in range(1, 31):
 
         # Values for GridSearchCV to iterate over
         param_grid = {
-            'poly_features__degree': [1, 2, 3],
+            'poly_features__degree': [1, 2],
             'poly_features__interaction_only': [True, False],
             'poly_features__include_bias': [True, False],
             'ridge_reg__alpha': [0, 1],
@@ -100,7 +100,7 @@ for exec in range(1, 31):
              'best params': grid.best_params_,
              'best score': grid.best_score_,
              'best estimator': grid.best_estimator_,
-             'y_true': y_test,
+             'y_true': y_test.to_numpy(),
              'y_pred': y_pred,
              'best index': grid.best_index_,
              'cv_results': pd.DataFrame(grid.cv_results_)
@@ -110,12 +110,12 @@ for exec in range(1, 31):
         print(" - Ok.")
 
 
-print("Done!")
+print("\nDone!")
 
 
 # Save the final results into a .csv file
 results = pd.DataFrame(L)
-results.to_csv('results.csv', index=False)
+results.to_json('results.json')
 
 
 # Display the elapsed time
