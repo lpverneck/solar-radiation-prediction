@@ -35,6 +35,19 @@ def data_split(df):
 
 
 def metrics_computation(data_list):
+    """Calculates the metrics values based on the model output. (RMSE,
+    MSE, MAE and R²)
+
+    Parameters
+    ----------
+    data_list : list with the separated data corresponding to each
+    station.
+
+    Returns
+    -------
+    m_list : list with the separated data corresponding to each
+    station with metrics included.
+    """
     m_list = []
     for el in data_list:
         el['rmse'], el['mse'], el['mae'], el['r2'] = 0, 0, 0, 0
@@ -54,6 +67,19 @@ def metrics_computation(data_list):
 
 
 def final_tab(data_list):
+    """Performs the averages of each metrics evaluated in relation to
+    the number of executions.
+
+    Parameters
+    ----------
+    data_list : list with the separated data corresponding to each
+    station containing the metrics values.
+
+    Returns
+    -------
+    df : DataFrame containing the averages of each metric for each
+    station.
+    """
     f_list = []
     for el in data_list:
         n = el.shape[0]
@@ -78,22 +104,22 @@ def final_tab(data_list):
 def plot_v1(data):
     # Create the figure and axis objects I'll be plotting on
     fig, ax = plt.subplots()
-    
+
     # Plot the bars
     ax.bar(np.arange(len(data)), data, align='center')
-    
+
     # Show the 50% mark, which would indicate an equal
     # number of tasks being completed by the robot and the
     # human. There are 39 tasks total, so 50% is 19.5
     ax.hlines(19.5, -0.5, 5.5, linestyle='--', linewidth=1)
-    
+
     # Set a reasonable y-axis limit
     ax.set_ylim(0, 40)
-    
+
     # Apply labels to the bars so you know which is which
     ax.set_xticks(np.arange(len(data)))
     ax.set_xticklabels(["\n".join(x) for x in data.index])
-    
+
     return fig, ax
 
 
@@ -108,7 +134,7 @@ def plot_v2(data):
     # Plot the 50% line
     ax.hlines(19.5, -0.5, 4.5, linestyle='--', linewidth=1)
     ax.set_ylim(0, 40)
-    
+
     # Return the figure object and axis
     return plt.gcf(), ax
 
@@ -142,7 +168,7 @@ def plot_v3(data):
 def set_labels(fig, axes):
     # These are the labels of each subplot
     labels = ["Fixed", "Reactive", "Predictive"]
-    
+
     # Iterate over each subplot and set the labels
     for i, ax in enumerate(axes):
 
@@ -152,31 +178,32 @@ def set_labels(fig, axes):
 
         # Set the label for each subplot
         ax.set_xlabel(labels[i])
-        
+
         # Remove the y-axis label and title
         ax.set_ylabel("")
         ax.set_title("")
-    
+
     # Set the y-axis label only for the left subplot
     axes.flat[0].set_ylabel("Number of tasks")
-    
+
     # Remove the "spines" (the lines surrounding the subplot)
     # including the left spine for the 2nd and 3rd subplots
     sns.despine(ax=axes[1], left=True)
     sns.despine(ax=axes[2], left=True)
 
     # Set the overall title for the plot
-    fig.suptitle("Single-agent tasks completed by the robot", fontsize=12, x=0.55)
+    fig.suptitle("Single-agent tasks completed by the robot", fontsize=12,
+                 x=0.55)
 
 
 def set_style():
     # This sets reasonable defaults for font size for
     # a figure that will go in a paper
     sns.set_context("paper")
-    
+
     # Set the font to be serif, rather than sans
     sns.set(font='serif')
-    
+
     # Make the background white, and specify the
     # specific font family
     sns.set_style("white", {
@@ -187,12 +214,12 @@ def set_style():
 
 def get_colors():
     return np.array([
-        [0.1, 0.1, 0.1],          # black
-        [0.4, 0.4, 0.4],          # very dark gray
-        [0.7, 0.7, 0.7],          # dark gray
-        [0.9, 0.9, 0.9],          # light gray
-        [0.984375, 0.7265625, 0], # dark yellow
-        [1, 1, 0.9]               # light yellow
+        [0.1, 0.1, 0.1],           # black
+        [0.4, 0.4, 0.4],           # very dark gray
+        [0.7, 0.7, 0.7],           # dark gray
+        [0.9, 0.9, 0.9],           # light gray
+        [0.984375, 0.7265625, 0],  # dark yellow
+        [1, 1, 0.9]                # light yellow
     ])
 
 # sns.palplot(get_colors())
@@ -213,7 +240,7 @@ def color_bars(axes, colors):
 
         # The first bar gets the dark color
         p1.set_color(dark_color)
-        
+
         # The second bar gets the light color, plus
         # hatch marks int he dark color
         p2.set_color(light_color)
@@ -226,18 +253,40 @@ def set_size(fig):
     plt.tight_layout()
 
 
-
 # =============================================================================
+# Analysis
 # =============================================================================
 
 
-df = pd.read_json('results.json')
+results = pd.read_json('results.json')
 
 
-LL = data_split(df)
+table_2 = data_split(results)
 
 
-TT = metrics_computation(LL)
+table_3 = metrics_computation(table_2)
 
 
-FF = final_tab(TT)
+TF = final_tab(table_3)
+
+
+###############################################################################
+# Draft
+###############################################################################
+
+
+plot = sns.barplot(x='station', y='rmse', data=TF)
+plot.set_ylabel("RMSE")
+plot.set_xticklabels(plot.get_xticklabels(), rotation=40, ha="right")
+
+plota = sns.barplot(x='station', y='mse', data=TF)
+plota.set_ylabel("MSE")
+plota.set_xticklabels(plota.get_xticklabels(), rotation=40, ha="right")
+
+plotb = sns.barplot(x='station', y='mae', data=TF)
+plotb.set_ylabel("MAE")
+plotb.set_xticklabels(plotb.get_xticklabels(), rotation=40, ha="right")
+
+plotc = sns.barplot(x='station', y='r2', data=TF)
+plotc.set_ylabel("R2")
+plotc.set_xticklabels(plotc.get_xticklabels(), rotation=40, ha="right")

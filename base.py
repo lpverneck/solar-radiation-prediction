@@ -29,7 +29,7 @@ files.pop(0)  # G.col (-)
 # Independent and generalized executions (executions = 30)
 for exec in range(1, 31):
 
-    print("=============================================\nExecution nº:", exec)
+    print("="*45 + "\nExecution nº:", exec)
     # Setting random number generator seed
     semente = ((exec + 100) * 77) + 2**exec
 
@@ -119,8 +119,8 @@ results.to_json('results.json')
 
 
 # Display the elapsed time
-print("=============================================\nelapsed time:\n")
+print("="*45 + "\nelapsed time:\n")
 elapsed = time.time() - t
 print(int(elapsed / 3600), 'hours', int((elapsed % 3600) / 60),
       'minutes', (elapsed % 3600) % 60, 'seconds')
-print("=============================================\n")
+print("="*45 + "\n")

@@ -158,7 +158,7 @@ def set_size(fig):
 
 #######################################################################
 
-task_data = pd.read_csv('task_data.csv')
+task_data = pd.read_csv('task_data_DRAFT.csv')
 tasks = task_data.groupby(['robot', 'inference'])['robot_tasks'].mean()
 plot_v1(tasks)
 plot_v2(task_data)
