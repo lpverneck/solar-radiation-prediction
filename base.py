@@ -16,6 +16,10 @@ warnings.filterwarnings("ignore")
 
 # Data structure to store the final results
 L = []
+main_values = [0, 0.0001, 0.001, 0.01, 0.0125, 0.1, 0.125, 0.175, 0.3, 0.5]
+# comp_values = np.linspace(1, 5, 5).tolist()
+comp_values = np.linspace(1, 5, 10).tolist()
+alpha_param = main_values + comp_values
 
 
 # Selecting data folder
@@ -31,7 +35,7 @@ for exec in range(1, 31):
 
     print("="*45 + "\nExecution nº:", exec)
     # Setting random number generator seed
-    semente = ((exec + 100) * 77) + 2**exec
+    semente = (exec + 1550) * exec
 
     # Iteration over the different stations
     for station in files:
@@ -68,12 +72,12 @@ for exec in range(1, 31):
 
         # Values for GridSearchCV to iterate over
         param_grid = {
-            'poly_features__degree': [1, 2],
+            'poly_features__degree': [1, 2, 3, 4],
             'poly_features__interaction_only': [True, False],
             'poly_features__include_bias': [True, False],
-            'ridge_reg__alpha': [0, 1],
-            'ridge_reg__fit_intercept': [True, False],
-            'ridge_reg__normalize': [True, False]
+            'ridge_reg__alpha': alpha_param,
+            'ridge_reg__fit_intercept': [True],
+            'ridge_reg__normalize': [True]
         }
 
         # Scores

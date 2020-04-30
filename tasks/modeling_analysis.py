@@ -3,8 +3,13 @@ import numpy as np
 import matplotlib
 import matplotlib.pyplot as plt
 import seaborn as sns
+import hydroeval as he
 from sklearn import metrics
 sns.set()
+
+
+def vaf_metric(y_true, y_pred):
+    return (1 - np.var(y_true - y_pred) / np.var(y_true)) * 100
 
 
 # =============================================================================
@@ -51,6 +56,7 @@ def metrics_computation(data_list):
     m_list = []
     for el in data_list:
         el['rmse'], el['mse'], el['mae'], el['r2'] = 0, 0, 0, 0
+        el['vaf'], el['nse'] = 0, 0
         lines = el.shape[0]
         for i in range(lines):
             yt = np.asarray(el.iloc[i, 6], dtype=np.float32)
@@ -60,6 +66,8 @@ def metrics_computation(data_list):
             el.iloc[i, 11] = metrics.mean_squared_error(yt, yp, squared=True)
             el.iloc[i, 12] = metrics.mean_absolute_error(yt, yp)
             el.iloc[i, 13] = metrics.r2_score(yt, yp)
+            el.iloc[i, 14] = vaf_metric(yt, yp)
+            el.iloc[i, 15] = he.nse(yt, yp)
 
         m_list.append(el)
 
@@ -82,13 +90,20 @@ def final_tab(data_list):
     """
     f_list = []
     for el in data_list:
-        n = el.shape[0]
         d = {
              'station': el.iloc[0, 2],
-             'rmse': (el['rmse'].sum()) / n,
-             'mse': (el['mse'].sum()) / n,
-             'mae': (el['mae'].sum()) / n,
-             'r2': (el['r2'].sum()) / n
+             'rmse': el['rmse'].mean(),
+             '(+-)rmse': el['rmse'].std(),
+             'mse': el['mse'].mean(),
+             '(+-)mse': el['mse'].std(),
+             'mae': el['mae'].mean(),
+             '(+-)mae': el['mae'].std(),
+             'r2': el['r2'].mean(),
+             '(+-)r2': el['r2'].std(),
+             'vaf': el['vaf'].mean(),
+             '(+-)vaf': el['vaf'].std(),
+             'nse': el['nse'].mean(),
+             '(+-)nse': el['nse'].std()
         }
 
         f_list.append(d)
@@ -290,3 +305,15 @@ plotb.set_xticklabels(plotb.get_xticklabels(), rotation=40, ha="right")
 plotc = sns.barplot(x='station', y='r2', data=TF)
 plotc.set_ylabel("R2")
 plotc.set_xticklabels(plotc.get_xticklabels(), rotation=40, ha="right")
+
+plotd = sns.barplot(x='station', y='vaf', data=TF)
+plotd.set_ylabel("VAF")
+plotd.set_xticklabels(plotd.get_xticklabels(), rotation=40, ha="right")
+
+plote = sns.barplot(x='station', y='nse', data=TF, ci='sd')
+plote.set_ylabel("NSE")
+plote.set_xticklabels(plote.get_xticklabels(), rotation=40, ha="right")
+
+###############################################################################
+
+boxplot = sns.boxplot(data=teste, x=["nse", "rmse"])

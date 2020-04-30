@@ -130,5 +130,8 @@ dependencies:
   - zeromq=4.3.1=h33f27b4_3
   - zipp=0.6.0=py_0
   - zlib=1.2.11=h62dcd97_3
+  - pip:
+    - hydroeval==0.0.3
+    - scikit-posthocs==0.6.2
 prefix: C:\Users\lucas\Anaconda3\envs\bf
 
