@@ -273,7 +273,7 @@ def set_size(fig):
 # =============================================================================
 
 
-results = pd.read_json('results.json')
+results = pd.read_json('results6.json')
 
 
 table_2 = data_split(results)

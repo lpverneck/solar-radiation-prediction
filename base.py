@@ -3,11 +3,15 @@ import time
 import warnings
 import numpy as np
 import pandas as pd
+from datetime import datetime
+from sklearn.externals import joblib
 from sklearn.pipeline import Pipeline
 from sklearn.linear_model import Ridge
 from sklearn.model_selection import KFold
 from sklearn.model_selection import GridSearchCV
+from sklearn.preprocessing import StandardScaler
 from sklearn.preprocessing import PolynomialFeatures
+from sklearn.feature_selection import SelectKBest, f_regression
 
 
 t = time.time()
@@ -32,6 +36,7 @@ def time_display(t, flag=""):
         print(int(elapsed / 3600), 'hours', int((elapsed % 3600) / 60),
               'minutes', int((elapsed % 3600) % 60), 'seconds')
         print("="*45 + "\n")
+        print(datetime.now())
     elif (flag == "mid"):
         print(' - [', int(elapsed / 3600), 'h', int((elapsed % 3600) / 60),
               'm', int((elapsed % 3600) % 60), 's]', end='')
@@ -39,20 +44,22 @@ def time_display(t, flag=""):
 
 # Initial parameters
 L = []
-main_values = [0, 0.0001, 0.001, 0.01, 0.0125, 0.1, 0.125, 0.175, 0.3, 0.5]
+# guess_values = [0, 0.0001, 0.001, 0.01, 0.0125, 0.1, 0.125, 0.175, 0.3, 0.5]
 # comp_values = np.linspace(1, 5, 5).tolist()
-comp_values = np.linspace(1, 5, 10).tolist()
-alpha_param = main_values + comp_values
+# comp_values = np.linspace(1, 5, 10).tolist()
+# alpha_param = guess_values + comp_values
+short_test = [0, 0.0001, 0.001, 1]
 
 
 # Values for GridSearchCV to iterate over
 param_grid = {
-    'poly_features__degree': [1, 2, 3, 4],
+    'poly_features__degree': [4],  #[1, 2, 3, 4],
     'poly_features__interaction_only': [True, False],
-    'poly_features__include_bias': [True, False],
-    'ridge_reg__alpha': alpha_param,
+    'poly_features__include_bias': [True], # True > False [AQUI!!]
+    'ridge_reg__alpha': short_test,
     'ridge_reg__fit_intercept': [True],
-    'ridge_reg__normalize': [True]
+    'ridge_reg__normalize': [False],               # True > False
+    'features_select__k': [20, 7, 3]
 }
 
 
@@ -100,6 +107,8 @@ for exec in range(1, 31):
         # Pipeline creation
         pipeline = Pipeline([
             ('poly_features', PolynomialFeatures()),
+            ('features_select', SelectKBest(score_func=f_regression)),
+            ('scale', StandardScaler()),
             ('ridge_reg', Ridge())
         ])
 
@@ -111,6 +120,10 @@ for exec in range(1, 31):
                             scoring=scoring,
                             iid=False, return_train_score=True)
         grid.fit(X_train, y_train)
+
+        # Save the fitted model
+        if (exec == 1) and (station_name == "Bobo Dioulasso"):
+            joblib.dump(grid.best_estimator_, 'model6.pkl', compress=1)
 
         # Predict test instances using the refit model
         y_pred = grid.predict(X_test)
@@ -139,7 +152,7 @@ print("\nDone!")
 
 # Save the final results into a .json file
 results = pd.DataFrame(L)
-results.to_json('results.json')
+results.to_json('results6.json')
 
 
 time_display(t, "end")
