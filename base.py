@@ -42,24 +42,24 @@ def time_display(t, flag=""):
               'm', int((elapsed % 3600) % 60), 's]', end='')
 
 
-# Initial parameters
 L = []
-# guess_values = [0, 0.0001, 0.001, 0.01, 0.0125, 0.1, 0.125, 0.175, 0.3, 0.5]
-# comp_values = np.linspace(1, 5, 5).tolist()
-# comp_values = np.linspace(1, 5, 10).tolist()
-# alpha_param = guess_values + comp_values
-short_test = [0, 0.0001, 0.001, 1]
+
+# Parameters setup
+guess_values = [0, 0.0001, 0.001, 0.01, 0.0125, 0.1, 0.125, 0.175, 0.2, 0.3,
+                0.4, 0.5, 0.6, 0.7, 0.8, 0.9]
+comp_values = np.linspace(1, 5, 24).tolist()
+alpha_param = guess_values + comp_values
 
 
 # Values for GridSearchCV to iterate over
 param_grid = {
-    'poly_features__degree': [4],  #[1, 2, 3, 4],
+    'poly_features__degree': [1],
     'poly_features__interaction_only': [True, False],
-    'poly_features__include_bias': [True], # True > False [AQUI!!]
-    'ridge_reg__alpha': short_test,
+    'poly_features__include_bias': [True, False],
+    'ridge_reg__alpha': [0, 1],
     'ridge_reg__fit_intercept': [True],
-    'ridge_reg__normalize': [False],               # True > False
-    'features_select__k': [20, 7, 3]
+    'ridge_reg__normalize': [False]  # ,
+    # 'features_select__k': [20, 7, 3]
 }
 
 
@@ -81,11 +81,11 @@ files.pop(0)  # G.col (-)
 
 
 # Independent and generalized executions (executions = 30)
-for exec in range(1, 31):
+for run in range(1, 31):
 
-    print("="*45 + "\nExecution nº:", exec)
+    print("="*45 + "\nExecution nº:", run)
     # Setting random number generator seed
-    root = (exec + 1550) * exec
+    root = (run + 1550) * run
 
     # Iteration over the different stations
     for station in files:
@@ -107,7 +107,7 @@ for exec in range(1, 31):
         # Pipeline creation
         pipeline = Pipeline([
             ('poly_features', PolynomialFeatures()),
-            ('features_select', SelectKBest(score_func=f_regression)),
+            # ('features_select', SelectKBest(score_func=f_regression)),
             ('scale', StandardScaler()),
             ('ridge_reg', Ridge())
         ])
@@ -122,15 +122,15 @@ for exec in range(1, 31):
         grid.fit(X_train, y_train)
 
         # Save the fitted model
-        if (exec == 1) and (station_name == "Bobo Dioulasso"):
-            joblib.dump(grid.best_estimator_, 'model6.pkl', compress=1)
+        joblib.dump(grid.best_estimator_, data_dir[:-8] + "models\\" +
+                    station_name + "_" + str(run) + "_model.pkl", compress=1)
 
         # Predict test instances using the refit model
         y_pred = grid.predict(X_test)
 
         # Save the results for each station
         d = {
-             'exec': exec,
+             'exec': run,
              'seed': root,
              'station': station_name,
              'best params': grid.best_params_,
@@ -152,7 +152,7 @@ print("\nDone!")
 
 # Save the final results into a .json file
 results = pd.DataFrame(L)
-results.to_json('results6.json')
+results.to_json('results.json')
 
 
 time_display(t, "end")

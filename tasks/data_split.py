@@ -1,5 +1,11 @@
+"""Data Split
+
+Preprocess, standardizes and splits the raw data into subsets for
+training the models and validate them.
+"""
+
+
 import os
-import warnings
 import numpy as np
 import pandas as pd
 

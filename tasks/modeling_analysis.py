@@ -1,10 +1,17 @@
+"""Modeling Analysis
+
+Processing of results generating tables, reports and graphs to be
+analyzed.
+"""
+
+
 import pandas as pd
 import numpy as np
 import matplotlib
-import matplotlib.pyplot as plt
 import seaborn as sns
 import hydroeval as he
 from sklearn import metrics
+import matplotlib.pyplot as plt
 sns.set()
 
 
@@ -273,7 +280,7 @@ def set_size(fig):
 # =============================================================================
 
 
-results = pd.read_json('results6.json')
+results = pd.read_json('results.json')
 
 
 table_2 = data_split(results)
@@ -315,5 +322,3 @@ plote.set_ylabel("NSE")
 plote.set_xticklabels(plote.get_xticklabels(), rotation=40, ha="right")
 
 ###############################################################################
-
-boxplot = sns.boxplot(data=teste, x=["nse", "rmse"])
