@@ -5,6 +5,22 @@ import pandas as pd
 from datetime import datetime
 
 
+def mode_select(opt=""):
+    """Select the operation mode.
+
+    Parameters
+    ----------
+    opt : {'test', 'on'}
+        - 'test' test running mode.
+        - 'on'   real running mode.
+    """
+    if opt == "test":
+        return "test_models/", "test_results.json"
+
+    elif opt == "on":
+        return "models/", "results.json"
+
+
 def server_select(opt=""):
     """Select the server to be used.
 

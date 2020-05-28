@@ -1,10 +1,10 @@
 import os
 import time
+import joblib
 import warnings
 import numpy as np
 import pandas as pd
 from datetime import datetime
-from sklearn.externals import joblib
 from sklearn.pipeline import Pipeline
 from sklearn.linear_model import Ridge
 from sklearn.model_selection import KFold
@@ -19,26 +19,13 @@ t = time.time()
 # warnings.filterwarnings("ignore")
 
 
-L = []
-
-
-# Scores used
-scoring = [
-    "neg_root_mean_squared_error",
-    "neg_mean_squared_error",
-    "neg_mean_absolute_error",
-    "r2",
-]
-
-
-# Selecting data folder
-# data_dir = os.getcwd() + "/data/raw"
-# G.col instructions
-# data_dir = os.getcwd() + "/drive/My Drive/data/raw"
-# files = os.listdir(data_dir)
-# files.pop(0)  # G.col (-)
+# Select data folder and the server
 data_dir, files = tasks.server_select(opt="loc")
 
+# Select folder to save models and the final results
+models_dir, res = tasks.mode_select(opt="test")
+
+L = []
 
 # Independent and generalized executions (executions = 30)
 for run in range(1, 31):
@@ -54,16 +41,16 @@ for run in range(1, 31):
         station_name = station[:-5]
 
         X_train = pd.read_json(
-            data_dir[:-3] + "splitted\\" + station_name + "_xtrain.json"
+            data_dir[:-3] + "processed/" + station_name + "_xtrain.json"
         )
         y_train = pd.read_json(
-            data_dir[:-3] + "splitted\\" + station_name + "_ytrain.json", typ="series"
+            data_dir[:-3] + "processed/" + station_name + "_ytrain.json", typ="series"
         )
         X_test = pd.read_json(
-            data_dir[:-3] + "splitted\\" + station_name + "_xtest.json"
+            data_dir[:-3] + "processed/" + station_name + "_xtest.json"
         )
         y_test = pd.read_json(
-            data_dir[:-3] + "splitted\\" + station_name + "_ytest.json", typ="series"
+            data_dir[:-3] + "processed/" + station_name + "_ytest.json", typ="series"
         )
 
         print("'\tStation:", station_name, end="")
@@ -93,7 +80,7 @@ for run in range(1, 31):
         # Save the fitted model
         joblib.dump(
             grid.best_estimator_,
-            data_dir[:-8] + "models\\" + station_name + "_" + str(run) + "_model.pkl",
+            data_dir[:-8] + models_dir + station_name + "_" + str(run) + "_model.pkl",
             compress=1,
         )
 
@@ -124,7 +111,7 @@ print("\nDone!")
 
 # Save the final results into a .json file
 results = pd.DataFrame(L)
-results.to_json("results.json")
+results.to_json(res)
 
 
 tasks.time_display(t, "end")
