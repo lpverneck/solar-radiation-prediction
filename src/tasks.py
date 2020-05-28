@@ -5,7 +5,7 @@ import pandas as pd
 from datetime import datetime
 
 
-def mode_select(opt=""):
+def mode_select(opt="", gcol=False):
     """Select the operation mode.
 
     Parameters
@@ -13,12 +13,19 @@ def mode_select(opt=""):
     opt : {'test', 'on'}
         - 'test' test running mode.
         - 'on'   real running mode.
+
+    gcol : {'True', 'False'}
+        - 'True'  g-colaboratory server selected.
+        - 'False' local server selected.
     """
     if opt == "test":
-        return "test_models/", "test_results.json"
+        return "test_models/", "/results/test_results.json"
 
-    elif opt == "on":
-        return "models/", "results.json"
+    elif opt == "on" and not gcol:
+        return "models/", "/results/results.json"
+
+    elif opt == "on" and gcol:
+        return "models/", "/content/drive/My Drive/results.json"
 
 
 def server_select(opt=""):

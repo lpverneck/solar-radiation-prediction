@@ -1,7 +1,6 @@
 import os
 import time
 import joblib
-import warnings
 import numpy as np
 import pandas as pd
 from datetime import datetime
@@ -16,14 +15,13 @@ from src import tasks
 from params import *
 
 t = time.time()
-# warnings.filterwarnings("ignore")
 
 
 # Select data folder and the server
 data_dir, files = tasks.server_select(opt="loc")
 
 # Select folder to save models and the final results
-models_dir, res = tasks.mode_select(opt="test")
+models_dir, res = tasks.mode_select(opt="test", gcol=False)
 
 L = []
 

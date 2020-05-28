@@ -61,13 +61,11 @@ scoring = [
 # ======================================================================
 
 # fast test params
-alpha_param = [0, 0.1, 1]
-n_feats = [20, 50, 100, 200, 300]
+alpha_param = [0, 1]
+n_feats = [20, 30]
 
-
-# Values for GridSearchCV to iterate over
 param_grid = {
-    "poly_features__degree": [1],
+    "poly_features__degree": [2],
     "poly_features__interaction_only": [True, False],
     "poly_features__include_bias": [True, False],
     "ridge_reg__alpha": alpha_param,
