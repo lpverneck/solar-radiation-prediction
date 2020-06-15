@@ -5,26 +5,37 @@
 
     solar-radiation-prediction/
     │
-    ├── data/                          # Solar radiation data
-    │   ├── raw/                       # Raw data
-    │   └── splitted/                  # Separate data according to each station for final validation
+    ├── data/
+    │   ├── processed/                 # data after processing
+    │   └── raw/                       # raw data
     │
-    ├── graphic_results/               # Some graphics results
-    │
-	├── models/                        # Best trained models
+	├── docs/                          # documentation
 	│
-	├── notebooks/                     # Some exploratory analysis
+	├── models/                        # trained models for each station
+	│   ├── w1_models/                 # without features selection
+	│	└── w2_models/                 # with features selection
 	│
-	├── tasks/                         # Independent tasks
-	│   ├── correlation_graphic.py     # Displays a correlation matrix graphically between the variables
+	├── notebooks/
+	│   ├── cover.png
+	│   ├── eda.ipynb                  # exploratory data analysis
+	│   ├── norm_test.ipynb            # normality test
+	│	└── norm_test.py               # normality test function
+	│
+	├── results/                       # general results
+	│	└── graphic_results/   
+	│
+	├── src/                           # Independent tasks
+	│   ├── __init__.py
+	│   ├── correlation_graphic.py      
 	│   ├── data_split.py              # Split data per station for validation
-	│   ├── model_rebuild.py           # Reloads a previously trained model
-	│   ├── modeling_analysis.py       # Generation of reports and final graphics
-	│   └── stat_script.py             # Statistical tests (To be REMOVED !)
+	│   ├── model_rebuild.py
+	│   ├── modeling_analysis.py
+	│   └── tasks.py
 	│   
-    ├── base.py                        # Main code responsible for training and optimizing the models
-	│
-	├── environment.yaml               # Conda environment dependencies
+    ├── main.py                        # Main code
+	├── params.py                      # Params settings
+	├── poetry.lock
+	├── pyproject.toml                 # Environment dependencies
 	│ 
-	├── .gitignore      
+	├── .gitignore
 	└── README.md
