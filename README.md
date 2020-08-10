@@ -13,13 +13,13 @@
 	│
 	├── models/                        # trained models for each station
 	│   ├── w1_models/                 # without features selection
-	│	└── w2_models/                 # with features selection
+	│   └── w2_models/                 # with features selection
 	│
 	├── notebooks/
 	│   ├── cover.png
 	│   ├── eda.ipynb                  # exploratory data analysis
 	│   ├── norm_test.ipynb            # normality test
-	│	└── norm_test.py               # normality test function
+	│   └── norm_test.py               # normality test function
 	│
 	├── results/                       # general results
 	│	└── graphic_results/   
