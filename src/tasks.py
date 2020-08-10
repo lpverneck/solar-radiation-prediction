@@ -1,3 +1,9 @@
+"""Tasks
+
+Customized tasks involving the computing process.
+"""
+
+
 import os
 import time
 import numpy as np
@@ -45,9 +51,10 @@ def server_select(opt=""):
         return data_dir, files
 
     elif opt == "gcol":
-        data_dir = os.getcwd() + "/drive/My Drive/data/raw"
+        data_dir = os.getcwd() + "/drive/My Drive/data/raw"  # CHANGE IT SOON!
         files = os.listdir(data_dir)
         files.sort()
+        files.pop(0)
         return data_dir, files
 
 
