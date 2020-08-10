@@ -1,7 +1,7 @@
 """Modeling Analysis
 
-Processing of results generating tables, reports and graphs to be
-analyzed.
+Processing of results generating tables and a refined data to be
+analyzed on post processing.
 """
 
 
@@ -120,6 +120,16 @@ def final_tab(data_list):
 
 
 def select_by_execn(table, n_exec):
+    """Selects the n_exec referenced data.
+
+    Parameters
+    ----------
+    table : table with the final results divided.
+
+    Returns
+    -------
+    json : json data file.
+    """
     li = []
     for item in table:
         li.append(item.loc[item["exec"] == n_exec])
