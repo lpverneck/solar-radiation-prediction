@@ -1,1 +1,1 @@
-# module
+# Set Python package directory
