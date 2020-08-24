@@ -10,7 +10,7 @@ from sklearn.model_selection import KFold
 from sklearn.model_selection import GridSearchCV
 from sklearn.preprocessing import StandardScaler
 from sklearn.preprocessing import PolynomialFeatures
-from sklearn.feature_selection import SelectKBest, f_regression
+from sklearn.feature_selection import SelectKBest, mutual_info_regression
 from src import tasks
 from params import *
 
@@ -42,13 +42,15 @@ for run in range(1, 31):
             data_dir[:-3] + "processed/" + station_name + "_xtrain.json"
         )
         y_train = pd.read_json(
-            data_dir[:-3] + "processed/" + station_name + "_ytrain.json", typ="series"
+            data_dir[:-3] + "processed/" + station_name + "_ytrain.json",
+            typ="series",
         )
         X_test = pd.read_json(
             data_dir[:-3] + "processed/" + station_name + "_xtest.json"
         )
         y_test = pd.read_json(
-            data_dir[:-3] + "processed/" + station_name + "_ytest.json", typ="series"
+            data_dir[:-3] + "processed/" + station_name + "_ytest.json",
+            typ="series",
         )
 
         print("'\tStation:", station_name, end="")
@@ -57,7 +59,10 @@ for run in range(1, 31):
         pipeline = Pipeline(
             [
                 ("poly_features", PolynomialFeatures()),
-                ("features_select", SelectKBest(score_func=f_regression)),
+                (
+                    "features_select",
+                    SelectKBest(score_func=mutual_info_regression),
+                ),
                 ("scale", StandardScaler()),
                 ("ridge_reg", Ridge()),
             ]
@@ -78,7 +83,12 @@ for run in range(1, 31):
         # Save the fitted model
         joblib.dump(
             grid.best_estimator_,
-            data_dir[:-8] + models_dir + station_name + "_" + str(run) + "_model.pkl",
+            data_dir[:-8]
+            + models_dir
+            + station_name
+            + "_"
+            + str(run)
+            + "_model.pkl",
             compress=1,
         )
 
