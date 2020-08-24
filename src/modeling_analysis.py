@@ -120,7 +120,7 @@ def final_tab(data_list):
 
 
 def select_by_execn(table, n_exec):
-    """Selects the n_exec referenced data.
+    """Selects the n_exec referenced data for all stations.
 
     Parameters
     ----------
@@ -128,7 +128,7 @@ def select_by_execn(table, n_exec):
 
     Returns
     -------
-    json : json data file.
+    json : json data file. containing 8x16 df.
     """
     li = []
     for item in table:
@@ -142,7 +142,7 @@ def select_by_execn(table, n_exec):
 # =============================================================================
 
 
-raw = pd.read_json("../results/w1_results.json")
+raw = pd.read_json("../results/s1_results.json")
 
 table_one = data_split(raw)
 
