@@ -148,6 +148,10 @@ table_one = data_split(raw)
 
 table_two = metrics_computation(table_one)
 
+# draft - for hyperparameters frequency - APENAS PARA 1 ESTAÇÃO
+hyperp_data_frequency = table_two[0]
+hyperp_data_frequency.to_json("../results/hyperp_data_frequency.json")
+
 general_table = final_tab(table_two)
 
 # df selected by exec number
