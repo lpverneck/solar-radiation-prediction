@@ -60,16 +60,32 @@ scoring = [
 
 # ======================================================================
 
-# fast test params
-alpha_param = [0, 1]
-n_feats = [20, 30]
+# s3 params
+alpha_param = [0.001, 0.01, 0.0125, 5.0]
+n_feats = [30, 60, 90, 120, 150, 180, 210, 240, 270, 300]
 
 param_grid = {
-    "poly_features__degree": [2],
-    "poly_features__interaction_only": [True, False],
-    "poly_features__include_bias": [True, False],
+    "poly_features__degree": [4],
+    "poly_features__interaction_only": [False],
+    "poly_features__include_bias": [True],
     "ridge_reg__alpha": alpha_param,
     "ridge_reg__fit_intercept": [True],
     "ridge_reg__normalize": [False],
     "features_select__k": n_feats,
 }
+
+# ======================================================================
+
+# fast test params
+# alpha_param = [0, 1]
+# n_feats = [20, 30]
+
+# param_grid = {
+#     "poly_features__degree": [2],
+#     "poly_features__interaction_only": [True, False],
+#     "poly_features__include_bias": [True, False],
+#     "ridge_reg__alpha": alpha_param,
+#     "ridge_reg__fit_intercept": [True],
+#     "ridge_reg__normalize": [False],
+#     "features_select__k": n_feats,
+# }
