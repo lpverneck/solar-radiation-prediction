@@ -100,6 +100,9 @@ def hyperparameter_check(st_name, std, alpha, feats):
     Parameters
     ----------
     st_name : station name.
+    std     : standart param grid.
+    alpha   : standart alpha param values.
+    feats   : standart number of features values.
     """
     if st_name == "Gaoua" or st_name == "Po":
         params = {
