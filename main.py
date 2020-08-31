@@ -12,7 +12,7 @@ from sklearn.preprocessing import StandardScaler
 from sklearn.preprocessing import PolynomialFeatures
 from sklearn.feature_selection import SelectKBest, mutual_info_regression
 from src import tasks
-from params import *
+from hyperparameters import *
 
 t = time.time()
 
