@@ -89,3 +89,39 @@ param_grid = {
 #     "ridge_reg__normalize": [False],
 #     "features_select__k": n_feats,
 # }
+
+# ======================================================================
+
+
+def hyperparameter_check(st_name, std, alpha, feats):
+    """Checks the station name to assign the appropriate hyperparameters
+    values. Used only for the feature selection stage.
+
+    Parameters
+    ----------
+    st_name : station name.
+    """
+    if st_name == "Gaoua" or st_name == "Po":
+        params = {
+            "poly_features__degree": [3],
+            "poly_features__interaction_only": [False],
+            "poly_features__include_bias": [True],
+            "ridge_reg__alpha": alpha,
+            "ridge_reg__fit_intercept": [True],
+            "ridge_reg__normalize": [False],
+            "features_select__k": feats,
+        }
+        return params
+    elif st_name == "Bur Dedougou" or st_name == "Bobo Dioulasso":
+        paramss = {
+            "poly_features__degree": [4],
+            "poly_features__interaction_only": [False],
+            "poly_features__include_bias": [False],
+            "ridge_reg__alpha": alpha,
+            "ridge_reg__fit_intercept": [True],
+            "ridge_reg__normalize": [False],
+            "features_select__k": feats,
+        }
+        return paramss
+    else:
+        return std

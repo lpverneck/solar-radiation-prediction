@@ -16,9 +16,9 @@ from hyperparameters import *
 
 t = time.time()
 
-################################################################
+# >>>>>>>>>>>>>>>>>>>>>>>>> #
 standart = param_grid
-################################################################
+# >>>>>>>>>>>>>>>>>>>>>>>>> #
 
 # Select data folder
 data_dir, files = tasks.set_directory()
@@ -71,32 +71,14 @@ for run in range(1, 31):
             ]
         )
 
-        ################################################################
-        if station_name == "Gaoua" or station_name == "Po":
-            param_grid = {
-                "poly_features__degree": [3],
-                "poly_features__interaction_only": [False],
-                "poly_features__include_bias": [True],
-                "ridge_reg__alpha": alpha_param,
-                "ridge_reg__fit_intercept": [True],
-                "ridge_reg__normalize": [False],
-                "features_select__k": n_feats,
-            }
-        elif (
-            station_name == "Bur Dedougou" or station_name == "Bobo Dioulasso"
-        ):
-            param_grid = {
-                "poly_features__degree": [4],
-                "poly_features__interaction_only": [False],
-                "poly_features__include_bias": [False],
-                "ridge_reg__alpha": alpha_param,
-                "ridge_reg__fit_intercept": [True],
-                "ridge_reg__normalize": [False],
-                "features_select__k": n_feats,
-            }
-        else:
-            param_grid = standart
-        ################################################################
+        # >>>>>>>>>>>>>>>>>>>>>>>>> #
+        param_grid = hyperparameter_check(
+            st_name=station_name,
+            std=standart,
+            alpha=alpha_param,
+            feats=n_feats,
+        )
+        # >>>>>>>>>>>>>>>>>>>>>>>>> #
 
         # Cross-Validation procedure
         grid = GridSearchCV(
