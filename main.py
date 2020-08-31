@@ -20,11 +20,11 @@ t = time.time()
 standart = param_grid
 ################################################################
 
-# Select data folder and the server
+# Select data folder
 data_dir, files = tasks.set_directory()
 
 # Select folder to save models and the final results
-models_dir, res = tasks.mode_select(opt="test", gcol=False)
+models_dir, res = tasks.mode_select(opt="test")
 
 L = []
 
