@@ -21,7 +21,7 @@ standart = param_grid
 ################################################################
 
 # Select data folder and the server
-data_dir, files = tasks.server_select(opt="loc")
+data_dir, files = tasks.set_directory()
 
 # Select folder to save models and the final results
 models_dir, res = tasks.mode_select(opt="test", gcol=False)

@@ -34,28 +34,14 @@ def mode_select(opt="", gcol=False):
         return "models/", "/content/drive/My Drive/results.json"
 
 
-def server_select(opt=""):
-    """Select the server to be used.
-
-    Parameters
-    ----------
-    opt : {'gcol', 'loc'}
-        - 'gcol' chooses the G-colaboratory server.
-        - 'loc'  chooses a local server.
+def set_directory():
+    """Set data directory.
     """
-    if opt == "loc":
-        data_dir = os.getcwd() + "/data/raw"
-        files = os.listdir(data_dir)
-        files.sort()
-        files.pop(0)
-        return data_dir, files
-
-    elif opt == "gcol":
-        data_dir = os.getcwd() + "/drive/My Drive/data/raw"  # CHANGE IT SOON!
-        files = os.listdir(data_dir)
-        files.sort()
-        files.pop(0)
-        return data_dir, files
+    data_dir = os.getcwd() + "/data/raw"
+    files = os.listdir(data_dir)
+    files.sort()
+    files.pop(0)
+    return data_dir, files
 
 
 def time_display(t, flag=""):
