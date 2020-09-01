@@ -38,6 +38,7 @@ for run in range(1, 31):
     # Iteration over the different stations
     for station in files:
 
+        time_track = time.time()
         d = {}
         station_name = station[:-5]
 
@@ -120,6 +121,7 @@ for run in range(1, 31):
             "y_pred": y_pred,
             "best index": grid.best_index_,
             "cv_results": pd.DataFrame(grid.cv_results_),
+            "time": time.time() - time_track,
         }
 
         L.append(d)
