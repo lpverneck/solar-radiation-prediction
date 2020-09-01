@@ -16,8 +16,9 @@ from hyperparameters import *
 
 t = time.time()
 
+# S1 ONLY @@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@
 # >>>>>>>>>>>>>>>>>>>>>>>>> #
-standart = param_grid
+# standart = param_grid
 # >>>>>>>>>>>>>>>>>>>>>>>>> #
 
 # Select data folder
@@ -63,22 +64,23 @@ for run in range(1, 31):
         pipeline = Pipeline(
             [
                 ("poly_features", PolynomialFeatures()),
-                (
-                    "features_select",
-                    SelectKBest(score_func=mutual_info_regression),
-                ),
+                # (
+                #     "features_select",
+                #     SelectKBest(score_func=mutual_info_regression),
+                # ),
                 ("scale", StandardScaler()),
                 ("ridge_reg", Ridge()),
             ]
         )
 
+        # S1 ONLY @@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@
         # >>>>>>>>>>>>>>>>>>>>>>>>> #
-        param_grid = hyperparameter_check(
-            st_name=station_name,
-            std=standart,
-            alpha=alpha_param,
-            feats=n_feats,
-        )
+        # param_grid = hyperparameter_check(
+        #     st_name=station_name,
+        #     std=standart,
+        #     alpha=alpha_param,
+        #     feats=n_feats,
+        # )
         # >>>>>>>>>>>>>>>>>>>>>>>>> #
 
         # Cross-Validation procedure
