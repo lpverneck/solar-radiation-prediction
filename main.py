@@ -89,6 +89,7 @@ for run in range(1, 31):
             scoring=scoring,
             iid=False,
             return_train_score=True,
+            n_jobs=-1,
         )
         grid.fit(X_train, y_train)
 
