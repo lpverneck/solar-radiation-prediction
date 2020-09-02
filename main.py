@@ -25,7 +25,7 @@ t = time.time()
 data_dir, files = tasks.set_directory()
 
 # Select folder to save models and the final results
-models_dir, res = tasks.mode_select(opt="test")
+models_dir, res = tasks.mode_select(opt="on")
 
 L = []
 

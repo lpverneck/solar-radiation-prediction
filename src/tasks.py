@@ -21,10 +21,10 @@ def mode_select(opt=""):
         - 'on'   real running mode.
     """
     if opt == "test":
-        return "models_test/", "/results/test_results.json"
+        return "models_test/", "results/test_results.json"
 
     elif opt == "on":
-        return "models/", "/results/results.json"
+        return "models/", "results/results.json"
 
 
 def set_directory():
