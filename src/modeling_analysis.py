@@ -70,12 +70,12 @@ def metrics_computation(data_list):
             yt = np.asarray(el.iloc[i, 6], dtype=np.float32)
             yp = np.asarray(el.iloc[i, 7], dtype=np.float32)
 
-            el.iloc[i, 10] = metrics.mean_squared_error(yt, yp, squared=False)
-            el.iloc[i, 11] = metrics.mean_squared_error(yt, yp, squared=True)
-            el.iloc[i, 12] = metrics.mean_absolute_error(yt, yp)
-            el.iloc[i, 13] = metrics.r2_score(yt, yp)
-            el.iloc[i, 14] = vaf_metric(yt, yp)
-            el.iloc[i, 15] = he.nse(yt, yp)
+            el.iloc[i, 11] = metrics.mean_squared_error(yt, yp, squared=False)
+            el.iloc[i, 12] = metrics.mean_squared_error(yt, yp, squared=True)
+            el.iloc[i, 13] = metrics.mean_absolute_error(yt, yp)
+            el.iloc[i, 14] = metrics.r2_score(yt, yp)
+            el.iloc[i, 15] = vaf_metric(yt, yp)
+            el.iloc[i, 16] = he.nse(yt, yp)
 
         m_list.append(el)
 
@@ -142,15 +142,15 @@ def select_by_execn(table, n_exec):
 # =============================================================================
 
 
-raw = pd.read_json("../results/s1_results.json")
+raw = pd.read_json("../results/#1_results.json")
 
 table_one = data_split(raw)
 
 table_two = metrics_computation(table_one)
 
 # draft - for hyperparameters frequency - APENAS PARA 1 ESTAÇÃO
-hyperp_data_frequency = table_two[0]
-hyperp_data_frequency.to_json("../results/hyperp_data_frequency.json")
+hyperp_data_frequency = table_two[8]
+hyperp_data_frequency.to_json("../results/hyperp_data_frequency_7.json")
 
 general_table = final_tab(table_two)
 
