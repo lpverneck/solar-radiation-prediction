@@ -12,35 +12,35 @@ scoring = [
 # ======================================================================
 
 # s1 params
-g_values = [
-    0,
-    0.0001,
-    0.001,
-    0.01,
-    0.0125,
-    0.1,
-    0.125,
-    0.175,
-    0.2,
-    0.3,
-    0.4,
-    0.5,
-    0.6,
-    0.7,
-    0.8,
-    0.9,
-]
-comp_values = np.linspace(1, 5, 24).tolist()
-alpha_param = g_values + comp_values
+# g_values = [
+#     0,
+#     0.0001,
+#     0.001,
+#     0.01,
+#     0.0125,
+#     0.1,
+#     0.125,
+#     0.175,
+#     0.2,
+#     0.3,
+#     0.4,
+#     0.5,
+#     0.6,
+#     0.7,
+#     0.8,
+#     0.9,
+# ]
+# comp_values = np.linspace(1, 5, 24).tolist()
+# alpha_param = g_values + comp_values
 
-param_grid = {
-    "poly_features__degree": [1, 2, 3, 4],
-    "poly_features__interaction_only": [True, False],
-    "poly_features__include_bias": [True, False],
-    "ridge_reg__alpha": alpha_param,
-    "ridge_reg__fit_intercept": [True],
-    "ridge_reg__normalize": [False],
-}
+# param_grid = {
+#     "poly_features__degree": [1, 2, 3, 4],
+#     "poly_features__interaction_only": [True, False],
+#     "poly_features__include_bias": [True, False],
+#     "ridge_reg__alpha": alpha_param,
+#     "ridge_reg__fit_intercept": [True],
+#     "ridge_reg__normalize": [False],
+# }
 
 # ======================================================================
 
@@ -93,38 +93,165 @@ param_grid = {
 # ======================================================================
 
 
-# def hyperparameter_check(st_name, std, alpha, feats):
-#     """Checks the station name to assign the appropriate hyperparameters
-#     values. Used only for the feature selection stage.
+def hyperparameter_check(st_name):
+    """Checks the station name to assign the appropriate hyperparameters
+    values. Used only for the feature selection stage.
 
-#     Parameters
-#     ----------
-#     st_name : station name.
-#     std     : standart param grid.
-#     alpha   : standart alpha param values.
-#     feats   : standart number of features values.
-#     """
-#     if st_name == "Gaoua" or st_name == "Po":
-#         params = {
-#             "poly_features__degree": [3],
-#             "poly_features__interaction_only": [False],
-#             "poly_features__include_bias": [True],
-#             "ridge_reg__alpha": alpha,
-#             "ridge_reg__fit_intercept": [True],
-#             "ridge_reg__normalize": [False],
-#             "features_select__k": feats,
-#         }
-#         return params
-#     elif st_name == "Bur Dedougou" or st_name == "Bobo Dioulasso":
-#         paramss = {
-#             "poly_features__degree": [4],
-#             "poly_features__interaction_only": [False],
-#             "poly_features__include_bias": [False],
-#             "ridge_reg__alpha": alpha,
-#             "ridge_reg__fit_intercept": [True],
-#             "ridge_reg__normalize": [False],
-#             "features_select__k": feats,
-#         }
-#         return paramss
-#     else:
-#         return std
+    Parameters
+    ----------
+    st_name : station name.
+    """
+    if st_name == "Bobo Dioulasso":
+        params = {
+            "poly_features__degree": [4],
+            "poly_features__interaction_only": [False],
+            "poly_features__include_bias": [False],
+            "ridge_reg__alpha": [0.001],
+            "ridge_reg__fit_intercept": [True],
+            "ridge_reg__normalize": [False],
+            "features_select__k": [
+                30,
+                60,
+                90,
+                120,
+                150,
+                180,
+                210,
+                240,
+                270,
+                300,
+            ],
+        }
+        return params
+    elif st_name == "Boromo":
+        params = {
+            "poly_features__degree": [4],
+            "poly_features__interaction_only": [False],
+            "poly_features__include_bias": [True],
+            "ridge_reg__alpha": [0.0125],
+            "ridge_reg__fit_intercept": [True],
+            "ridge_reg__normalize": [False],
+            "features_select__k": [
+                30,
+                60,
+                90,
+                120,
+                150,
+                180,
+                210,
+                240,
+                270,
+                300,
+            ],
+        }
+        return params
+    elif st_name == "Bur Dedougou":
+        params = {
+            "poly_features__degree": [4],
+            "poly_features__interaction_only": [False],
+            "poly_features__include_bias": [False],
+            "ridge_reg__alpha": [0.001],
+            "ridge_reg__fit_intercept": [True],
+            "ridge_reg__normalize": [False],
+            "features_select__k": [
+                30,
+                60,
+                90,
+                120,
+                150,
+                180,
+                210,
+                240,
+                270,
+                300,
+            ],
+        }
+        return params
+    elif st_name == "Dori":
+        params = {
+            "poly_features__degree": [4],
+            "poly_features__interaction_only": [False],
+            "poly_features__include_bias": [True],
+            "ridge_reg__alpha": [5.0],
+            "ridge_reg__fit_intercept": [True],
+            "ridge_reg__normalize": [False],
+            "features_select__k": [
+                30,
+                60,
+                90,
+                120,
+                150,
+                180,
+                210,
+                240,
+                270,
+                300,
+            ],
+        }
+        return params
+    elif st_name == "Fada N'gourma":
+        params = {
+            "poly_features__degree": [4],
+            "poly_features__interaction_only": [False],
+            "poly_features__include_bias": [True],
+            "ridge_reg__alpha": [0.01],
+            "ridge_reg__fit_intercept": [True],
+            "ridge_reg__normalize": [False],
+            "features_select__k": [
+                30,
+                60,
+                90,
+                120,
+                150,
+                180,
+                210,
+                240,
+                270,
+                300,
+            ],
+        }
+        return params
+    elif st_name == "Gaoua":
+        params = {
+            "poly_features__degree": [3],
+            "poly_features__interaction_only": [False],
+            "poly_features__include_bias": [True],
+            "ridge_reg__alpha": [0.001],
+            "ridge_reg__fit_intercept": [True],
+            "ridge_reg__normalize": [False],
+            "features_select__k": [10, 20, 30, 40, 50, 60, 70, 80, 90, 100],
+        }
+        return params
+    elif st_name == "Ouahigouya":
+        params = {
+            "poly_features__degree": [4],
+            "poly_features__interaction_only": [False],
+            "poly_features__include_bias": [True],
+            "ridge_reg__alpha": [0.001],
+            "ridge_reg__fit_intercept": [True],
+            "ridge_reg__normalize": [False],
+            "features_select__k": [
+                30,
+                60,
+                90,
+                120,
+                150,
+                180,
+                210,
+                240,
+                270,
+                300,
+            ],
+        }
+        return params
+    elif st_name == "Po":
+        params = {
+            "poly_features__degree": [3],
+            "poly_features__interaction_only": [False],
+            "poly_features__include_bias": [True],
+            "ridge_reg__alpha": [0.01],
+            "ridge_reg__fit_intercept": [True],
+            "ridge_reg__normalize": [False],
+            "features_select__k": [10, 20, 30, 40, 50, 60, 70, 80, 90, 100],
+        }
+        return params
